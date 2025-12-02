@@ -1,0 +1,486 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Updated to luxury gold, black, white palette */
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.08 0 0);
+  --card: oklch(0.98 0 0);
+  --card-foreground: oklch(0.08 0 0);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.08 0 0);
+  --primary: oklch(0.08 0 0);
+  --primary-foreground: oklch(1 0 0);
+  --secondary: oklch(0.95 0.01 60);
+  --secondary-foreground: oklch(0.08 0 0);
+  --muted: oklch(0.92 0 0);
+  --muted-foreground: oklch(0.5 0 0);
+  --accent: oklch(0.88 0.18 100);
+  --accent-foreground: oklch(0.08 0 0);
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(1 0 0);
+  --border: oklch(0.92 0 0);
+  --input: oklch(0.98 0 0);
+  --ring: oklch(0.88 0.18 100);
+  --chart-1: oklch(0.88 0.18 100);
+  --chart-2: oklch(0.6 0.118 184.704);
+  --chart-3: oklch(0.398 0.07 227.392);
+  --chart-4: oklch(0.828 0.189 84.429);
+  --chart-5: oklch(0.769 0.188 70.08);
+  --radius: 0.5rem;
+  --sidebar: oklch(1 0 0);
+  --sidebar-foreground: oklch(0.08 0 0);
+  --sidebar-primary: oklch(0.08 0 0);
+  --sidebar-primary-foreground: oklch(1 0 0);
+  --sidebar-accent: oklch(0.88 0.18 100);
+  --sidebar-accent-foreground: oklch(0.08 0 0);
+  --sidebar-border: oklch(0.92 0 0);
+  --sidebar-ring: oklch(0.88 0.18 100);
+}
+
+.dark {
+  --background: oklch(0.12 0 0);
+  --foreground: oklch(0.98 0 0);
+  --card: oklch(0.15 0 0);
+  --card-foreground: oklch(0.98 0 0);
+  --popover: oklch(0.12 0 0);
+  --popover-foreground: oklch(0.98 0 0);
+  --primary: oklch(1 0 0);
+  --primary-foreground: oklch(0.08 0 0);
+  --secondary: oklch(0.25 0.01 60);
+  --secondary-foreground: oklch(0.98 0 0);
+  --muted: oklch(0.3 0 0);
+  --muted-foreground: oklch(0.7 0 0);
+  --accent: oklch(0.88 0.18 100);
+  --accent-foreground: oklch(0.08 0 0);
+  --destructive: oklch(0.396 0.141 25.723);
+  --destructive-foreground: oklch(0.637 0.237 25.331);
+  --border: oklch(0.25 0 0);
+  --input: oklch(0.2 0 0);
+  --ring: oklch(0.88 0.18 100);
+  --chart-1: oklch(0.88 0.18 100);
+  --chart-2: oklch(0.696 0.17 162.48);
+  --chart-3: oklch(0.769 0.188 70.08);
+  --chart-4: oklch(0.627 0.265 303.9);
+  --chart-5: oklch(0.645 0.246 16.439);
+  --sidebar: oklch(0.12 0 0);
+  --sidebar-foreground: oklch(0.98 0 0);
+  --sidebar-primary: oklch(1 0 0);
+  --sidebar-primary-foreground: oklch(0.08 0 0);
+  --sidebar-accent: oklch(0.88 0.18 100);
+  --sidebar-accent-foreground: oklch(0.08 0 0);
+  --sidebar-border: oklch(0.25 0 0);
+  --sidebar-ring: oklch(0.88 0.18 100);
+}
+
+@theme inline {
+  --font-sans: var(--font-inter), system-ui, sans-serif;
+  --font-mono: ui-monospace, monospace;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Added smooth scrolling and custom scrollbar styling */
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary);
+}
+
+/* Styles pour les articles de blog (Markdown) */
+.prose {
+  @apply text-gray-800 leading-relaxed;
+}
+
+/* Style pour le titre principal de l'article de blog */
+.article-title {
+  font-size: 2.5rem !important;
+  line-height: 1.2 !important;
+  font-weight: 700 !important;
+  color: #0b4f6c !important;
+  margin-top: 0 !important;
+  margin-bottom: 1.5rem !important;
+  padding: 1.5rem 1.5rem !important;
+  padding-left: 1.25rem !important;
+  background: linear-gradient(
+    to right,
+    rgba(11, 79, 108, 0.08) 0%,
+    rgba(11, 79, 108, 0.03) 50%,
+    transparent 100%
+  ) !important;
+  border-left: 5px solid #0b4f6c !important;
+  border-bottom: 3px solid rgba(11, 79, 108, 0.2) !important;
+  border-radius: 0.75rem !important;
+  letter-spacing: -0.02em !important;
+  box-shadow: 0 4px 12px rgba(11, 79, 108, 0.1) !important;
+}
+
+.prose h1 {
+  @apply text-4xl font-bold text-gray-900 mt-8 mb-4;
+  background: linear-gradient(135deg, #0b4f6c 0%, #0ea5e9 50%, #0b4f6c 100%) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  font-size: 2.5rem !important;
+  line-height: 1.2 !important;
+  margin-top: 2.5rem !important;
+  margin-bottom: 1.5rem !important;
+  padding-left: 1rem !important;
+  padding-bottom: 0.75rem !important;
+  border-bottom: 3px solid #0b4f6c !important;
+  letter-spacing: -0.02em !important;
+  position: relative !important;
+}
+
+.prose h1::before {
+  content: "" !important;
+  position: absolute !important;
+  inset: 0 !important;
+  background: linear-gradient(
+    to right,
+    rgba(11, 79, 108, 0.08) 0%,
+    rgba(14, 165, 233, 0.05) 50%,
+    rgba(11, 79, 108, 0.08) 100%
+  ) !important;
+  border-radius: 0.5rem !important;
+  z-index: -1 !important;
+}
+
+.prose h2 {
+  @apply text-3xl font-bold text-gray-900 mt-8 mb-4 pb-2 border-b-2 border-[#0B4F6C]/20;
+  background: linear-gradient(135deg, #0b4f6c 0%, #0284c7 40%, #0ea5e9 60%, #0b4f6c 100%) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  font-size: 2rem !important;
+  font-weight: 700 !important;
+  line-height: 1.3 !important;
+  margin-top: 2.5rem !important;
+  margin-bottom: 1.25rem !important;
+  padding: 1rem 1.25rem !important;
+  padding-left: 1rem !important;
+  border-left: 4px solid #0b4f6c !important;
+  border-bottom: 2px solid rgba(11, 79, 108, 0.15) !important;
+  position: relative !important;
+  border-radius: 0.5rem !important;
+  letter-spacing: -0.01em !important;
+}
+
+.prose h2::before {
+  content: "" !important;
+  position: absolute !important;
+  inset: 0 !important;
+  background: linear-gradient(
+    to right,
+    rgba(11, 79, 108, 0.05) 0%,
+    transparent 100%
+  ) !important;
+  border-radius: 0.5rem !important;
+  z-index: -1 !important;
+}
+
+.prose h3 {
+  @apply text-2xl font-semibold text-gray-800 mt-6 mb-3;
+  background: linear-gradient(135deg, #0b4f6c 0%, #0ea5e9 50%, #0b4f6c 100%) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  font-size: 1.5rem !important;
+  font-weight: 600 !important;
+  line-height: 1.4 !important;
+  margin-top: 2rem !important;
+  margin-bottom: 1rem !important;
+  padding-left: 0.75rem !important;
+  padding-bottom: 0.5rem !important;
+  border-bottom: 2px solid rgba(11, 79, 108, 0.1) !important;
+  letter-spacing: -0.005em !important;
+}
+
+.prose h4 {
+  @apply text-xl font-semibold text-gray-800 mt-4 mb-2;
+  background: linear-gradient(135deg, #0a4459 0%, #0b4f6c 50%, #0a4459 100%) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  font-size: 1.25rem !important;
+  font-weight: 600 !important;
+  line-height: 1.5 !important;
+  margin-top: 1.5rem !important;
+  margin-bottom: 0.75rem !important;
+  padding-left: 0.75rem !important;
+}
+
+@media (min-width: 768px) {
+  .article-title {
+    font-size: 3rem !important;
+    padding: 2rem 2rem !important;
+    padding-left: 1.5rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .article-title {
+    font-size: 1.875rem !important;
+    padding: 1.25rem 1rem !important;
+  }
+
+  .prose h1 {
+    font-size: 2rem !important;
+    margin-top: 2rem !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .prose h2 {
+    font-size: 1.75rem !important;
+    padding: 0.75rem 0 !important;
+    margin-top: 2rem !important;
+  }
+
+  .prose h3 {
+    font-size: 1.375rem !important;
+    margin-top: 1.5rem !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .prose h4 {
+    font-size: 1.125rem !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .prose {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .prose p,
+  .prose blockquote,
+  .prose table,
+  .prose img,
+  .prose .content-box,
+  .prose .section-box,
+  .prose .info-box,
+  .prose .highlight-box,
+  .prose .callout,
+  .prose .faq {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .prose ul,
+  .prose ol {
+    padding-left: 1.25rem !important;
+    padding-right: 0 !important;
+  }
+}
+
+.prose p {
+  @apply mb-4 text-lg leading-relaxed;
+}
+
+.prose strong {
+  @apply font-bold text-gray-900;
+}
+
+.prose em {
+  @apply italic;
+}
+
+.prose ul {
+  @apply list-disc mb-4 space-y-2;
+  padding-left: 1.5rem;
+}
+
+.prose ol {
+  @apply list-decimal mb-4 space-y-2;
+  padding-left: 1.5rem;
+}
+
+.prose li {
+  @apply text-lg;
+  margin-left: 0;
+}
+
+.prose a {
+  @apply underline transition-colors;
+  color: #2563eb !important;
+}
+
+.prose a:hover {
+  color: #1d4ed8 !important;
+}
+
+.prose blockquote {
+  @apply border-l-4 border-accent pl-4 italic text-gray-700 my-4;
+}
+
+.prose code {
+  @apply bg-gray-100 px-2 py-1 rounded text-sm font-mono text-gray-800;
+}
+
+.prose pre {
+  @apply bg-gray-100 p-4 rounded-lg overflow-x-auto mb-4;
+}
+
+.prose pre code {
+  @apply bg-transparent p-0;
+}
+
+.prose table {
+  @apply w-full border-collapse mb-6;
+  display: table;
+  width: 100%;
+  table-layout: auto;
+}
+
+.prose th:not([style]) {
+  @apply bg-accent font-semibold p-3 text-left;
+  color: #1e40af !important;
+}
+
+.prose td:not([style]) {
+  @apply border border-gray-300 p-3;
+}
+
+.prose tr:nth-child(even) {
+  @apply bg-gray-50;
+}
+
+/* Wrapper pour les tableaux responsives */
+.table-wrapper {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin: 1.5rem 0;
+  scrollbar-width: thin;
+  scrollbar-color: #cbd5e1 #f1f5f9;
+}
+
+.table-wrapper::-webkit-scrollbar {
+  height: 8px;
+}
+
+.table-wrapper::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-radius: 4px;
+}
+
+.table-wrapper::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+.table-wrapper::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Styles responsives pour les tableaux sur mobile */
+@media (max-width: 768px) {
+  /* Tableaux responsives - les tableaux sont maintenant enveloppés dans .table-wrapper */
+  .table-wrapper table {
+    font-size: 0.875rem;
+    min-width: 600px; /* Largeur minimale pour forcer le scroll si nécessaire */
+    width: max-content;
+    display: table;
+  }
+
+  .table-wrapper th,
+  .table-wrapper td {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.875rem;
+    white-space: nowrap; /* Garder le texte sur une ligne */
+  }
+
+  .table-wrapper th {
+    font-size: 0.8125rem;
+    padding: 0.625rem 0.75rem;
+  }
+}
+
+.prose img {
+  @apply rounded-lg shadow-lg my-6;
+}
+
+.prose hr {
+  @apply my-8 border-t-2 border-gray-200;
+}
+
+/* FAQ accordéon */
+.faq {
+  border: 1px solid #e5e7eb;
+  border-radius: 0.75rem;
+  padding: 0.75rem 1rem;
+  margin: 0.6rem 0;
+  background: #fff;
+}
+
+.faq summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.faq[open] {
+  background: #f8fafc;
+}
