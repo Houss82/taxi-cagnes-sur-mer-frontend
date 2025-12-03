@@ -1,6 +1,22 @@
 // Fonction utilitaire pour appeler l'API backend
-// Le backend écoute sur le port 3001 par défaut (ou PORT env variable)
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3001'
+// En production, utilise l'URL Vercel du backend
+// En développement, utilise localhost:3001
+const getApiBaseUrl = () => {
+  // Si une URL est définie dans les variables d'environnement, l'utiliser
+  if (process.env.NEXT_PUBLIC_API_URL) {
+    return process.env.NEXT_PUBLIC_API_URL;
+  }
+  
+  // En production (Vercel), utiliser l'URL du backend Vercel
+  if (process.env.NODE_ENV === 'production' || process.env.VERCEL) {
+    return 'https://taxi-cagnes-sur-mer-backend.vercel.app';
+  }
+  
+  // En développement local
+  return 'http://localhost:3001';
+};
+
+const API_BASE_URL = getApiBaseUrl();
 
 export async function createReservation(reservationData) {
   try {

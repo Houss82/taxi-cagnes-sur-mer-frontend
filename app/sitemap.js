@@ -1,4 +1,4 @@
-import { getAllPostSlugs, getAllPosts } from "../lib/blog";
+import { getAllPostSlugs, getAllPosts } from "./lib/blog";
 
 const baseUrl = "https://taxi-cagnes-sur-mer.com";
 
