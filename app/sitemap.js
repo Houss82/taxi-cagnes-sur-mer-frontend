@@ -19,6 +19,17 @@ export default function sitemap() {
     { path: "/services", priority: 0.8, changeFrequency: "weekly" },
     { path: "/contact", priority: 0.8, changeFrequency: "monthly" },
     { path: "/blog", priority: 0.7, changeFrequency: "weekly" },
+    {
+      path: "/conditions-utilisation",
+      priority: 0.5,
+      changeFrequency: "yearly",
+    },
+    {
+      path: "/politique-confidentialite",
+      priority: 0.5,
+      changeFrequency: "yearly",
+    },
+    { path: "/mentions-legales", priority: 0.5, changeFrequency: "yearly" },
   ].map(({ path, priority, changeFrequency }) => ({
     url: `${baseUrl}${path}`,
     lastModified: now,
@@ -35,4 +46,3 @@ export default function sitemap() {
 
   return [...staticPages, ...blogPosts];
 }
-
