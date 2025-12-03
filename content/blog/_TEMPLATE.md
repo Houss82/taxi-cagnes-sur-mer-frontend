@@ -77,7 +77,7 @@ Résumé des points importants de l'article en 2-3 paragraphes.
 Invitez le lecteur à réserver, vous contacter, etc.
 
 📞 **+33 6 15 29 37 21**  
-✉️ **info@taxicagnessurmer.fr**
+✉️ **taxicagnessurmer2025@gmail.com**
 
 ---
 

@@ -6,7 +6,16 @@ import HeaderClient from "./client/HeaderClient";
 
 const navItems = [
   { label: "Accueil", href: "/" },
-  { label: "Services", href: "/services" },
+  {
+    label: "Services",
+    href: "/services",
+    submenu: [
+      { label: "Transfert Aéroport", href: "/services/transfert-aeroport" },
+      { label: "Chauffeur Privé", href: "/services/chauffeur-prive" },
+      { label: "Longue Distance", href: "/services/longue-distance" },
+      { label: "Événements", href: "/services/evenements" },
+    ],
+  },
   { label: "Tarifs", href: "/tarifs" },
   { label: "Blog", href: "/blog" },
   { label: "Contact", href: "/contact" },

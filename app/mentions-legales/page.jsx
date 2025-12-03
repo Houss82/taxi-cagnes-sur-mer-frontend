@@ -136,10 +136,10 @@ export default function MentionsLegales() {
                 Pour exercer ces droits, vous pouvez nous contacter à l'adresse
                 :{" "}
                 <a
-                  href="mailto:info@taxicagnessurmer.fr"
+                  href="mailto:taxicagnessurmer2025@gmail.com"
                   className="text-accent hover:underline"
                 >
-                  info@taxicagnessurmer.fr
+                  taxicagnessurmer2025@gmail.com
                 </a>
               </p>
               <p className="text-muted-foreground leading-relaxed mt-4">
@@ -197,10 +197,10 @@ export default function MentionsLegales() {
                 Si vous constatez une lacune, erreur ou ce qui parait être un
                 dysfonctionnement, merci de bien vouloir le signaler par email à{" "}
                 <a
-                  href="mailto:info@taxicagnessurmer.fr"
+                  href="mailto:taxicagnessurmer2025@gmail.com"
                   className="text-accent hover:underline"
                 >
-                  info@taxicagnessurmer.fr
+                  taxicagnessurmer2025@gmail.com
                 </a>
                 .
               </p>
@@ -256,7 +256,7 @@ export default function MentionsLegales() {
                   <strong>Téléphone :</strong> +33 6 15 29 37 21
                 </li>
                 <li>
-                  <strong>Email :</strong> info@taxicagnessurmer.fr
+                  <strong>Email :</strong> taxicagnessurmer2025@gmail.com
                 </li>
                 <li>
                   <strong>Adresse :</strong> Cagnes-sur-Mer, Côte d'Azur, France

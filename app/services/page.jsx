@@ -19,38 +19,11 @@ export const metadata = {
 export default function Services() {
   const services = [
     {
-      title: "Transfert Aéroport Nice – Cagnes-sur-Mer",
+      title: "Transfert Aéroport",
       desc: "Service rapide et fiable vers/depuis l'aéroport Nice-Côte d'Azur",
       image: "/aeroport-nice-cagnes.jpg",
       details: ["Prix fixe", "Chauffeur à l'accueil", "24h/24 disponible"],
-    },
-    {
-      title: "Trajets Hôtels & Résidences",
-      desc: "Service VIP pour les établissements de Cagnes-sur-Mer et environs",
-      image: "/hotels-cagnes.jpg",
-      details: ["Discrétion garantie", "Service blanc", "Ponctualité premium"],
-    },
-    {
-      title: "Cagnes-sur-Mer → Monaco",
-      desc: "Transfert vers la Principauté de Monaco",
-      image: "/monaco-cagnes.jpg",
-      details: ["Confort assuré", "Trajets réguliers", "WiFi à bord"],
-    },
-    {
-      title: "Cagnes-sur-Mer → Antibes",
-      desc: "Découvrez la Côte d'Azur en style",
-      image: "/antibes-cagnes.jpg",
-      details: ["Trajets panoramiques", "Durée: 25 min", "Forfait groupes"],
-    },
-    {
-      title: "Cagnes-sur-Mer → Cannes",
-      desc: "Explorez la Côte d'Azur côté ouest",
-      image: "/cannes-cagnes.jpg",
-      details: [
-        "Express disponible",
-        "Trajets touristiques",
-        "Guides recommandés",
-      ],
+      href: "/services/transfert-aeroport",
     },
     {
       title: "Chauffeur Privé",
@@ -61,6 +34,25 @@ export default function Services() {
         "Accueil personnalisé",
         "Services adaptés",
       ],
+      href: "/services/chauffeur-prive",
+    },
+    {
+      title: "Longue Distance",
+      desc: "Trajets vers Monaco, Cannes, Antibes et toute la Côte d'Azur",
+      image: "/monaco-cagnes.jpg",
+      details: ["Confort assuré", "Trajets réguliers", "WiFi à bord"],
+      href: "/services/longue-distance",
+    },
+    {
+      title: "Événements",
+      desc: "Service premium pour mariages, séminaires et événements d'entreprise",
+      image: "/hotels-cagnes.jpg",
+      details: [
+        "Véhicules haut de gamme",
+        "Service sur mesure",
+        "Disponibilité garantie",
+      ],
+      href: "/services/evenements",
     },
   ];
 
@@ -69,7 +61,7 @@ export default function Services() {
       {/* Hero */}
       <section className="relative h-96 flex items-center justify-center overflow-hidden pt-20">
         <Image
-          src="/service-page.jpg"
+          src="/page-services.jpg"
           alt="Services Taxi Cagnes-sur-Mer"
           fill
           className="object-cover"
@@ -84,11 +76,11 @@ export default function Services() {
       {/* Services Grid */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {services.map((service, i) => (
               <Card
                 key={i}
-                className="overflow-hidden hover:shadow-xl transition-shadow"
+                className="overflow-hidden hover:shadow-xl transition-shadow flex flex-col h-full"
               >
                 <Image
                   src={service.image || "/placeholder.svg"}
@@ -97,10 +89,10 @@ export default function Services() {
                   height={300}
                   className="w-full h-48 object-cover"
                 />
-                <div className="p-6">
+                <div className="p-6 flex flex-col grow">
                   <h3 className="text-xl font-bold mb-2">{service.title}</h3>
                   <p className="text-muted-foreground mb-4">{service.desc}</p>
-                  <ul className="space-y-2 mb-6">
+                  <ul className="space-y-2 mb-6 grow">
                     {service.details.map((detail, j) => (
                       <li key={j} className="flex items-center gap-2 text-sm">
                         <ChevronRight className="w-4 h-4 text-accent" />
@@ -108,9 +100,9 @@ export default function Services() {
                       </li>
                     ))}
                   </ul>
-                  <Link href="/reservation">
+                  <Link href={service.href} className="mt-auto">
                     <Button className="w-full bg-accent text-accent-foreground hover:opacity-90">
-                      Réserver ce service
+                      Voir
                     </Button>
                   </Link>
                 </div>
@@ -122,4 +114,3 @@ export default function Services() {
     </main>
   );
 }
-

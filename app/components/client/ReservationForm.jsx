@@ -43,6 +43,39 @@ export default function ReservationForm() {
     return { indicatifPays: "+33", telephone: cleanedPhone };
   };
 
+  // Fonction pour envoyer à Formspree (en parallèle, ne bloque pas le flux)
+  const sendToFormspree = async (reservationData) => {
+    try {
+      // Préparer les données pour Formspree
+      const formspreeData = {
+        name: reservationData.nom,
+        phone: `${reservationData.indicatifPays} ${reservationData.telephone}`,
+        email: reservationData.email || "Non renseigné",
+        date: reservationData.date,
+        time: reservationData.heure,
+        from: reservationData.adresseDepart,
+        to: reservationData.adresseArrivee,
+        passengers: reservationData.nombrePassagers,
+        luggage: reservationData.nombreBagages,
+        vehicle: reservationData.vehicule,
+        notes: reservationData.commentaires || "Aucune note",
+        _subject: `Nouvelle réservation - ${reservationData.nom}`,
+      };
+
+      await fetch("https://formspree.io/f/meoykwvo", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify(formspreeData),
+      });
+    } catch (err) {
+      // Ne pas bloquer le flux si Formspree échoue
+      console.error("Erreur Formspree (non bloquant):", err);
+    }
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     setError("");
@@ -74,8 +107,13 @@ export default function ReservationForm() {
         commentaires: formData.notes || undefined, // Optionnel
       };
 
-      // Appeler l'API
+      // Appeler l'API backend (code existant)
       const result = await createReservation(reservationData);
+
+      // Envoyer aussi à Formspree en parallèle (sans bloquer)
+      sendToFormspree(reservationData).catch(() => {
+        // Erreur déjà gérée dans sendToFormspree, on continue
+      });
 
       if (result.result) {
         setSubmitted(true);

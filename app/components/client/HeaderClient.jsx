@@ -6,6 +6,7 @@ import {
   Briefcase,
   Calendar,
   Car,
+  ChevronDown,
   Euro,
   Home,
   Menu,
@@ -14,7 +15,7 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 
 export default function HeaderClient({ navItems, children }) {
@@ -24,6 +25,9 @@ export default function HeaderClient({ navItems, children }) {
   // Sur la page d'accueil, on commence transparent, sinon on commence avec le fond
   const [isScrolled, setIsScrolled] = useState(!isHomePage);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isServicesOpen, setIsServicesOpen] = useState(false);
+  const [openSubmenu, setOpenSubmenu] = useState(null);
+  const servicesRef = useRef(null);
 
   useEffect(() => {
     // Si on n'est pas sur la page d'accueil, toujours avoir le fond
@@ -42,7 +46,24 @@ export default function HeaderClient({ navItems, children }) {
   // Fermer le menu quand on change de page
   useEffect(() => {
     setIsMobileMenuOpen(false);
+    setIsServicesOpen(false);
+    setOpenSubmenu(null);
   }, [pathname]);
+
+  // Fermer le sous-menu Services si on clique en dehors
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (servicesRef.current && !servicesRef.current.contains(event.target)) {
+        setIsServicesOpen(false);
+      }
+    };
+    if (isServicesOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+    }
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [isServicesOpen]);
 
   // Icônes pour chaque élément de navigation
   const getIcon = (label) => {
@@ -127,6 +148,65 @@ export default function HeaderClient({ navItems, children }) {
               <div className="space-y-2">
                 {navItems.map((item, index) => {
                   const Icon = getIcon(item.label);
+                  const hasSubmenu = item.submenu && item.submenu.length > 0;
+                  const isSubmenuOpen = openSubmenu === item.href;
+
+                  if (hasSubmenu) {
+                    return (
+                      <motion.div
+                        key={item.href}
+                        initial={{ opacity: 0, x: -20 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.3, delay: 0.3 + index * 0.1 }}
+                      >
+                        <div className="space-y-1">
+                          <button
+                            onClick={() =>
+                              setOpenSubmenu(
+                                isSubmenuOpen ? null : item.href
+                              )
+                            }
+                            className="w-full flex items-center justify-between px-4 py-3 rounded-xl bg-linear-to-r from-blue-50 to-indigo-50 hover:from-blue-100 hover:to-indigo-100 text-gray-800 hover:text-accent font-medium transition-all duration-300 group"
+                          >
+                            <div className="flex items-center space-x-4">
+                              <Icon className="w-5 h-5 text-accent group-hover:scale-110 transition-transform" />
+                              <span>{item.label.toUpperCase()}</span>
+                            </div>
+                            <ChevronDown
+                              className={`w-4 h-4 transition-transform ${
+                                isSubmenuOpen ? "rotate-180" : ""
+                              }`}
+                            />
+                          </button>
+                          <AnimatePresence>
+                            {isSubmenuOpen && (
+                              <motion.div
+                                initial={{ opacity: 0, height: 0 }}
+                                animate={{ opacity: 1, height: "auto" }}
+                                exit={{ opacity: 0, height: 0 }}
+                                transition={{ duration: 0.2 }}
+                                className="overflow-hidden"
+                              >
+                                <div className="pl-8 space-y-1 mt-1">
+                                  {item.submenu.map((subItem) => (
+                                    <Link
+                                      key={subItem.href}
+                                      href={subItem.href}
+                                      className="block px-4 py-2 rounded-lg bg-gray-50 hover:bg-gray-100 text-gray-700 hover:text-accent transition-colors text-sm"
+                                      onClick={() => setIsMobileMenuOpen(false)}
+                                    >
+                                      {subItem.label}
+                                    </Link>
+                                  ))}
+                                </div>
+                              </motion.div>
+                            )}
+                          </AnimatePresence>
+                        </div>
+                      </motion.div>
+                    );
+                  }
+
                   return (
                     <motion.div
                       key={item.href}
@@ -199,19 +279,68 @@ export default function HeaderClient({ navItems, children }) {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
-            {navItems.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                className={`text-sm font-medium transition-colors hover:text-accent ${
-                  isScrolled
-                    ? "text-foreground hover:text-accent"
-                    : "text-white/80 hover:text-white"
-                }`}
-              >
-                {item.label}
-              </Link>
-            ))}
+            {navItems.map((item) => {
+              const hasSubmenu = item.submenu && item.submenu.length > 0;
+              
+              if (hasSubmenu) {
+                return (
+                  <div
+                    key={item.href}
+                    ref={servicesRef}
+                    className="relative"
+                    onMouseEnter={() => setIsServicesOpen(true)}
+                    onMouseLeave={() => setIsServicesOpen(false)}
+                  >
+                    <Link
+                      href={item.href}
+                      className={`text-sm font-medium transition-colors hover:text-accent flex items-center gap-1 ${
+                        isScrolled
+                          ? "text-foreground hover:text-accent"
+                          : "text-white/80 hover:text-white"
+                      }`}
+                    >
+                      {item.label}
+                      <ChevronDown className="w-4 h-4" />
+                    </Link>
+                    <AnimatePresence>
+                      {isServicesOpen && (
+                        <motion.div
+                          initial={{ opacity: 0, y: -10 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          exit={{ opacity: 0, y: -10 }}
+                          transition={{ duration: 0.2 }}
+                          className="absolute top-full left-0 mt-2 w-56 bg-white rounded-lg shadow-lg border border-gray-200 py-2 z-50"
+                        >
+                          {item.submenu.map((subItem) => (
+                            <Link
+                              key={subItem.href}
+                              href={subItem.href}
+                              className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-accent transition-colors"
+                            >
+                              {subItem.label}
+                            </Link>
+                          ))}
+                        </motion.div>
+                      )}
+                    </AnimatePresence>
+                  </div>
+                );
+              }
+
+              return (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className={`text-sm font-medium transition-colors hover:text-accent ${
+                    isScrolled
+                      ? "text-foreground hover:text-accent"
+                      : "text-white/80 hover:text-white"
+                  }`}
+                >
+                  {item.label}
+                </Link>
+              );
+            })}
           </nav>
 
           {/* Desktop CTA Button */}

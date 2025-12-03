@@ -26,22 +26,22 @@ export default function Footer() {
             <h3 className="font-bold mb-4">Services</h3>
             <ul className="space-y-2 text-sm text-primary-foreground/80">
               <li>
-                <Link href="/services" className="hover:text-accent transition-colors">
+                <Link href="/services/transfert-aeroport" className="hover:text-accent transition-colors">
                   Transfert Aéroport
                 </Link>
               </li>
               <li>
-                <Link href="/services" className="hover:text-accent transition-colors">
+                <Link href="/services/chauffeur-prive" className="hover:text-accent transition-colors">
                   Chauffeur Privé
                 </Link>
               </li>
               <li>
-                <Link href="/services" className="hover:text-accent transition-colors">
+                <Link href="/services/longue-distance" className="hover:text-accent transition-colors">
                   Longue Distance
                 </Link>
               </li>
               <li>
-                <Link href="/services" className="hover:text-accent transition-colors">
+                <Link href="/services/evenements" className="hover:text-accent transition-colors">
                   Événements
                 </Link>
               </li>
@@ -63,7 +63,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-2">
                 <Mail className="w-4 h-4" />
-                <span>info@taxicagnessurmer.fr</span>
+                <span>taxicagnessurmer2025@gmail.com</span>
               </li>
               <li className="flex items-center gap-2">
                 <MapPin className="w-4 h-4" />

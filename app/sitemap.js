@@ -17,6 +17,26 @@ export default function sitemap() {
     { path: "/reservation", priority: 0.9, changeFrequency: "weekly" },
     { path: "/tarifs", priority: 0.8, changeFrequency: "monthly" },
     { path: "/services", priority: 0.8, changeFrequency: "weekly" },
+    {
+      path: "/services/transfert-aeroport",
+      priority: 0.8,
+      changeFrequency: "monthly",
+    },
+    {
+      path: "/services/chauffeur-prive",
+      priority: 0.8,
+      changeFrequency: "monthly",
+    },
+    {
+      path: "/services/longue-distance",
+      priority: 0.8,
+      changeFrequency: "monthly",
+    },
+    {
+      path: "/services/evenements",
+      priority: 0.8,
+      changeFrequency: "monthly",
+    },
     { path: "/contact", priority: 0.8, changeFrequency: "monthly" },
     { path: "/blog", priority: 0.7, changeFrequency: "weekly" },
     {

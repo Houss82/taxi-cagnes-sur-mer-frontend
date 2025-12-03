@@ -196,7 +196,7 @@ export default function ConditionsUtilisation() {
                   <strong>Téléphone :</strong> +33 6 15 29 37 21
                 </li>
                 <li>
-                  <strong>Email :</strong> info@taxicagnessurmer.fr
+                  <strong>Email :</strong> taxicagnessurmer2025@gmail.com
                 </li>
                 <li>
                   <strong>Adresse :</strong> Cagnes-sur-Mer, Côte d'Azur, France

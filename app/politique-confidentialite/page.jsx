@@ -254,10 +254,10 @@ export default function PolitiqueConfidentialite() {
               <p className="text-muted-foreground leading-relaxed mt-4">
                 Pour exercer ces droits, contactez-nous à l'adresse :{" "}
                 <a
-                  href="mailto:info@taxicagnessurmer.fr"
+                  href="mailto:taxicagnessurmer2025@gmail.com"
                   className="text-accent hover:underline"
                 >
-                  info@taxicagnessurmer.fr
+                  taxicagnessurmer2025@gmail.com
                 </a>
               </p>
             </Card>
