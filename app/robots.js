@@ -1,4 +1,4 @@
-const baseUrl = "https://taxi-cagnes-sur-mer.com";
+const baseUrl = "https://taxi-cagnes-sur-mer.fr";
 
 export default function robots() {
   return {
@@ -12,4 +12,3 @@ export default function robots() {
     sitemap: `${baseUrl}/sitemap.xml`,
   };
 }
-
