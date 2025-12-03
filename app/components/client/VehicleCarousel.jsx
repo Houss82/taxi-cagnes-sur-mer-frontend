@@ -1,19 +1,19 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import Image from "next/image"
-import Card from "../ui/Card"
-import Button from "../ui/Button"
+import Image from "next/image";
+import { useState } from "react";
+import Button from "../ui/Button";
+import Card from "../ui/Card";
 
 export default function VehicleCarousel({ vehicles }) {
-  const [activeVehicle, setActiveVehicle] = useState(0)
+  const [activeVehicle, setActiveVehicle] = useState(0);
 
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+    <div className="flex flex-wrap justify-center gap-8">
       {vehicles.map((vehicle, i) => (
         <Card
           key={i}
-          className={`overflow-hidden cursor-pointer transition-all ${
+          className={`overflow-hidden cursor-pointer transition-all w-full max-w-sm ${
             activeVehicle === i ? "ring-2 ring-accent" : ""
           }`}
           onClick={() => setActiveVehicle(i)}
@@ -30,13 +30,16 @@ export default function VehicleCarousel({ vehicles }) {
             <p className="text-sm text-muted-foreground mb-4">
               Confort et performance exceptionnels
             </p>
-            <Button variant="outline" size="sm" className="w-full bg-transparent">
+            <Button
+              variant="outline"
+              size="sm"
+              className="w-full bg-transparent"
+            >
               En savoir plus
             </Button>
           </div>
         </Card>
       ))}
     </div>
-  )
+  );
 }
-
