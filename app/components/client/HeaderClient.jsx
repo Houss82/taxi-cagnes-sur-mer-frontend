@@ -120,8 +120,9 @@ export default function HeaderClient({ navItems, children }) {
               >
                 <div className="flex items-center space-x-3">
                   <div className="w-12 h-12 bg-accent rounded-full flex items-center justify-center shadow-lg">
-                    <span className="text-accent-foreground font-bold text-lg">
-                      T
+                    <span className="font-bold text-lg italic">
+                      <span className="text-white">T</span>
+                      <span className="text-gray-900">C</span>
                     </span>
                   </div>
                   <div className="text-center">

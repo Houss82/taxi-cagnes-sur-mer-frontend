@@ -28,7 +28,12 @@ export default function Header() {
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2">
           <div className="w-10 h-10 bg-accent rounded-full flex items-center justify-center">
-            <span className="text-accent-foreground font-bold text-lg">T</span>
+            <span className="font-bold text-lg italic">
+              <span className="text-white">T</span>
+              <span className="text-black" style={{ color: "#000000" }}>
+                C
+              </span>
+            </span>
           </div>
           <span
             className={`font-bold text-lg md:text-xl transition-colors ${
