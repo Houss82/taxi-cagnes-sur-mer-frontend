@@ -177,7 +177,7 @@ export default async function BlogPostPage({ params }) {
                 "@context": "https://schema.org",
                 "@type": "BlogPosting",
                 headline: post.title,
-                image: `https://taxi-cagnes-sur-mer.com${post.image}`,
+                image: `https://taxi-cagnes-sur-mer.fr${post.image}`,
                 datePublished: post.date,
                 dateModified: post.date,
                 author: {
@@ -189,7 +189,7 @@ export default async function BlogPostPage({ params }) {
                   name: "Taxi Cagnes-sur-Mer",
                   logo: {
                     "@type": "ImageObject",
-                    url: "https://taxi-cagnes-sur-mer.com/logo1.png",
+                    url: "https://taxi-cagnes-sur-mer.fr/logo1.png",
                   },
                 },
                 description: post.excerpt,
@@ -199,7 +199,7 @@ export default async function BlogPostPage({ params }) {
                   : post.keywords || "",
                 mainEntityOfPage: {
                   "@type": "WebPage",
-                  "@id": `https://taxi-cagnes-sur-mer.com/blog/${post.slug}`,
+                  "@id": `https://taxi-cagnes-sur-mer.fr/blog/${post.slug}`,
                 },
               }),
             }}

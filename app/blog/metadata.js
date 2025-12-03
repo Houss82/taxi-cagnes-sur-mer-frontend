@@ -17,12 +17,12 @@ export const metadata = {
     title: "Blog Taxi Cagnes-sur-Mer | Conseils & Actualités | Taxi Cagnes-sur-Mer",
     description:
       "Découvrez nos conseils pour vos transports à Cagnes-sur-Mer et Côte d'Azur. Guides pratiques, actualités et informations sur nos services de taxi premium.",
-    url: "https://taxi-cagnes-sur-mer.com/blog",
+    url: "https://taxi-cagnes-sur-mer.fr/blog",
     type: "website",
     siteName: "Taxi Cagnes-sur-Mer",
     images: [
       {
-        url: "https://taxi-cagnes-sur-mer.com/bg-image.png",
+        url: "https://taxi-cagnes-sur-mer.fr/bg-image.png",
         width: 1200,
         height: 630,
         alt: "Blog Taxi Cagnes-sur-Mer",
@@ -34,12 +34,12 @@ export const metadata = {
     title: "Blog Taxi Cagnes-sur-Mer | Conseils & Actualités | Taxi Cagnes-sur-Mer",
     description:
       "Découvrez nos conseils pour vos transports à Cagnes-sur-Mer et Côte d'Azur. Guides pratiques et actualités.",
-    images: ["https://taxi-cagnes-sur-mer.com/bg-image.png"],
+    images: ["https://taxi-cagnes-sur-mer.fr/bg-image.png"],
   },
   alternates: {
-    canonical: "https://taxi-cagnes-sur-mer.com/blog",
+    canonical: "https://taxi-cagnes-sur-mer.fr/blog",
     languages: {
-      "fr-FR": "https://taxi-cagnes-sur-mer.com/blog",
+      "fr-FR": "https://taxi-cagnes-sur-mer.fr/blog",
     },
   },
   robots: {

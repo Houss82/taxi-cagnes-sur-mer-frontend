@@ -1,6 +1,6 @@
 import { getAllPostSlugs, getAllPosts } from "./lib/blog";
 
-const baseUrl = "https://taxi-cagnes-sur-mer.com";
+const baseUrl = "https://taxi-cagnes-sur-mer.fr";
 
 export default function sitemap() {
   const now = new Date();

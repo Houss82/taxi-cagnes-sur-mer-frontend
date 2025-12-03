@@ -8,13 +8,13 @@ export default function SEOBreadcrumb({ items = [], hideVisual = false }) {
 
   // Fonction pour convertir une URL relative en URL absolue
   const toAbsoluteUrl = (url) => {
-    if (!url) return "https://taxi-cagnes-sur-mer.com";
+    if (!url) return "https://taxi-cagnes-sur-mer.fr";
     // Si déjà absolue, retourner telle quelle
     if (url.startsWith("http://") || url.startsWith("https://")) {
       return url;
     }
     // Sinon, convertir en absolue
-    return `https://taxi-cagnes-sur-mer.com${url.startsWith("/") ? url : `/${url}`}`;
+    return `https://taxi-cagnes-sur-mer.fr${url.startsWith("/") ? url : `/${url}`}`;
   };
 
   // Ajouter "Accueil" en premier si pas présent

@@ -564,7 +564,7 @@ export default function Home() {
             "@context": "https://schema.org",
             "@type": "TaxiService",
             name: "Taxi Cagnes-sur-Mer",
-            url: "https://www.taxi-cagnes-sur-mer.fr/",
+            url: "https://taxi-cagnes-sur-mer.fr/",
             telephone: "+33 6 15 29 37 21",
             areaServed: [
               "Cagnes-sur-Mer",

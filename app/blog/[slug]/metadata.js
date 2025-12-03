@@ -13,16 +13,16 @@ export async function generateMetadata({ params }) {
         follow: false,
       },
       alternates: {
-        canonical: "https://taxi-cagnes-sur-mer.com/blog",
+        canonical: "https://taxi-cagnes-sur-mer.fr/blog",
       },
     };
   }
 
   // Définir l'URL canonique
-  const canonicalUrl = `https://taxi-cagnes-sur-mer.com/blog/${post.slug}`;
+  const canonicalUrl = `https://taxi-cagnes-sur-mer.fr/blog/${post.slug}`;
   const imageUrl = post.image.startsWith("http")
     ? post.image
-    : `https://taxi-cagnes-sur-mer.com${post.image}`;
+    : `https://taxi-cagnes-sur-mer.fr${post.image}`;
 
   return {
     title: `${post.title} | Taxi Cagnes-sur-Mer`,
