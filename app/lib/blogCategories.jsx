@@ -3,8 +3,9 @@
 const blogCategories = [
   {
     id: "taxi",
-    label: "Taxi & Transports",
-    description: "Trajets, tarifs, transferts aéroport, taxi conventionné, longues distances et services de transport.",
+    label: "Transport & Service de Taxi",
+    description:
+      "Nos prestations de transport : transferts aéroport Nice, courses locales, longues distances, véhicules premium et réservations 24h/24.",
     icon: "Car",
     color: {
       bg: "bg-blue-50",
@@ -15,16 +16,13 @@ const blogCategories = [
       hover: "hover:bg-blue-100",
     },
     // Mapping des catégories d'articles vers cette catégorie
-    articleCategories: [
-      "Transferts Aéroport",
-      "Taxi",
-      "Transport",
-    ],
+    articleCategories: ["Transferts Aéroport", "Taxi", "Transport"],
   },
   {
     id: "voyage",
-    label: "Voyage & Tourisme",
-    description: "Destinations, activités, plages, visites, Côte d'Azur, idées de sorties et découvertes.",
+    label: "Découvertes",
+    description:
+      "Explorer la région : sorties à Cagnes-sur-Mer, visites culturelles, plages, activités et escapades sur la Côte d'Azur.",
     icon: "Compass",
     color: {
       bg: "bg-pink-50",
@@ -34,12 +32,18 @@ const blogCategories = [
       iconColor: "text-pink-600",
       hover: "hover:bg-pink-100",
     },
-    articleCategories: ["Tourisme", "Voyage & Tourisme", "Excursions", "Découvertes"],
+    articleCategories: [
+      "Tourisme",
+      "Voyage & Tourisme",
+      "Excursions",
+      "Découvertes",
+    ],
   },
   {
     id: "local",
-    label: "Vie locale & Entreprises",
-    description: "Actualités de la ville, entreprises locales, artisans, restaurants, événements et nouveautés.",
+    label: "Actualités & Partenaires ",
+    description:
+      "L'actualité : commerces locaux, artisans, restaurants partenaires, événements et initiatives.",
     icon: "Building2",
     color: {
       bg: "bg-green-50",
@@ -49,12 +53,18 @@ const blogCategories = [
       iconColor: "text-green-600",
       hover: "hover:bg-green-100",
     },
-    articleCategories: ["Partenaires", "Actualités", "Entreprises", "Vie locale & Entreprises"],
+    articleCategories: [
+      "Partenaires",
+      "Actualités",
+      "Entreprises",
+      "Vie locale & Entreprises",
+    ],
   },
   {
     id: "sante",
-    label: "Santé, Mobilité & Bien-être",
-    description: "Centres de santé, mobilité réduite, taxi conventionné, accessibilité, hôpitaux et services liés à la santé.",
+    label: "Accompagnement, Accessibilité et Santé",
+    description:
+      "Services dédiés : transport médicalisé, accompagnement personnes à mobilité réduite, accès aux centres de santé et hôpitaux de la région.",
     icon: "Heart",
     color: {
       bg: "bg-rose-50",
@@ -68,8 +78,9 @@ const blogCategories = [
   },
   {
     id: "guides",
-    label: "Guides pratiques & Lifestyle",
-    description: "Conseils pour voyager, checklists, organisation, sécurité, astuces et guides pratiques.",
+    label: "Conseils, Astuces & Déplacements",
+    description:
+      "Nos recommandations : comment organiser vos trajets, préparer vos déplacements, optimiser vos réservations et profiter de nos services.",
     icon: "BookOpen",
     color: {
       bg: "bg-purple-50",
@@ -104,4 +115,3 @@ export function getCategoryById(categoryId) {
 }
 
 export default blogCategories;
-

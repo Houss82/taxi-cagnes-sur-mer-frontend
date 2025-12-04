@@ -18,19 +18,53 @@ export const metadata = {
   icons: {
     icon: [
       {
-        url: "/icon-light-32x32.png",
-        media: "(prefers-color-scheme: light)",
+        url: "/logo-taxi-cagnes.png",
+        sizes: "any",
+        type: "image/png",
       },
       {
-        url: "/icon-dark-32x32.png",
-        media: "(prefers-color-scheme: dark)",
-  },
+        url: "/logo-taxi-cagnes.png",
+        sizes: "32x32",
+        type: "image/png",
+      },
       {
-        url: "/icon.svg",
-        type: "image/svg+xml",
+        url: "/logo-taxi-cagnes.png",
+        sizes: "16x16",
+        type: "image/png",
       },
     ],
-    apple: "/apple-icon.png",
+    apple: [
+      {
+        url: "/logo-taxi-cagnes.png",
+        sizes: "180x180",
+        type: "image/png",
+      },
+    ],
+    shortcut: "/logo-taxi-cagnes.png",
+  },
+  openGraph: {
+    title: "Taxi Cagnes-sur-Mer - Transferts Premium sur la Côte d'Azur",
+    description:
+      "Service de taxi luxe à Cagnes-sur-Mer. Transferts aéroport Nice, Monaco, Antibes. Véhicules Mercedes premium 24/7.",
+    url: "https://taxi-cagnes-sur-mer.fr",
+    siteName: "Taxi Cagnes-sur-Mer",
+    images: [
+      {
+        url: "https://taxi-cagnes-sur-mer.fr/logo-taxi-cagnes.png",
+        width: 1200,
+        height: 630,
+        alt: "Taxi Cagnes-sur-Mer",
+      },
+    ],
+    locale: "fr_FR",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Taxi Cagnes-sur-Mer - Transferts Premium sur la Côte d'Azur",
+    description:
+      "Service de taxi luxe à Cagnes-sur-Mer. Transferts aéroport Nice, Monaco, Antibes.",
+    images: ["https://taxi-cagnes-sur-mer.fr/logo-taxi-cagnes.png"],
   },
 }
 
