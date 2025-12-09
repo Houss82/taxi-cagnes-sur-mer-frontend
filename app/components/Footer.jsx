@@ -1,7 +1,7 @@
 // ✅ SERVER COMPONENT - Pas de "use client"
 
 import Link from "next/link"
-import { Phone, Mail, MapPin, Clock } from "lucide-react"
+import { Phone, Mail, MapPin, Clock, Star } from "lucide-react"
 
 export default function Footer() {
   return (
@@ -72,6 +72,17 @@ export default function Footer() {
               <li className="flex items-center gap-2">
                 <Clock className="w-4 h-4" />
                 <span>24/7 disponible</span>
+              </li>
+              <li className="flex items-center gap-2">
+                <Star className="w-4 h-4" />
+                <a 
+                  href="https://maps.app.goo.gl/yCtievVkn6jXJYCdA" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="hover:text-accent transition-colors"
+                >
+                  Voir sur Google
+                </a>
               </li>
             </ul>
           </div>
