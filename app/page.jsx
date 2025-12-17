@@ -31,7 +31,7 @@ export default function Home() {
     <main className="min-h-screen bg-white">
       {/* Hero Section */}
       <section className="relative h-screen md:h-screen flex items-center justify-center overflow-hidden pt-0 md:pt-20">
-        {/* Image mobile - optimisée pour mobile */}
+        {/* Image mobile - optimisée pour photo portrait (téléphone) */}
         <Image
           src="/taxi-cagnes-sur-mer-mobile.png"
           alt="Taxi Cagnes-sur-Mer Mercedes pour transferts aéroport Nice"
@@ -41,7 +41,7 @@ export default function Home() {
           sizes="100vw"
           style={{
             objectFit: "cover",
-            objectPosition: "center",
+            objectPosition: "center top",
             width: "100%",
             height: "100%",
           }}
@@ -462,7 +462,7 @@ export default function Home() {
             </Button>
           </div>
           <Image
-            src="/taxi-aeroport-nice-cagnes-van.png"
+            src="/arrivée-aeroport-nice.jpeg"
             alt="Taxi Cagnes-sur-Mer pour transfert aéroport Nice"
             width={500}
             height={500}
@@ -530,6 +530,55 @@ export default function Home() {
                 </div>
               </Card>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Guide & Conseils Section */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="bg-linear-to-r from-accent/10 via-white to-primary/10 rounded-2xl p-8 md:p-12 border-2 border-accent/30 shadow-xl">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+              <div>
+                <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">
+                  Comment choisir un taxi à Cagnes-sur-Mer ?
+                </h2>
+                <p className="text-lg text-gray-700 mb-6">
+                  Découvrez notre guide complet pour choisir le meilleur taxi à
+                  Cagnes-sur-Mer : critères de sélection, comparaison des
+                  services, tarifs transparents et conseils pratiques pour
+                  éviter les mauvaises surprises.
+                </p>
+                <ul className="space-y-3 mb-6">
+                  {[
+                    "Critères essentiels de sélection",
+                    "Comparaison taxi vs VTC",
+                    "Vérification de la fiabilité",
+                    "Conseils pour éviter les pièges",
+                  ].map((item, i) => (
+                    <li key={i} className="flex items-center gap-3">
+                      <ChevronRight className="w-5 h-5 text-accent shrink-0" />
+                      <span className="text-gray-700">{item}</span>
+                    </li>
+                  ))}
+                </ul>
+                <Button
+                  href="/blog/comment-choisir-taxi-cagnes-sur-mer-2025"
+                  className="bg-accent text-accent-foreground hover:opacity-90 px-8 py-6 text-lg"
+                >
+                  Lire le guide complet
+                </Button>
+              </div>
+              <div className="relative h-64 md:h-80 rounded-lg overflow-hidden shadow-lg">
+                <Image
+                  src="/comment-choisir-taxi-cagnes-sur-mer.png"
+                  alt="Guide pour choisir un taxi à Cagnes-sur-Mer"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>
