@@ -189,9 +189,11 @@ export default async function BlogPostPage({ params }) {
                   name: "Taxi Cagnes-sur-Mer",
                   logo: {
                     "@type": "ImageObject",
-                    url: "https://taxi-cagnes-sur-mer.fr/logo1.png",
+                    url: "https://taxi-cagnes-sur-mer.fr/logo-taxi-cagnes.png",
                   },
                 },
+                inLanguage: "fr-FR",
+                url: `https://taxi-cagnes-sur-mer.fr/blog/${post.slug}`,
                 description: post.excerpt,
                 articleSection: post.category,
                 keywords: Array.isArray(post.keywords)

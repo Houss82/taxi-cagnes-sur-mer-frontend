@@ -448,4 +448,4 @@ ou contactez-nous via notre site ou par téléphone au **+33 6 15 29 37 21**.
 
 ---
 
-_Article mis à jour le 25 janvier 2025_
+_Article mis à jour le 2 décembre 2025_

@@ -16,7 +16,7 @@ const blogCategories = [
       hover: "hover:bg-blue-100",
     },
     // Mapping des catégories d'articles vers cette catégorie
-    articleCategories: ["Transferts Aéroport", "Taxi", "Transport"],
+    articleCategories: ["Transferts Aéroport", "Taxi", "Transport", "Longue Distance"],
   },
   {
     id: "voyage",
