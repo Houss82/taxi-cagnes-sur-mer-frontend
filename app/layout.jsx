@@ -19,11 +19,6 @@ export const metadata = {
     icon: [
       {
         url: "/logo-taxi-cagnes.png",
-        sizes: "any",
-        type: "image/png",
-      },
-      {
-        url: "/logo-taxi-cagnes.png",
         sizes: "32x32",
         type: "image/png",
       },
@@ -41,6 +36,13 @@ export const metadata = {
       },
     ],
     shortcut: "/logo-taxi-cagnes.png",
+    other: [
+      {
+        rel: "icon",
+        type: "image/png",
+        url: "/logo-taxi-cagnes.png",
+      },
+    ],
   },
   openGraph: {
     title: "Taxi Cagnes-sur-Mer - Transferts Premium sur la Côte d'Azur",
