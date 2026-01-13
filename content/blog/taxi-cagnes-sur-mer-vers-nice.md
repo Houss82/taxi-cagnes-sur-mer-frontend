@@ -44,6 +44,12 @@ Selon nos données internes de réservation et le trafic moyen entre Cagnes-sur-
 
 <div class="info-box">
 
+<strong>💡 Note importante :</strong> Si vous recherchez spécifiquement un **transfert depuis l'aéroport Nice vers Cagnes-sur-Mer** (arrivée à l'aéroport), consultez notre [guide dédié aux transferts aéroport](/blog/taxi-aeroport-nice-cagnes-sur-mer) qui contient toutes les informations spécifiques pour ce type de trajet.
+
+</div>
+
+<div class="info-box">
+
 <strong>💡 À retenir :</strong> En période de forte affluence (weekend d'été, événements niçois, festivals), réservez votre **taxi Cagnes-sur-Mer vers Nice** **au moins 2h à l'avance**. Le temps de trajet peut monter à 25-30 minutes en cas de bouchons sur la Promenade des Anglais ou dans le centre-ville de Nice.
 
 </div>
@@ -72,7 +78,9 @@ Selon nos données internes de réservation et le trafic moyen entre Cagnes-sur-
 
 </div>
 
-**💶 Prix taxi Cagnes-sur-Mer vers Nice :** le tarif est **fixe et transparent**, sans mauvaise surprise. Que vous recherchiez un **taxi Cagnes-sur-Mer vers Nice** pour rejoindre le centre-ville, la Promenade des Anglais, la gare SNCF ou l'aéroport, les prix sont annoncés dès la réservation :
+**💶 Prix taxi Cagnes-sur-Mer vers Nice :** le tarif est **fixe et transparent**, sans mauvaise surprise. Que vous recherchiez un **taxi Cagnes-sur-Mer vers Nice** pour rejoindre le centre-ville, la Promenade des Anglais, la gare SNCF ou l'aéroport, les prix sont annoncés dès la réservation.
+
+**Note :** Pour un transfert depuis l'aéroport Nice vers Cagnes-sur-Mer (arrivée à l'aéroport), consultez notre [article dédié aux transferts aéroport](/blog/taxi-aeroport-nice-cagnes-sur-mer) qui détaille les spécificités de ce trajet.
 
 <table style="width: 100%; border-collapse: collapse; margin: 1.5rem 0;">
   <thead>
