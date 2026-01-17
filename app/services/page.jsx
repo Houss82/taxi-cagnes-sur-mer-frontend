@@ -26,6 +26,17 @@ export default function Services() {
       href: "/services/transfert-aeroport",
     },
     {
+      title: "Transport Médical Conventionné",
+      desc: "Taxi conventionné CPAM pour transport médical remboursé par l'Assurance Maladie",
+      image: "/transport-medical-cagnes-sur-mer.jpeg",
+      details: [
+        "Conventionné CPAM",
+        "Remboursement possible",
+        "Véhicules adaptés",
+      ],
+      href: "/services/taxi-conventionne-cagnes-sur-mer",
+    },
+    {
       title: "Chauffeur Privé",
       desc: "Location avec chauffeur pour demi-journée ou journée complète",
       image: "/chauffeur-prive.jpg",

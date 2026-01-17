@@ -11,6 +11,7 @@ const navItems = [
     href: "/services",
     submenu: [
       { label: "Transfert Aéroport", href: "/services/transfert-aeroport" },
+      { label: "Transport Médical Conventionné", href: "/services/taxi-conventionne-cagnes-sur-mer" },
       { label: "Chauffeur Privé", href: "/services/chauffeur-prive" },
       { label: "Longue Distance", href: "/services/longue-distance" },
       { label: "Événements", href: "/services/evenements" },

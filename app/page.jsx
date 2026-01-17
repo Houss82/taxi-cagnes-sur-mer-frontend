@@ -308,6 +308,30 @@ export default function Home() {
               </p>
             </div>
 
+            {/* Cinquième paragraphe - Transport médical conventionné */}
+            <div className="bg-blue-50/80 backdrop-blur-sm rounded-xl p-8 border-2 border-blue-200 shadow-md">
+              <p className="text-gray-800 leading-relaxed text-lg">
+                En tant que{" "}
+                <a
+                  href="/services/taxi-conventionne-cagnes-sur-mer"
+                  className="inline-flex items-center gap-1 text-accent font-bold hover:text-primary transition-all duration-200 relative group text-xl"
+                >
+                  <span className="relative">
+                    taxi conventionné CPAM à Cagnes-sur-Mer
+                    <span className="absolute bottom-0 left-0 right-0 h-1 bg-linear-to-r from-accent to-primary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left rounded-full"></span>
+                  </span>
+                </a>
+                , nous proposons également un{" "}
+                <strong className="font-bold text-accent text-xl">
+                  service de transport médical
+                </strong>{" "}
+                remboursable par l'Assurance Maladie. Nos véhicules adaptés vous
+                accompagnent vers les hôpitaux et cliniques de la Côte d'Azur
+                (CHU Nice, Hôpital Cannes, cliniques privées) avec des
+                chauffeurs formés à l'accompagnement médical.
+              </p>
+            </div>
+
             {/* Call-to-action avec design premium */}
             <div className="bg-linear-to-r from-accent/10 via-white to-primary/10 border-2 border-accent/30 rounded-2xl p-8 md:p-10 shadow-xl relative overflow-hidden">
               <div className="absolute top-0 right-0 w-32 h-32 bg-accent/10 rounded-full blur-2xl -mr-16 -mt-16"></div>
@@ -571,7 +595,7 @@ export default function Home() {
               </div>
               <div className="relative h-64 md:h-80 rounded-lg overflow-hidden shadow-lg">
                 <Image
-                  src="/comment-choisir-taxi-cagnes-sur-mer.png"
+                  src="/taxi-cagnes-sur-mer-monaco.png"
                   alt="Guide pour choisir un taxi à Cagnes-sur-Mer"
                   fill
                   className="object-cover"

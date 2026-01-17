@@ -37,6 +37,11 @@ export default function sitemap() {
       priority: 0.8,
       changeFrequency: "monthly",
     },
+    {
+      path: "/services/taxi-conventionne-cagnes-sur-mer",
+      priority: 0.9,
+      changeFrequency: "monthly",
+    },
     { path: "/contact", priority: 0.8, changeFrequency: "monthly" },
     { path: "/blog", priority: 0.7, changeFrequency: "weekly" },
     {
