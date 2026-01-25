@@ -686,6 +686,7 @@ _Article mis à jour le 13 janvier 2026_
 ## Liens utiles
 
 - [Découvrir nos services de transport](/)
+- [Taxi Conventionné CPAM Cagnes-sur-Mer](/services/taxi-conventionne-cagnes-sur-mer) – Transport médical remboursé par l'Assurance Maladie
 - [Consulter nos tarifs](/tarifs)
 - [Réserver un trajet](/reservation)
 - [En savoir plus sur nos véhicules](/services)

@@ -118,7 +118,7 @@ export default async function BlogPostPage({ params }) {
           </div>
 
           {/* Image principale */}
-          <div className="relative h-96 rounded-2xl overflow-hidden mb-12">
+          <div className="relative h-96 md:h-[500px] rounded-2xl overflow-hidden mb-12">
             <Image
               src={post.image}
               alt={post.title}

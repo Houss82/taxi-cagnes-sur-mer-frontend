@@ -45,6 +45,8 @@ Selon nos statistiques internes et les données de l'[Observatoire Régional de 
 
 <strong>💡 Expertise médicale :</strong> Nos chauffeurs sont formés à l'accompagnement médical et connaissent parfaitement les accès aux établissements de santé de la région. **92% de nos clients** choisissent notre service pour la ponctualité, le confort et la sérénité lors de leurs déplacements médicaux.
 
+**💡 Remboursement CPAM :** Si vous avez besoin d'un transport médical remboursé par l'Assurance Maladie, découvrez notre service de [**taxi conventionné CPAM à Cagnes-sur-Mer**](/services/taxi-conventionne-cagnes-sur-mer) qui vous permet de bénéficier du remboursement de vos trajets médicaux vers les hôpitaux et cliniques de la région.
+
 </div>
 
 ---
@@ -401,6 +403,7 @@ Oui, pour les **trajets réguliers** (dialyse, chimiothérapie, consultations de
 
 Pour continuer votre découverte de nos services de transport :
 
+- 👉 [**Taxi Conventionné CPAM Cagnes-sur-Mer**](/services/taxi-conventionne-cagnes-sur-mer) – Transport médical remboursé par l'Assurance Maladie
 - 👉 [Réservation transport médical](/reservation) – Réservez votre trajet vers les établissements de santé
 - 👉 [Services de transport](/services) – Découvrez tous nos services disponibles
 - 👉 [Contact](/contact) – Besoin d'informations sur le transport médical ?

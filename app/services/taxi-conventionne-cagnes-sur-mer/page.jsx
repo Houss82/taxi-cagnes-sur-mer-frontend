@@ -1,6 +1,7 @@
 // ✅ SERVER COMPONENT - Pas de "use client"
-// ISR: Revalidate toutes les 24 heures pour le SEO
-export const revalidate = 86400;
+// Force static generation pour meilleure indexation Google
+export const dynamic = 'force-static';
+export const revalidate = false; // Page statique pure pour indexation optimale
 
 import { Building2, CheckCircle, Heart } from "lucide-react";
 import Image from "next/image";
@@ -38,7 +39,7 @@ export const metadata = {
 export default function TransportMedical() {
   const medicalBusinessSchema = {
     "@context": "https://schema.org",
-    "@type": "TaxiService",
+    "@type": ["MedicalBusiness", "TaxiService"],
     "@id": "https://taxi-cagnes-sur-mer.fr/services/taxi-conventionne-cagnes-sur-mer",
     "name": "Taxi Conventionné CPAM Cagnes-sur-Mer",
     "description": "Service de taxi conventionné CPAM pour transport médical remboursé par l'Assurance Maladie à Cagnes-sur-Mer",
@@ -48,14 +49,35 @@ export default function TransportMedical() {
       "@type": "PostalAddress",
       "addressLocality": "Cagnes-sur-Mer",
       "addressRegion": "Alpes-Maritimes",
+      "postalCode": "06800",
       "addressCountry": "FR"
     },
-    "areaServed": {
-      "@type": "City",
-      "name": "Cagnes-sur-Mer"
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "43.6644",
+      "longitude": "7.1489"
     },
+    "areaServed": [
+      {
+        "@type": "City",
+        "name": "Cagnes-sur-Mer"
+      },
+      {
+        "@type": "City",
+        "name": "Nice"
+      },
+      {
+        "@type": "City",
+        "name": "Cannes"
+      },
+      {
+        "@type": "City",
+        "name": "Antibes"
+      }
+    ],
     "serviceType": "Transport médical conventionné CPAM",
     "medicalSpecialty": [
+      "Transport médical",
       "Transport vers hôpitaux",
       "Transport vers cliniques",
       "Transport personnes à mobilité réduite",
@@ -63,7 +85,7 @@ export default function TransportMedical() {
     ],
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
-      "name": "Services transport médical",
+      "name": "Services transport médical conventionné CPAM",
       "itemListElement": [
         {
           "@type": "Offer",
@@ -92,7 +114,9 @@ export default function TransportMedical() {
       ]
     },
     "priceRange": "€€",
-    "openingHours": "Mo-Su 00:00-23:59"
+    "openingHours": "Mo-Su 00:00-23:59",
+    "paymentAccepted": "Cash, Credit Card, Assurance Maladie",
+    "currenciesAccepted": "EUR"
   };
 
   return (
@@ -100,7 +124,10 @@ export default function TransportMedical() {
       <Script
         id="medical-business-schema"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(medicalBusinessSchema) }}
+        strategy="beforeInteractive"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(medicalBusinessSchema, null, 2),
+        }}
       />
       {/* Hero */}
       <section className="relative h-96 flex items-center justify-center overflow-hidden pt-20">

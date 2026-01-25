@@ -322,6 +322,8 @@ Pour aller plus loin avec Taxi Cagnes-sur-Mer :
 
 - [Taxi Cagnes-sur-Mer → Monaco](/services) – Transfert vers la Principauté
 
+- [**Taxi Conventionné CPAM Cagnes-sur-Mer**](/services/taxi-conventionne-cagnes-sur-mer) – Transport médical remboursé par l'Assurance Maladie
+
 - [Taxi Cagnes-sur-Mer → Antibes](/services) – Trajet vers la ville voisine
 
 - [Taxi Cagnes-sur-Mer → Cannes](/services) – Trajet très demandé sur la Côte d'Azur

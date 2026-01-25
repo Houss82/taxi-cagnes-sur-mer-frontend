@@ -440,6 +440,8 @@ Pour aller plus loin avec Taxi Cagnes-sur-Mer :
 
 - 👉 [Transfert Aéroport Nice](/services/transfert-aeroport) – Service complet 24/7 depuis Cagnes-sur-Mer
 
+- 👉 [**Taxi Conventionné CPAM Cagnes-sur-Mer**](/services/taxi-conventionne-cagnes-sur-mer) – Transport médical remboursé par l'Assurance Maladie
+
 - 👉 [Chauffeur Privé](/services/chauffeur-prive) – Service personnalisé pour tous vos déplacements
 
 - 👉 [Longue Distance](/services/longue-distance) – Trajets vers Monaco, Cannes, Antibes

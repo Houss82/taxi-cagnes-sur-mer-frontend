@@ -31,6 +31,11 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/services/taxi-conventionne-cagnes-sur-mer" className="hover:text-accent transition-colors">
+                  Transport Médical Conventionné
+                </Link>
+              </li>
+              <li>
                 <Link href="/services/chauffeur-prive" className="hover:text-accent transition-colors">
                   Chauffeur Privé
                 </Link>
