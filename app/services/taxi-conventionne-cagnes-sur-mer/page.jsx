@@ -171,12 +171,12 @@ export default function TransportMedical() {
               l'Assurance Maladie pour les transports médicaux et les
               déplacements de santé.
             </p>
-            <p className="text-lg text-gray-700 mb-8 leading-relaxed">
+            <p className="text-lg text-gray-700 mb-6 leading-relaxed">
               En tant que <strong>taxi conventionné à Cagnes-sur-Mer</strong>,
-              nous proposons un service de transport médical professionnel,
-              adapté aux besoins de santé et pouvant être partiellement ou
-              totalement remboursé par la Sécurité Sociale selon votre
-              situation.
+              nous proposons un service de transport médical professionnel depuis <strong>tous les quartiers de Cagnes-sur-Mer</strong> : le <strong>Cros-de-Cagnes</strong> (village de pêcheurs et plages), le <strong>Haut-de-Cagnes</strong> (village perché médiéval), le <strong>centre-ville</strong> (gare SNCF, commerces), et toutes les <strong>zones résidentielles</strong>. Notre service est adapté aux besoins de santé et peut être partiellement ou totalement remboursé par la Sécurité Sociale selon votre situation.
+            </p>
+            <p className="text-lg text-gray-700 mb-8 leading-relaxed">
+              Nos taxis conventionnés CPAM assurent les transports médicaux depuis Cagnes-sur-Mer vers les principaux établissements de santé de la Côte d'Azur : <strong>CHU Nice</strong> (Hôpital Pasteur, Archet, Cimiez), <strong>Hôpital de Cannes</strong> (Simone Veil), <strong>cliniques privées</strong> (Saint-Georges, Parc Impérial à Nice, Polyclinique Antibes), et tous les <strong>centres spécialisés</strong> (dialyse, chimiothérapie, rééducation, imagerie médicale).
             </p>
 
             <div className="bg-blue-50 border-l-4 border-blue-500 p-6 mb-8 rounded-r-lg">
@@ -357,13 +357,27 @@ export default function TransportMedical() {
             </div>
 
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900 mt-12">
-              Destinations médicales depuis Cagnes-sur-Mer
+              Destinations médicales depuis Cagnes-sur-Mer : quartiers et établissements desservis
             </h2>
             <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-              En tant que <strong>taxi conventionné CPAM Cagnes-sur-Mer</strong>
-              , nous desservons tous les établissements de santé de la Côte
-              d'Azur :
+              En tant que <strong>taxi conventionné CPAM Cagnes-sur-Mer</strong>, nous desservons tous les quartiers de Cagnes-sur-Mer et tous les établissements de santé de la Côte d'Azur. Nos taxis conventionnés assurent les transports médicaux depuis <strong>tous les quartiers de Cagnes-sur-Mer</strong> : le <strong>Cros-de-Cagnes</strong> (village de pêcheurs), le <strong>Haut-de-Cagnes</strong> (village perché médiéval), le <strong>centre-ville</strong>, les <strong>résidences du bord de mer</strong>, et les <strong>zones résidentielles</strong> vers les hôpitaux et cliniques de la région.
             </p>
+            
+            <div className="bg-accent/10 border border-accent/20 p-6 rounded-lg mb-8">
+              <h3 className="text-xl font-bold mb-3 text-gray-900">
+                📍 Zones de prise en charge à Cagnes-sur-Mer
+              </h3>
+              <p className="text-gray-700 mb-4">
+                Nos taxis conventionnés CPAM prennent en charge les patients depuis <strong>tous les quartiers de Cagnes-sur-Mer</strong> :
+              </p>
+              <ul className="space-y-2 text-gray-700 list-disc list-inside">
+                <li><strong>Cros-de-Cagnes</strong> : Village de pêcheurs, plages, résidences du bord de mer</li>
+                <li><strong>Haut-de-Cagnes</strong> : Village perché médiéval, château Grimaldi, musée Renoir</li>
+                <li><strong>Centre-ville</strong> : Gare SNCF, commerces, hôtels, résidences</li>
+                <li><strong>Zones résidentielles</strong> : Toutes les résidences et quartiers de Cagnes-sur-Mer</li>
+                <li><strong>Hippodrome de la Côte d'Azur</strong> : Zone hippique et résidentielle</li>
+              </ul>
+            </div>
 
             {/* Tableau des trajets médicaux - Optimisé SEO */}
             <div className="overflow-x-auto mb-8">
@@ -423,47 +437,53 @@ export default function TransportMedical() {
               </table>
             </div>
 
-            <ul className="space-y-3 mb-8 text-gray-700">
+            <div className="bg-gray-50 p-6 rounded-lg mb-8">
+              <h3 className="text-xl font-bold mb-4 text-gray-900">
+                🏥 Établissements de santé desservis depuis Cagnes-sur-Mer
+              </h3>
+              <ul className="space-y-3 text-gray-700">
+                <li className="flex items-start gap-3">
+                  <Building2 className="w-6 h-6 text-blue-500 shrink-0 mt-0.5" />
+                  <span>
+                    <strong>CHU de Nice</strong> : Hôpital Pasteur (urgences adultes, cardiologie, neurologie), Hôpital Archet (maternité, pédiatrie), Hôpital Cimiez (gériatrie), Hôpital Saint-Roch (chirurgie, urgences)
+                  </span>
+                </li>
               <li className="flex items-start gap-3">
-                <Building2 className="w-6 h-6 text-blue-500 shrink-0 mt-0.5" />
+                  <Building2 className="w-6 h-6 text-blue-500 shrink-0 mt-0.5" />
                 <span>
-                  <strong>CHU de Nice</strong> : Hôpital Pasteur, Cimiez,
-                  Archet, Saint-Roch
+                    <strong>Hôpital de Cannes</strong> : Hôpital Simone Veil (urgences, maternité, chirurgie, consultations spécialisées)
                 </span>
               </li>
               <li className="flex items-start gap-3">
-                <Building2 className="w-6 h-6 text-blue-500 shrink-0 mt-0.5" />
+                  <Building2 className="w-6 h-6 text-blue-500 shrink-0 mt-0.5" />
                 <span>
-                  <strong>Hôpital de Cannes</strong> : Urgences, maternité,
-                  chirurgie
+                    <strong>Cliniques privées Nice</strong> : Clinique Saint-Georges, Clinique du Parc Impérial, Clinique Saint-Antoine, Polyclinique de l'Europe (Antibes)
                 </span>
               </li>
               <li className="flex items-start gap-3">
-                <Building2 className="w-6 h-6 text-blue-500 shrink-0 mt-0.5" />
+                  <Building2 className="w-6 h-6 text-blue-500 shrink-0 mt-0.5" />
                 <span>
-                  <strong>Cliniques privées</strong> : Saint-Georges, Parc
-                  Impérial, Saint-Antoine (Nice), Polyclinique Antibes
+                    <strong>Centres spécialisés</strong> : Centres de dialyse (Nice, Antibes), centres de chimiothérapie, centres de rééducation, centres d'imagerie médicale (IRM, scanner)
                 </span>
               </li>
               <li className="flex items-start gap-3">
-                <Building2 className="w-6 h-6 text-blue-500 shrink-0 mt-0.5" />
+                  <Building2 className="w-6 h-6 text-blue-500 shrink-0 mt-0.5" />
                 <span>
-                  <strong>Centres spécialisés</strong> : Centres de dialyse,
-                  centres de chimiothérapie, centres de rééducation
+                    <strong>Cabinet médicaux Cagnes-sur-Mer</strong> : Consultations généralistes et spécialistes dans tous les quartiers de Cagnes-sur-Mer (Cros-de-Cagnes, Haut-de-Cagnes, centre-ville)
                 </span>
               </li>
             </ul>
+            </div>
 
             <div className="bg-accent/10 border border-accent/20 p-6 rounded-lg mb-8">
               <h3 className="text-xl font-bold mb-3 text-gray-900">
-                💡 Bon à savoir
+                💡 Expertise locale Cagnes-sur-Mer
               </h3>
+              <p className="text-gray-700 mb-3">
+                Nos chauffeurs connaissent parfaitement <strong>tous les quartiers de Cagnes-sur-Mer</strong> (Cros-de-Cagnes, Haut-de-Cagnes, centre-ville) et les accès aux établissements de santé de la région. Ils peuvent vous conseiller les meilleurs itinéraires selon votre destination médicale et votre quartier de départ à Cagnes-sur-Mer.
+              </p>
               <p className="text-gray-700">
-                Nos chauffeurs connaissent parfaitement les accès aux
-                établissements de santé de la région et peuvent vous conseiller
-                les meilleurs itinéraires selon votre destination médicale. Pour
-                les trajets réguliers (dialyse, chimiothérapie), des tarifs
-                préférentiels peuvent être proposés.
+                Pour les trajets réguliers depuis Cagnes-sur-Mer (dialyse, chimiothérapie, consultations de suivi), des <strong>tarifs préférentiels</strong> peuvent être proposés. Nous proposons également des <strong>forfaits mensuels</strong> pour les patients nécessitant des transports médicaux réguliers depuis Cagnes-sur-Mer vers les hôpitaux de Nice, Cannes ou Antibes.
               </p>
             </div>
 
@@ -501,20 +521,20 @@ export default function TransportMedical() {
           {/* Section CTA - Hors de prose pour éviter les conflits de styles */}
           <div className="bg-linear-to-r from-accent to-accent/90 p-8 rounded-lg mb-8 text-center">
             <h3 className="text-2xl font-bold mb-4 text-accent-foreground">
-              Service disponible 24h/24 et 7j/7
-            </h3>
+                Service disponible 24h/24 et 7j/7
+              </h3>
             <p className="text-lg mb-6 text-accent-foreground">
               Notre service de <strong className="text-accent-foreground">taxi conventionné CPAM</strong> est
-              disponible en permanence pour répondre à vos besoins de
-              transport médical, y compris les urgences non critiques.
-            </p>
-            <Button
-              href="/reservation"
-              size="lg"
+                disponible en permanence pour répondre à vos besoins de
+                transport médical, y compris les urgences non critiques.
+              </p>
+              <Button
+                href="/reservation"
+                size="lg"
               className="bg-accent-foreground text-accent hover:opacity-90"
-            >
-              Réserver maintenant
-            </Button>
+              >
+                Réserver maintenant
+              </Button>
           </div>
         </div>
       </section>
