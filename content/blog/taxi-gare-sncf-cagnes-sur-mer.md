@@ -474,6 +474,7 @@ Offrez-vous un trajet sans stress depuis la **gare SNCF de Cagnes-sur-Mer** avec
 
 - 📞 [Guide : Réserver un taxi Cagnes-sur-Mer](/blog/reserver-taxi-cagnes-sur-mer-en-ligne-24h-guide-complet) – Toutes les méthodes de réservation détaillées
 - 🚗 [Taxi Cagnes-sur-Mer vers Nice](/blog/taxi-cagnes-sur-mer-vers-nice) – Guide complet pour les trajets vers Nice
+- 🎬 [Taxi Cagnes-sur-Mer → Cannes](/blog/taxi-cagnes-sur-mer-cannes) – Trajet vers Palais des Festivals, Croisette, Festival de Cannes
 - ✈️ [Taxi Aéroport Nice → Cagnes-sur-Mer](/blog/taxi-aeroport-nice-cagnes-sur-mer) – Transferts depuis l'aéroport
 - 🏥 [Transport Médical Conventionné](/services/taxi-conventionne-cagnes-sur-mer) – Taxi conventionné CPAM pour rendez-vous médicaux
 - 📍 [Nos tarifs](/tarifs) – Tarifs détaillés pour tous nos services

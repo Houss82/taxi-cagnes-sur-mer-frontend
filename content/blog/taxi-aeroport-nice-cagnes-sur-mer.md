@@ -326,7 +326,7 @@ Pour aller plus loin avec Taxi Cagnes-sur-Mer :
 
 - [Taxi Cagnes-sur-Mer → Antibes](/services) – Trajet vers la ville voisine
 
-- [Taxi Cagnes-sur-Mer → Cannes](/services) – Trajet très demandé sur la Côte d'Azur
+- [Taxi Cagnes-sur-Mer → Cannes](/blog/taxi-cagnes-sur-mer-cannes) – Trajet vers Palais des Festivals, Croisette, Festival de Cannes
 
 - [Transferts Aéroport](/services) – Toutes nos destinations depuis NCE
 

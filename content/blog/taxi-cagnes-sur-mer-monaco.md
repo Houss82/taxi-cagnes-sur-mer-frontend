@@ -362,6 +362,8 @@ Pour aller plus loin avec Taxi Cagnes-sur-Mer :
 
 - 👉 [Taxi Cagnes-sur-Mer → Antibes](/blog/taxi-cagnes-sur-mer-antibes) – Trajet vers Antibes, Juan-les-Pins, Port Vauban
 
+- 👉 [Taxi Cagnes-sur-Mer → Cannes](/blog/taxi-cagnes-sur-mer-cannes) – Trajet vers Palais des Festivals, Croisette, Festival de Cannes
+
 - 👉 [**Taxi Conventionné CPAM Cagnes-sur-Mer**](/services/taxi-conventionne-cagnes-sur-mer) – Transport médical remboursé par l'Assurance Maladie
 
 - 👉 [Chauffeur Privé](/services/chauffeur-prive) – Service personnalisé pour tous vos déplacements
