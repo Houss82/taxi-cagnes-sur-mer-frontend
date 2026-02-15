@@ -1,7 +1,7 @@
 // ✅ SERVER COMPONENT - Pas de "use client"
-// Force static generation pour meilleure indexation Google
+// ISR: Revalidate toutes les heures pour permettre l'indexation Google
 export const dynamic = "force-static";
-export const revalidate = false; // Page statique pure pour indexation optimale
+export const revalidate = 3600; // ISR toutes les heures pour meilleure indexation
 
 import { Building2, CheckCircle, Heart } from "lucide-react";
 import Image from "next/image";
@@ -17,6 +17,17 @@ export const metadata = {
     "Taxi conventionné CPAM à Cagnes-sur-Mer pour transport médical remboursé. Service conventionné Assurance Maladie vers hôpitaux Nice, Cannes, Antibes. Véhicules adaptés, chauffeurs formés, disponible 24/7.",
   keywords:
     "taxi conventionné cagnes sur mer, taxi conventionné cpam cagnes sur mer, transport médical cagnes sur mer, taxi remboursé sécurité sociale, vsl cagnes sur mer, taxi conventionné assurance maladie",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
   alternates: {
     canonical:
       "https://taxi-cagnes-sur-mer.fr/services/taxi-conventionne-cagnes-sur-mer",
@@ -28,6 +39,7 @@ export const metadata = {
       "Taxi conventionné CPAM à Cagnes-sur-Mer pour transport médical remboursé. Service conventionné Assurance Maladie vers hôpitaux Nice, Cannes, Antibes.",
     url: "https://taxi-cagnes-sur-mer.fr/services/taxi-conventionne-cagnes-sur-mer",
     type: "website",
+    siteName: "Taxi Cagnes-sur-Mer",
     images: [
       {
         url: "https://taxi-cagnes-sur-mer.fr/transport-medical-cagnes-sur-mer.jpeg",
@@ -35,6 +47,16 @@ export const metadata = {
         height: 630,
         alt: "Taxi Conventionné CPAM Cagnes-sur-Mer",
       },
+    ],
+    locale: "fr_FR",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Taxi Conventionné CPAM Cagnes-sur-Mer | Transport Médical Remboursé",
+    description:
+      "Taxi conventionné CPAM à Cagnes-sur-Mer pour transport médical remboursé. Service conventionné Assurance Maladie vers hôpitaux Nice, Cannes, Antibes.",
+    images: [
+      "https://taxi-cagnes-sur-mer.fr/transport-medical-cagnes-sur-mer.jpeg",
     ],
   },
 };
@@ -137,7 +159,7 @@ export default function TransportMedical() {
         }}
       />
       {/* Hero */}
-      <section className="relative h-[500px] flex items-center justify-center overflow-hidden pt-20">
+      <section className="relative h-[600px] flex items-center justify-center overflow-hidden pt-20">
         <Image
           src="/taxi-cagnes-sur-mer-hopital.jpeg"
           alt="Taxi Conventionné CPAM Cagnes-sur-Mer - Transport médical remboursé"

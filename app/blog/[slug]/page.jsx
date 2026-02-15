@@ -206,6 +206,138 @@ export default async function BlogPostPage({ params }) {
               }),
             }}
           />
+
+          {/* Schema FAQPage et TaxiService pour Centre Antoine Lacassagne */}
+          {post.slug === "taxi-cagnes-sur-mer-centre-antoine-lacassagne-nice" && (
+            <>
+              <Script
+                id="faq-schema"
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                  __html: JSON.stringify({
+                    "@context": "https://schema.org",
+                    "@type": "FAQPage",
+                    mainEntity: [
+                      {
+                        "@type": "Question",
+                        name: "Combien de temps faut-il pour aller de Cagnes-sur-Mer au Centre Antoine Lacassagne ?",
+                        acceptedAnswer: {
+                          "@type": "Answer",
+                          text: "Le trajet dure généralement 20 à 30 minutes selon le trafic et l'itinéraire choisi. En période de trafic dense (7h-9h, 17h-19h), le trajet peut prendre jusqu'à 35 minutes.",
+                        },
+                      },
+                      {
+                        "@type": "Question",
+                        name: "Quel est le tarif pour un trajet vers le Centre Antoine Lacassagne ?",
+                        acceptedAnswer: {
+                          "@type": "Answer",
+                          text: "Le tarif est à partir de 40€ (selon horaires et conditions – prix confirmé à la réservation) pour un véhicule Mercedes GLB (1-4 passagers). Pour un véhicule plus grand (Mercedes Classe V, jusqu'à 7 passagers), le tarif est à partir de 50€. Les tarifs sont transparents, sans mauvaise surprise.",
+                        },
+                      },
+                      {
+                        "@type": "Question",
+                        name: "Les trajets vers le Centre Antoine Lacassagne sont-ils remboursés par la CPAM ?",
+                        acceptedAnswer: {
+                          "@type": "Answer",
+                          text: "La prise en charge dépend de votre situation et d'une prescription médicale. Renseignez-vous auprès de votre CPAM ou de votre médecin pour vérifier vos droits. Consultez notre page dédiée au taxi conventionné CPAM pour connaître les conditions et les documents généralement demandés.",
+                        },
+                      },
+                      {
+                        "@type": "Question",
+                        name: "Puis-je réserver un trajet régulier pour mes séances de traitement ?",
+                        acceptedAnswer: {
+                          "@type": "Answer",
+                          text: "Oui, nous proposons des tarifs préférentiels pour les trajets réguliers. Nous pouvons organiser un planning de trajets pour toute la durée de votre traitement. Contactez-nous pour discuter de vos besoins.",
+                        },
+                      },
+                      {
+                        "@type": "Question",
+                        name: "Puis-je être accompagné dans le taxi ?",
+                        acceptedAnswer: {
+                          "@type": "Answer",
+                          text: "Oui, vous pouvez être accompagné par un proche dans le même véhicule. Les véhicules Mercedes GLB peuvent accueillir jusqu'à 4 passagers, et les Mercedes Classe V jusqu'à 7 passagers.",
+                        },
+                      },
+                      {
+                        "@type": "Question",
+                        name: "Dois-je réserver à l'avance ?",
+                        acceptedAnswer: {
+                          "@type": "Answer",
+                          text: "Il est fortement recommandé de réserver au moins 24h à l'avance, surtout pour les rendez-vous de traitement. Pour les trajets réguliers, nous pouvons organiser un planning à l'avance.",
+                        },
+                      },
+                      {
+                        "@type": "Question",
+                        name: "Puis-je réserver un retour après ma séance de traitement ?",
+                        acceptedAnswer: {
+                          "@type": "Answer",
+                          text: "Oui, vous pouvez réserver un aller-retour. C'est même fortement recommandé après une séance de traitement, car conduire après une séance peut être dangereux (fatigue, nausées, vertiges possibles). Nous conseillons de prévoir le retour à l'avance pour éviter d'attendre et garantir votre confort.",
+                        },
+                      },
+                    ],
+                  }),
+                }}
+              />
+              <Script
+                id="taxiservice-schema"
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                  __html: JSON.stringify({
+                    "@context": "https://schema.org",
+                    "@type": ["TaxiService", "MedicalBusiness"],
+                    name: "Taxi Cagnes-sur-Mer → Centre Antoine Lacassagne",
+                    description: "Service de taxi depuis Cagnes-sur-Mer vers le Centre Antoine Lacassagne à Nice pour consultations oncologiques, chimiothérapie, radiothérapie et suivi médical",
+                    url: `https://taxi-cagnes-sur-mer.fr/blog/${post.slug}`,
+                    telephone: "+33 6 63 57 65 34",
+                    areaServed: [
+                      {
+                        "@type": "City",
+                        name: "Cagnes-sur-Mer",
+                      },
+                      {
+                        "@type": "City",
+                        name: "Nice",
+                      },
+                    ],
+                    address: {
+                      "@type": "PostalAddress",
+                      addressLocality: "Cagnes-sur-Mer",
+                      addressRegion: "Alpes-Maritimes",
+                      postalCode: "06800",
+                      addressCountry: "FR",
+                    },
+                    hasOfferCatalog: {
+                      "@type": "OfferCatalog",
+                      name: "Services de transport vers Centre Antoine Lacassagne",
+                      itemListElement: [
+                        {
+                          "@type": "Offer",
+                          itemOffered: {
+                            "@type": "Service",
+                            name: "Taxi vers Centre Antoine Lacassagne",
+                            description: "Transport depuis Cagnes-sur-Mer vers le Centre Antoine Lacassagne",
+                            provider: {
+                              "@type": "LocalBusiness",
+                              name: "Taxi Cagnes-sur-Mer",
+                            },
+                          },
+                          price: "40",
+                          priceCurrency: "EUR",
+                        },
+                      ],
+                    },
+                    serviceType: "Transport médical vers Centre Antoine Lacassagne",
+                    medicalSpecialty: [
+                      "Transport vers centre de cancérologie",
+                      "Transport vers consultations oncologiques",
+                      "Transport vers séances de chimiothérapie",
+                      "Transport vers séances de radiothérapie",
+                    ],
+                  }),
+                }}
+              />
+            </>
+          )}
         </div>
       </article>
 
