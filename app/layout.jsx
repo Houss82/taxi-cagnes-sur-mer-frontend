@@ -1,20 +1,21 @@
-import { Plus_Jakarta_Sans } from "next/font/google"
-import "./globals.css"
-import Header from "./components/Header"
-import Footer from "./components/Footer"
+import { Plus_Jakarta_Sans } from "next/font/google";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import "./globals.css";
 
-const plusJakartaSans = Plus_Jakarta_Sans({ 
+const plusJakartaSans = Plus_Jakarta_Sans({
   subsets: ["latin"],
   variable: "--font-sans",
   display: "swap",
   weight: ["300", "400", "500", "600", "700", "800"],
-})
+});
 
 export const metadata = {
-  title: "Taxi Cagnes-sur-Mer - Transferts Premium sur la Côte d'Azur",
+  title: "Taxi Cagnes-sur-Mer ASM - Aéroport Nice, Gares & Conventionné CPAM",
   description:
-    "Service de taxi luxe à Cagnes-sur-Mer. Transferts aéroport Nice, Monaco, Antibes. Véhicules Mercedes premium 24/7.",
-  keywords: "taxi Cagnes-sur-Mer, transfert Nice, chauffeur privé, Côte d'Azur",
+    "Taxi Cagnes-sur-Mer ASM : Aéroport Nice, Gares & Conventionné CPAM. Service de taxi officiel 24/7 avec transferts aéroport Nice, gares SNCF et transport médical remboursé.",
+  keywords:
+    "taxi Cagnes-sur-Mer, taxi ASM, transfert aéroport Nice, gare SNCF, taxi conventionné CPAM, Cagnes-sur-Mer",
   generator: "v0.app",
   icons: {
     icon: [
@@ -39,9 +40,9 @@ export const metadata = {
     shortcut: "/favicon-32x32.png",
   },
   openGraph: {
-    title: "Taxi Cagnes-sur-Mer - Transferts Premium sur la Côte d'Azur",
+    title: "Taxi Cagnes-sur-Mer ASM - Aéroport Nice, Gares & Conventionné CPAM",
     description:
-      "Service de taxi luxe à Cagnes-sur-Mer. Transferts aéroport Nice, Monaco, Antibes. Véhicules Mercedes premium 24/7.",
+      "Taxi Cagnes-sur-Mer ASM : Aéroport Nice, Gares & Conventionné CPAM. Service de taxi officiel 24/7 avec transferts aéroport Nice, gares SNCF et transport médical remboursé.",
     url: "https://taxi-cagnes-sur-mer.fr",
     siteName: "Taxi Cagnes-sur-Mer",
     images: [
@@ -57,25 +58,27 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Taxi Cagnes-sur-Mer - Transferts Premium sur la Côte d'Azur",
+    title: "Taxi Cagnes-sur-Mer ASM - Aéroport Nice, Gares & Conventionné CPAM",
     description:
-      "Service de taxi luxe à Cagnes-sur-Mer. Transferts aéroport Nice, Monaco, Antibes.",
+      "Taxi Cagnes-sur-Mer ASM : Aéroport Nice, Gares & Conventionné CPAM. Service de taxi officiel 24/7 avec transferts aéroport Nice, gares SNCF et transport médical remboursé.",
     images: ["https://taxi-cagnes-sur-mer.fr/logo-taxi-cagnes.png"],
   },
-}
+};
 
 // ISR: Revalidate toutes les 24 heures pour le SEO
-export const revalidate = 86400
+export const revalidate = 86400;
 
 export default function RootLayout({ children }) {
   return (
     <html lang="fr" className="scroll-smooth">
-      <body className={`${plusJakartaSans.variable} font-sans antialiased`} suppressHydrationWarning>
+      <body
+        className={`${plusJakartaSans.variable} font-sans antialiased`}
+        suppressHydrationWarning
+      >
         <Header />
         <main>{children}</main>
         <Footer />
       </body>
     </html>
-  )
+  );
 }
-
