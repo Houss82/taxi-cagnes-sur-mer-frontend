@@ -458,7 +458,7 @@ Offrez-vous un trajet sans stress entre **Cagnes-sur-Mer** et **Nice** avec un c
 
 👉 [Réservez votre taxi en ligne dès maintenant](/reservation)
 
-ou contactez-nous via notre site ou par téléphone au **+33 6 15 29 37 21**.
+ou contactez-nous via notre site ou par téléphone au **+33 6 63 57 65 34**.
 
 <div class="cta">
 

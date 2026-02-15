@@ -45,7 +45,7 @@ export default function MentionsLegales() {
                   <strong>Adresse :</strong> Cagnes-sur-Mer, Côte d'Azur, France
                 </li>
                 <li>
-                  <strong>Téléphone :</strong> +33 6 15 29 37 21
+                  <strong>Téléphone :</strong> +33 6 63 57 65 34
                 </li>
                 <li>
                   <strong>Email :</strong> houssedev7@gmail.com
@@ -253,7 +253,7 @@ export default function MentionsLegales() {
               </p>
               <ul className="space-y-2 text-primary-foreground/90">
                 <li>
-                  <strong>Téléphone :</strong> +33 6 15 29 37 21
+                  <strong>Téléphone :</strong> +33 6 63 57 65 34
                 </li>
                 <li>
                   <strong>Email :</strong> taxicagnessurmer2025@gmail.com

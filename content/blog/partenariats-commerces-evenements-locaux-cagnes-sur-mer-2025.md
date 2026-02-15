@@ -213,7 +213,7 @@ Nos véhicules Mercedes GLB et Classe V offrent l'espace nécessaire pour transp
 
 Pour en savoir plus sur nos partenariats ou pour devenir partenaire :
 
-📞 **+33 6 15 29 37 21**  
+📞 **+33 6 63 57 65 34**  
 ✉️ **taxicagnessurmer2025@gmail.com**
 
 Nous sommes disponibles 24h/24 et 7j/7 pour répondre à vos questions et organiser vos déplacements.

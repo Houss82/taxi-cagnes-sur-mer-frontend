@@ -17,11 +17,12 @@ import {
 import Image from "next/image";
 import Script from "next/script";
 import VehicleCarousel from "./components/client/VehicleCarousel";
+import HeroBackgroundSlider from "./components/client/HeroBackgroundSlider";
 import Button from "./components/ui/Button";
 import Card from "./components/ui/Card";
 
 const vehicles = [
-  { name: "Mercedes GLB", image: "/taxi-cagnes-glb.png" },
+  { name: "Berline", image: "/taxi-cagnes-glb.png" },
 
   { name: "Mercedes classe V", image: "/taxi-cagnes-sur-mer-van.png" },
 ];
@@ -31,37 +32,16 @@ export default function Home() {
     <main className="min-h-screen bg-white">
       {/* Hero Section */}
       <section className="relative h-screen md:h-screen flex items-center justify-center overflow-hidden pt-0 md:pt-20">
-        {/* Image mobile - optimisée pour photo portrait (téléphone) */}
-        <Image
-          src="/taxi-cagnes-sur-mer-mobile.png"
-          alt="Taxi Cagnes-sur-Mer Mercedes pour transferts aéroport Nice"
-          fill
-          className="md:hidden"
-          priority
-          sizes="100vw"
-          style={{
-            objectFit: "cover",
-            objectPosition: "center top",
-            width: "100%",
-            height: "100%",
-          }}
-        />
-        {/* Image desktop */}
-        <Image
-          src="/taxi-cagnes-sur-mer.png"
-          alt="Taxi Cagnes-sur-Mer Mercedes pour transferts aéroport Nice"
-          fill
-          className="hidden md:block object-cover object-center"
-          priority
-          sizes="100vw"
-        />
+        {/* Images en alternance */}
+        <HeroBackgroundSlider />
         <div className="absolute inset-0 bg-black/40" />
-        <div className="relative z-10 text-center text-white max-w-3xl px-4 sm:px-6 pt-0 pb-8 md:pt-0 md:py-0 flex flex-col items-center justify-center h-full md:mt-0">
-          <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-3 md:mb-6 leading-tight text-balance -mt-20 md:mt-0">
-            Taxi Cagnes-sur-Mer
+        <div className="relative z-10 text-center text-white max-w-3xl px-4 sm:px-6 pb-8 md:py-0 flex flex-col items-center justify-start md:justify-center h-full md:mt-0 pt-32 md:pt-0">
+          <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-3 md:mb-6 leading-tight text-balance mt-0 md:mt-0">
+            Taxi <span className="whitespace-nowrap">Cagnes-sur-Mer</span>{" "}
+            <br /> <span className="whitespace-nowrap">ASM</span>
           </h1>
-          <p className="text-3xl md:text-4xl  mb-6 text-white">
-            Transferts Premium sur la Côte d'Azur
+          <p className="text-3xl md:text-4xl  mb-6 text-white mt-10">
+            Aéroport Nice, Gares & Conventionné CPAM
           </p>
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
             <Button
@@ -638,7 +618,7 @@ export default function Home() {
             "@type": "TaxiService",
             name: "Taxi Cagnes-sur-Mer",
             url: "https://taxi-cagnes-sur-mer.fr/",
-            telephone: "+33 6 15 29 37 21",
+            telephone: "+33 6 63 57 65 34",
             areaServed: [
               "Cagnes-sur-Mer",
               "Nice",

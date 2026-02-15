@@ -64,7 +64,7 @@ export default function PolitiqueConfidentialite() {
                   <strong>Email :</strong> houssedev7@gmail.com
                 </li>
                 <li>
-                  <strong>Téléphone :</strong> +33 6 15 29 37 21
+                  <strong>Téléphone :</strong> +33 6 63 57 65 34
                 </li>
               </ul>
             </Card>
@@ -363,7 +363,7 @@ export default function PolitiqueConfidentialite() {
                   <strong>Email :</strong> houssedev7@gmail.com
                 </li>
                 <li>
-                  <strong>Téléphone :</strong> +33 6 15 29 37 21
+                  <strong>Téléphone :</strong> +33 6 63 57 65 34
                 </li>
                 <li>
                   <strong>Adresse :</strong> Cagnes-sur-Mer, Côte d'Azur, France

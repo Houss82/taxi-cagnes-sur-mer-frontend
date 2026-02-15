@@ -218,7 +218,7 @@ Réserver un **taxi gare SNCF Cagnes-sur-Mer** est simple et peut se faire de pl
 - **Flexibilité** : vous pouvez modifier l'heure ou la destination jusqu'à quelques heures avant
 
 **Comment ça fonctionne ?**
-1. **Vous appelez** : 📞 **+33 6 15 29 37 21** (disponible 24h/24 et 7j/7)
+1. **Vous appelez** : 📞 **+33 6 63 57 65 34** (disponible 24h/24 et 7j/7)
 2. **Vous indiquez** : heure d'arrivée du train, destination, nombre de passagers, bagages
 3. **Nous confirmons** : vous recevez un SMS avec tous les détails (heure, point de rencontre, tarif, numéro du chauffeur)
 4. **Le jour J** : votre chauffeur vous attend à la sortie de la gare avec une pancarte à votre nom
@@ -448,7 +448,7 @@ Offrez-vous un trajet sans stress depuis la **gare SNCF de Cagnes-sur-Mer** avec
 
 **Pour réserver votre taxi gare SNCF Cagnes-sur-Mer :**
 
-📞 **Appelez-nous au +33 6 15 29 37 21** (disponible 24h/24 et 7j/7)
+📞 **Appelez-nous au +33 6 63 57 65 34** (disponible 24h/24 et 7j/7)
 
 💻 **Ou réservez en ligne** sur notre [page de réservation](/reservation)
 

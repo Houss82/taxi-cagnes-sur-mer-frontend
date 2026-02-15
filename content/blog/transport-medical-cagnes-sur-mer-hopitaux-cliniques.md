@@ -284,7 +284,7 @@ Pour les **visites hospitalières**, **accompagnement lors d'hospitalisation** o
 
 ### Réservation par téléphone
 
-- **Appelez** le **+33 6 15 29 37 21** (disponible 24/7)
+- **Appelez** le **+33 6 63 57 65 34** (disponible 24/7)
 - **Indiquez** : date, heure, établissement de santé, besoins spécifiques
 - **Confirmez** votre réservation immédiatement
 
@@ -343,7 +343,7 @@ Le **transport médical en taxi** peut être pris en charge par la Sécurité So
 
 <summary><strong>2. Puis-je réserver un transport médical pour une urgence ?</strong></summary>
 
-Oui, notre service est **disponible 24/7** pour les urgences médicales non critiques. Appelez-nous directement au **+33 6 15 29 37 21** et nous ferons notre maximum pour vous transporter rapidement.
+Oui, notre service est **disponible 24/7** pour les urgences médicales non critiques. Appelez-nous directement au **+33 6 63 57 65 34** et nous ferons notre maximum pour vous transporter rapidement.
 
 **Important** : Pour les **urgences vitales** (arrêt cardiaque, perte de conscience, traumatisme grave, difficultés respiratoires), appelez immédiatement le **15 (SAMU)** ou le **112 (numéro d'urgence européen)**. Notre service de transport médical ne remplace pas les services d'urgence médicale.
 

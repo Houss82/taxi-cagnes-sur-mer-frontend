@@ -485,7 +485,7 @@ Offrez-vous un trajet premium entre **Cagnes-sur-Mer** et **Monaco** avec un cha
 
 👉 [Réservez votre taxi en ligne dès maintenant](/reservation)
 
-ou contactez-nous via notre site ou par téléphone au **+33 6 15 29 37 21**.
+ou contactez-nous via notre site ou par téléphone au **+33 6 63 57 65 34**.
 
 <div class="cta">
 

@@ -59,7 +59,7 @@ La méthode la plus simple et la plus fiable pour réserver un taxi à Cagnes-su
 
 ### Comment ça fonctionne concrètement ?
 
-**Vous appelez** : 📞 **+33 6 15 29 37 21** (disponible 24h/24 et 7j/7)
+**Vous appelez** : 📞 **+33 6 63 57 65 34** (disponible 24h/24 et 7j/7)
 
 **Vous expliquez votre besoin** : d'où vous partez, où vous allez, à quelle heure, combien de passagers, avez-vous des bagages volumineux ?
 
@@ -182,7 +182,7 @@ La disponibilité immédiate signifie qu'un véhicule peut venir vous chercher d
 
 ### Comment savoir si un taxi est disponible immédiatement ?
 
-**Vous appelez** : 📞 **+33 6 15 29 37 21**
+**Vous appelez** : 📞 **+33 6 63 57 65 34**
 
 **Nous vérifions notre disponibilité** : selon l'heure, le jour, et où vous vous trouvez à Cagnes-sur-Mer, nous pouvons vous dire immédiatement si un véhicule peut venir rapidement
 
@@ -502,7 +502,7 @@ Parfois, les plans changent. Vous devez modifier l'heure de votre trajet, change
 
 ### Comment modifier une réservation ?
 
-**Appelez-nous** : 📞 **+33 6 15 29 37 21**
+**Appelez-nous** : 📞 **+33 6 63 57 65 34**
 
 **Expliquez votre besoin** : quelle modification souhaitez-vous faire ? Changement d'heure ? Changement de destination ? Changement du nombre de passagers ?
 
@@ -600,7 +600,7 @@ Oui, vous pouvez réserver pour quelqu'un d'autre. Il suffit de nous donner les 
 <details class="faq">
 <summary><strong>5. Que faire si le chauffeur est en retard ?</strong></summary>
 
-Si votre chauffeur est en retard de plus de 10 minutes, appelez-nous immédiatement au **+33 6 15 29 37 21**. Nous vérifierons la situation et vous tiendrons informé. En cas de retard important, nous pouvons vous proposer une compensation ou organiser un véhicule de remplacement.
+Si votre chauffeur est en retard de plus de 10 minutes, appelez-nous immédiatement au **+33 6 63 57 65 34**. Nous vérifierons la situation et vous tiendrons informé. En cas de retard important, nous pouvons vous proposer une compensation ou organiser un véhicule de remplacement.
 
 </details>
 
@@ -635,7 +635,7 @@ La **réservation en ligne** est pratique pour des trajets standards, disponible
 <details class="faq">
 <summary><strong>10. Comment savoir si un taxi est disponible immédiatement ?</strong></summary>
 
-Appelez-nous directement au **+33 6 15 29 37 21** et nous vous dirons immédiatement si un véhicule peut venir rapidement. Le délai dépend de plusieurs facteurs : heure de la journée, jour de la semaine, votre localisation, et la saison. En général, nous pouvons être chez vous dans les 10 à 30 minutes selon ces facteurs.
+Appelez-nous directement au **+33 6 63 57 65 34** et nous vous dirons immédiatement si un véhicule peut venir rapidement. Le délai dépend de plusieurs facteurs : heure de la journée, jour de la semaine, votre localisation, et la saison. En général, nous pouvons être chez vous dans les 10 à 30 minutes selon ces facteurs.
 
 </details>
 
@@ -649,7 +649,7 @@ Si vous n'avez pas reçu de confirmation dans les 30 minutes suivant votre rése
 <details class="faq">
 <summary><strong>12. Peut-on modifier ou annuler une réservation ?</strong></summary>
 
-Oui, vous pouvez modifier ou annuler votre réservation. L'annulation est gratuite jusqu'à 2 heures avant l'heure prévue. Si vous annulez moins de 2 heures avant, des frais d'annulation peuvent s'appliquer (généralement 20% du tarif). Pour modifier une réservation, appelez-nous directement au **+33 6 15 29 37 21**.
+Oui, vous pouvez modifier ou annuler votre réservation. L'annulation est gratuite jusqu'à 2 heures avant l'heure prévue. Si vous annulez moins de 2 heures avant, des frais d'annulation peuvent s'appliquer (généralement 20% du tarif). Pour modifier une réservation, appelez-nous directement au **+33 6 63 57 65 34**.
 
 </details>
 
@@ -659,7 +659,7 @@ Oui, vous pouvez modifier ou annuler votre réservation. L'annulation est gratui
 
 Pour réserver un taxi à Cagnes-sur-Mer, vous avez plusieurs options :
 
-**Par téléphone** : 📞 **+33 6 15 29 37 21** (disponible 24h/24 et 7j/7)
+**Par téléphone** : 📞 **+33 6 63 57 65 34** (disponible 24h/24 et 7j/7)
 
 **Par email** : ✉️ **taxicagnessurmer2025@gmail.com**
 
