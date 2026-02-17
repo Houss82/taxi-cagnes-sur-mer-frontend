@@ -25,9 +25,9 @@ export default function HeaderClient({ navItems, children }) {
   // Sur la page d'accueil, on commence transparent, sinon on commence avec le fond
   const [isScrolled, setIsScrolled] = useState(!isHomePage);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [isServicesOpen, setIsServicesOpen] = useState(false);
+  const [openDesktopSubmenu, setOpenDesktopSubmenu] = useState(null);
   const [openSubmenu, setOpenSubmenu] = useState(null);
-  const servicesRef = useRef(null);
+  const submenuRefs = useRef({});
 
   useEffect(() => {
     // Si on n'est pas sur la page d'accueil, toujours avoir le fond
@@ -46,24 +46,27 @@ export default function HeaderClient({ navItems, children }) {
   // Fermer le menu quand on change de page
   useEffect(() => {
     setIsMobileMenuOpen(false);
-    setIsServicesOpen(false);
+    setOpenDesktopSubmenu(null);
     setOpenSubmenu(null);
   }, [pathname]);
 
-  // Fermer le sous-menu Services si on clique en dehors
+  // Fermer le sous-menu desktop si on clique en dehors
   useEffect(() => {
     const handleClickOutside = (event) => {
-      if (servicesRef.current && !servicesRef.current.contains(event.target)) {
-        setIsServicesOpen(false);
+      if (openDesktopSubmenu) {
+        const ref = submenuRefs.current[openDesktopSubmenu];
+        if (ref && !ref.contains(event.target)) {
+          setOpenDesktopSubmenu(null);
+        }
       }
     };
-    if (isServicesOpen) {
+    if (openDesktopSubmenu) {
       document.addEventListener("mousedown", handleClickOutside);
     }
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
-  }, [isServicesOpen]);
+  }, [openDesktopSubmenu]);
 
   // Icônes pour chaque élément de navigation
   const getIcon = (label) => {
@@ -282,15 +285,20 @@ export default function HeaderClient({ navItems, children }) {
           <nav className="hidden md:flex items-center gap-8">
             {navItems.map((item) => {
               const hasSubmenu = item.submenu && item.submenu.length > 0;
+              const isSubmenuOpen = openDesktopSubmenu === item.label;
               
               if (hasSubmenu) {
                 return (
                   <div
                     key={item.href}
-                    ref={servicesRef}
+                    ref={(el) => {
+                      if (el) {
+                        submenuRefs.current[item.label] = el;
+                      }
+                    }}
                     className="relative"
-                    onMouseEnter={() => setIsServicesOpen(true)}
-                    onMouseLeave={() => setIsServicesOpen(false)}
+                    onMouseEnter={() => setOpenDesktopSubmenu(item.label)}
+                    onMouseLeave={() => setOpenDesktopSubmenu(null)}
                   >
                     <Link
                       href={item.href}
@@ -304,7 +312,7 @@ export default function HeaderClient({ navItems, children }) {
                       <ChevronDown className="w-4 h-4" />
                     </Link>
                     <AnimatePresence>
-                      {isServicesOpen && (
+                      {isSubmenuOpen && (
                         <motion.div
                           initial={{ opacity: 0, y: -10 }}
                           animate={{ opacity: 1, y: 0 }}

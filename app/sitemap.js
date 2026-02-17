@@ -42,6 +42,21 @@ export default function sitemap() {
       priority: 0.9,
       changeFrequency: "monthly",
     },
+    {
+      path: "/taxi-villeneuve-loubet",
+      priority: 0.8,
+      changeFrequency: "monthly",
+    },
+    {
+      path: "/taxi-saint-laurent-du-var",
+      priority: 0.8,
+      changeFrequency: "monthly",
+    },
+    {
+      path: "/taxi-vence",
+      priority: 0.8,
+      changeFrequency: "monthly",
+    },
     { path: "/contact", priority: 0.8, changeFrequency: "monthly" },
     { path: "/blog", priority: 0.7, changeFrequency: "weekly" },
     {

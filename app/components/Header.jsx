@@ -17,6 +17,15 @@ const navItems = [
       { label: "Événements", href: "/services/evenements" },
     ],
   },
+  {
+    label: "Villes",
+    href: "#",
+    submenu: [
+      { label: "Villeneuve-Loubet", href: "/taxi-villeneuve-loubet" },
+      { label: "Saint-Laurent-du-Var", href: "/taxi-saint-laurent-du-var" },
+      { label: "Vence", href: "/taxi-vence" },
+    ],
+  },
   { label: "Tarifs", href: "/tarifs" },
   { label: "Blog", href: "/blog" },
   { label: "Contact", href: "/contact" },
