@@ -1,4 +1,5 @@
 import { Plus_Jakarta_Sans } from "next/font/google";
+import Script from "next/script";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import "./globals.css";
@@ -71,6 +72,19 @@ export const revalidate = 86400;
 export default function RootLayout({ children }) {
   return (
     <html lang="fr" className="scroll-smooth">
+      {/* Google Analytics */}
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-Y76NRQ8CK2"
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-Y76NRQ8CK2');
+        `}
+      </Script>
       <body
         className={`${plusJakartaSans.variable} font-sans antialiased`}
         suppressHydrationWarning
