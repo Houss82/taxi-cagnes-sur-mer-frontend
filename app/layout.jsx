@@ -85,6 +85,19 @@ export default function RootLayout({ children }) {
           gtag('config', 'G-Y76NRQ8CK2');
         `}
       </Script>
+      {/* Google Ads Conversion Tracking */}
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=AW-17953621076"
+        strategy="afterInteractive"
+      />
+      <Script id="google-ads" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'AW-17953621076');
+        `}
+      </Script>
       <body
         className={`${plusJakartaSans.variable} font-sans antialiased`}
         suppressHydrationWarning
