@@ -1,7 +1,6 @@
 "use client";
 
 import { MessageCircle, Phone } from "lucide-react";
-import Link from "next/link";
 import { useEffect, useState } from "react";
 
 export default function FloatingCallButtons() {
@@ -36,7 +35,7 @@ export default function FloatingCallButtons() {
       <div className="max-w-md mx-auto px-4 pb-4 pointer-events-auto">
         <div className="flex gap-3 items-center">
           {/* Bouton WhatsApp */}
-          <Link
+          <a
             href="https://wa.me/33663576534"
             className="flex-1 bg-[#25D366] text-white rounded-2xl px-4 py-4 shadow-2xl hover:shadow-[#25D366]/50 transition-all duration-300 hover:scale-105 active:scale-95 flex items-center justify-center gap-2 font-semibold text-sm relative overflow-hidden group"
             aria-label="Contacter sur WhatsApp"
@@ -51,10 +50,10 @@ export default function FloatingCallButtons() {
           >
             <MessageCircle className="w-5 h-5 relative z-10" />
             <span className="relative z-10">WhatsApp</span>
-          </Link>
+          </a>
 
           {/* Bouton Appel principal - Plus grand et mis en avant */}
-          <Link
+          <a
             href="tel:+33663576534"
             className={`flex-[1.3] bg-green-600 text-white rounded-2xl px-5 py-5 shadow-2xl hover:shadow-green-600/50 transition-all duration-300 hover:scale-105 active:scale-95 flex items-center justify-center gap-2 font-bold text-base relative overflow-hidden ${
               !isScrolled ? "ring-4 ring-green-500/40 animate-pulse-ring" : ""
@@ -73,7 +72,7 @@ export default function FloatingCallButtons() {
             <div className="absolute inset-0 bg-linear-to-r from-transparent via-white/30 to-transparent -translate-x-full animate-shimmer"></div>
             <Phone className="w-6 h-6 relative z-10" />
             <span className="relative z-10">Appeler</span>
-          </Link>
+          </a>
         </div>
       </div>
     </div>
