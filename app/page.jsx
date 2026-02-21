@@ -9,6 +9,7 @@ import {
   Clock,
   Compass,
   CreditCard,
+  Phone,
   Plane,
   Star,
   Train,
@@ -18,6 +19,7 @@ import Image from "next/image";
 import Script from "next/script";
 import VehicleCarousel from "./components/client/VehicleCarousel";
 import HeroBackgroundSlider from "./components/client/HeroBackgroundSlider";
+import FloatingCallButtons from "./components/client/FloatingCallButtons";
 import Button from "./components/ui/Button";
 import Card from "./components/ui/Card";
 
@@ -59,6 +61,25 @@ export default function Home() {
             >
               Consulter les tarifs
             </Button>
+          </div>
+          {/* Bouton d'appel visible uniquement sur mobile dans le hero */}
+          <div className="md:hidden mt-4">
+            <a
+              href="tel:+33663576534"
+              className="inline-flex items-center gap-2 bg-green-600 text-white rounded-full px-6 py-3 shadow-xl hover:shadow-green-600/50 transition-all duration-300 hover:scale-105 active:scale-95 font-semibold text-sm"
+              aria-label="Appeler maintenant"
+              onClick={() => {
+                if (typeof window !== 'undefined' && window.gtag) {
+                  window.gtag('event', 'phone_call', {
+                    event_category: 'Contact',
+                    event_label: 'Hero Call Button Mobile',
+                  });
+                }
+              }}
+            >
+              <Phone className="w-5 h-5" />
+              <span>Appeler : +33 6 63 57 65 34</span>
+            </a>
           </div>
         </div>
       </section>
@@ -637,6 +658,9 @@ export default function Home() {
           }),
         }}
       />
+
+      {/* Boutons d'appel flottants pour mobile */}
+      <FloatingCallButtons />
     </main>
   );
 }

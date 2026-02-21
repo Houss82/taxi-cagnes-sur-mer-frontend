@@ -28,19 +28,90 @@ export default function ReservationForm() {
 
   // Fonction pour extraire l'indicatif pays du numéro de téléphone
   const extractCountryCode = (phone) => {
+    if (!phone) {
+      return { indicatifPays: "+33", telephone: "" };
+    }
+
+    // Nettoyer le numéro : enlever tous les espaces, tirets, points, parenthèses
+    let cleaned = phone.replace(/[\s\-\.\(\)]/g, "");
+
     // Si le numéro commence par +, extraire l'indicatif
-    if (phone.startsWith("+")) {
-      const match = phone.match(/^(\+\d{1,4})(.+)$/);
+    if (cleaned.startsWith("+")) {
+      // Regex pour capturer l'indicatif (+33, +1, +44, etc.) et le reste (uniquement des chiffres)
+      const match = cleaned.match(/^(\+\d{1,4})(\d+)$/);
+      if (match) {
+        const indicatifPays = match[1];
+        const telephone = match[2];
+        
+        // Vérifier que le numéro de téléphone contient entre 8 et 15 chiffres
+        if (telephone.length >= 8 && telephone.length <= 15) {
+          console.log(`Numéro extrait: indicatif=${indicatifPays}, téléphone=${telephone}`);
+          return {
+            indicatifPays: indicatifPays,
+            telephone: telephone,
+          };
+        } else {
+          console.warn(`Numéro trop court/long: ${telephone.length} chiffres`);
+        }
+      } else {
+        console.warn(`Regex ne correspond pas pour: ${cleaned}`);
+      }
+    }
+
+    // Si le numéro commence par 00 (format international sans +)
+    if (cleaned.startsWith("00")) {
+      const match = cleaned.match(/^00(\d{1,4})(\d{8,15})$/);
       if (match) {
         return {
-          indicatifPays: match[1],
-          telephone: match[2].replace(/\s/g, ""),
+          indicatifPays: `+${match[1]}`,
+          telephone: match[2],
         };
       }
     }
-    // Sinon, utiliser +33 par défaut et nettoyer le numéro
-    const cleanedPhone = phone.replace(/\s/g, "").replace(/^0/, "");
-    return { indicatifPays: "+33", telephone: cleanedPhone };
+
+    // Si le numéro commence par 0 (format français), remplacer par +33
+    if (cleaned.startsWith("0") && /^\d+$/.test(cleaned)) {
+      const telephone = cleaned.substring(1);
+      if (telephone.length >= 8 && telephone.length <= 15) {
+        return { indicatifPays: "+33", telephone: telephone };
+      }
+    }
+
+    // Si le numéro ne commence pas par + mais contient uniquement des chiffres
+    if (/^\d+$/.test(cleaned)) {
+      // Enlever le 0 initial si présent
+      const telephone = cleaned.replace(/^0/, "");
+      
+      if (telephone.length >= 8 && telephone.length <= 15) {
+        return { indicatifPays: "+33", telephone: telephone };
+      }
+    }
+
+    // Dernière tentative : si le numéro contient +33 au début, l'enlever et utiliser le reste
+    if (cleaned.startsWith("+33")) {
+      const telephone = cleaned.substring(3);
+      if (/^\d+$/.test(telephone) && telephone.length >= 8 && telephone.length <= 15) {
+        return { indicatifPays: "+33", telephone: telephone };
+      }
+    }
+
+    // Si rien ne fonctionne, essayer de nettoyer encore plus agressivement
+    // Enlever tout sauf les chiffres et le +
+    const veryCleaned = cleaned.replace(/[^\d+]/g, "");
+    
+    if (veryCleaned.startsWith("+")) {
+      const match = veryCleaned.match(/^(\+\d{1,4})(\d{8,15})$/);
+      if (match) {
+        return {
+          indicatifPays: match[1],
+          telephone: match[2],
+        };
+      }
+    }
+
+    // Si vraiment rien ne fonctionne, retourner une erreur (sera gérée par la validation)
+    console.error(`Impossible d'extraire le numéro de téléphone de: "${phone}" (nettoyé: "${cleaned}")`);
+    return { indicatifPays: "+33", telephone: cleaned.replace(/[^\d]/g, "").substring(0, 15) };
   };
 
   // Fonction pour envoyer à Formspree (en parallèle, ne bloque pas le flux)
@@ -60,9 +131,12 @@ export default function ReservationForm() {
         vehicle: reservationData.vehicule,
         notes: reservationData.commentaires || "Aucune note",
         _subject: `Nouvelle réservation - ${reservationData.nom}`,
+        _replyto: reservationData.email || undefined,
       };
 
-      await fetch("https://formspree.io/f/meoykwvo", {
+      console.log("Envoi à Formspree:", formspreeData);
+
+      const response = await fetch("https://formspree.io/f/meoykwvo", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -70,9 +144,23 @@ export default function ReservationForm() {
         },
         body: JSON.stringify(formspreeData),
       });
+
+      const responseData = await response.json();
+
+      if (!response.ok) {
+        throw new Error(`Formspree error: ${response.status} - ${JSON.stringify(responseData)}`);
+      }
+
+      console.log("Email envoyé via Formspree avec succès:", responseData);
     } catch (err) {
       // Ne pas bloquer le flux si Formspree échoue
       console.error("Erreur Formspree (non bloquant):", err);
+      // Log plus détaillé pour déboguer
+      console.error("Détails de l'erreur Formspree:", {
+        message: err.message,
+        stack: err.stack,
+        reservationData: reservationData,
+      });
     }
   };
 
@@ -84,6 +172,24 @@ export default function ReservationForm() {
     try {
       // Extraire l'indicatif pays et le téléphone
       const { indicatifPays, telephone } = extractCountryCode(formData.phone);
+
+      // Validation côté client du numéro de téléphone
+      if (!telephone || telephone.length < 8 || telephone.length > 15) {
+        setError(
+          "Le numéro de téléphone doit contenir entre 8 et 15 chiffres. Format attendu : +33 6 12 34 56 78"
+        );
+        setLoading(false);
+        return;
+      }
+
+      // Vérifier que le téléphone ne contient que des chiffres
+      if (!/^\d+$/.test(telephone)) {
+        setError(
+          "Le numéro de téléphone ne doit contenir que des chiffres (après l'indicatif pays)."
+        );
+        setLoading(false);
+        return;
+      }
 
       // Mapper le véhicule du format frontend vers le format backend
       const vehiculeMap = {
@@ -107,13 +213,20 @@ export default function ReservationForm() {
         commentaires: formData.notes || undefined, // Optionnel
       };
 
+      // Log pour déboguer
+      console.log("Données envoyées au backend:", reservationData);
+
       // Appeler l'API backend (code existant)
       const result = await createReservation(reservationData);
 
       // Envoyer aussi à Formspree en parallèle (sans bloquer)
-      sendToFormspree(reservationData).catch(() => {
-        // Erreur déjà gérée dans sendToFormspree, on continue
-      });
+      sendToFormspree(reservationData)
+        .then(() => {
+          console.log("Email envoyé via Formspree avec succès");
+        })
+        .catch((err) => {
+          console.error("Erreur Formspree (non bloquant):", err);
+        });
 
       if (result.result) {
         setSubmitted(true);
