@@ -41,3 +41,26 @@ export async function createReservation(reservationData) {
   }
 }
 
+// Fonction pour logger les erreurs d'envoi d'email au backend
+export async function logEmailError(reservationId, error, details) {
+  try {
+    await fetch(`${API_BASE_URL}/users/log-email-error`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        reservationId: reservationId || null,
+        error: error || 'Erreur inconnue',
+        details: details || {},
+        timestamp: new Date().toISOString(),
+      }),
+    }).catch(() => {
+      // Ignorer les erreurs de logging pour ne pas bloquer le flux
+    });
+  } catch (err) {
+    // Ignorer silencieusement les erreurs de logging
+    console.error('Impossible de logger l\'erreur email:', err);
+  }
+}
+

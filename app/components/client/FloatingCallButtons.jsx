@@ -8,19 +8,25 @@ export default function FloatingCallButtons() {
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
-    // Afficher les boutons après un court délai pour une meilleure UX
-    const timer = setTimeout(() => {
-      setIsVisible(true);
-    }, 800);
-
-    // Détecter le scroll pour changer l'apparence
+    // Détecter le scroll pour afficher les boutons uniquement lors du scroll
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 200);
+      const scrollY = window.scrollY;
+      // Afficher les boutons seulement si l'utilisateur a scrollé d'au moins 100px
+      if (scrollY > 100) {
+        setIsVisible(true);
+        setIsScrolled(scrollY > 200);
+      } else {
+        // Masquer les boutons si on revient en haut de la page
+        setIsVisible(false);
+        setIsScrolled(false);
+      }
     };
 
-    window.addEventListener("scroll", handleScroll);
+    // Vérifier la position initiale au chargement
+    handleScroll();
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
     return () => {
-      clearTimeout(timer);
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);

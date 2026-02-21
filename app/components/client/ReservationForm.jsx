@@ -2,7 +2,7 @@
 
 import { AlertCircle, CheckCircle } from "lucide-react";
 import { useState } from "react";
-import { createReservation } from "../../lib/api";
+import { createReservation, logEmailError } from "../../lib/api";
 import Button from "../ui/Button";
 import Card from "../ui/Card";
 import Input from "../ui/Input";
@@ -114,10 +114,16 @@ export default function ReservationForm() {
     return { indicatifPays: "+33", telephone: cleaned.replace(/[^\d]/g, "").substring(0, 15) };
   };
 
-  // Fonction pour envoyer à Formspree (en parallèle, ne bloque pas le flux)
-  const sendToFormspree = async (reservationData) => {
+  // Fonction pour envoyer à Formspree avec retry (en parallèle, ne bloque pas le flux)
+  const sendToFormspree = async (reservationData, retryCount = 0) => {
+    const MAX_RETRIES = 3;
+    const RETRY_DELAY = 1000; // 1 seconde entre chaque tentative
+
     try {
       // Préparer les données pour Formspree
+      // Ajouter un timestamp unique pour éviter les blocages anti-spam
+      const uniqueId = `${Date.now()}-${Math.random().toString(36).substr(2, 9)}`;
+      
       const formspreeData = {
         name: reservationData.nom,
         phone: `${reservationData.indicatifPays} ${reservationData.telephone}`,
@@ -132,9 +138,14 @@ export default function ReservationForm() {
         notes: reservationData.commentaires || "Aucune note",
         _subject: `Nouvelle réservation - ${reservationData.nom}`,
         _replyto: reservationData.email || undefined,
+        _id: uniqueId, // Identifiant unique pour éviter les blocages
+        _timestamp: new Date().toISOString(),
       };
 
-      console.log("Envoi à Formspree:", formspreeData);
+      console.log(`📧 [Formspree] Tentative ${retryCount + 1}/${MAX_RETRIES + 1}`, {
+        timestamp: new Date().toISOString(),
+        data: formspreeData,
+      });
 
       const response = await fetch("https://formspree.io/f/meoykwvo", {
         method: "POST",
@@ -145,22 +156,113 @@ export default function ReservationForm() {
         body: JSON.stringify(formspreeData),
       });
 
-      const responseData = await response.json();
+      console.log(`📧 [Formspree] Réponse reçue:`, {
+        status: response.status,
+        statusText: response.statusText,
+        ok: response.ok,
+        headers: Object.fromEntries(response.headers.entries()),
+      });
 
-      if (!response.ok) {
-        throw new Error(`Formspree error: ${response.status} - ${JSON.stringify(responseData)}`);
+      // Essayer de parser la réponse JSON
+      let responseData;
+      const contentType = response.headers.get("content-type");
+      
+      if (contentType && contentType.includes("application/json")) {
+        try {
+          responseData = await response.json();
+        } catch (parseError) {
+          const textResponse = await response.text();
+          console.error("❌ [Formspree] Erreur parsing JSON:", {
+            textResponse,
+            parseError: parseError.message,
+          });
+          throw new Error(`Erreur parsing réponse Formspree: ${textResponse}`);
+        }
+      } else {
+        const textResponse = await response.text();
+        responseData = { message: textResponse };
+        console.warn("⚠️ [Formspree] Réponse non-JSON:", textResponse);
       }
 
-      console.log("Email envoyé via Formspree avec succès:", responseData);
-    } catch (err) {
-      // Ne pas bloquer le flux si Formspree échoue
-      console.error("Erreur Formspree (non bloquant):", err);
-      // Log plus détaillé pour déboguer
-      console.error("Détails de l'erreur Formspree:", {
-        message: err.message,
-        stack: err.stack,
-        reservationData: reservationData,
+      if (!response.ok) {
+        const errorMsg = `Formspree error: ${response.status} - ${JSON.stringify(responseData)}`;
+        console.error(`❌ [Formspree] Erreur HTTP ${response.status}:`, responseData);
+        
+        // Si erreur 429 (rate limit) ou 5xx (erreur serveur), réessayer
+        if ((response.status === 429 || response.status >= 500) && retryCount < MAX_RETRIES) {
+          console.warn(`🔄 [Formspree] Retry dans ${RETRY_DELAY * (retryCount + 1)}ms...`);
+          await new Promise((resolve) => setTimeout(resolve, RETRY_DELAY * (retryCount + 1)));
+          return sendToFormspree(reservationData, retryCount + 1);
+        }
+        
+        // Erreur 422 = validation error (données invalides)
+        if (response.status === 422) {
+          console.error("❌ [Formspree] Erreur de validation (422):", responseData);
+          // Logger l'erreur au backend
+          logEmailError(null, `Formspree 422: ${JSON.stringify(responseData)}`, {
+            status: response.status,
+            responseData,
+            reservationData: {
+              nom: reservationData.nom,
+              telephone: reservationData.telephone,
+            },
+          }).catch(() => {});
+          return { success: false, error: "Données invalides", details: responseData };
+        }
+        
+        // Logger toutes les autres erreurs HTTP
+        logEmailError(null, errorMsg, {
+          status: response.status,
+          responseData,
+          reservationData: {
+            nom: reservationData.nom,
+            telephone: reservationData.telephone,
+          },
+        }).catch(() => {});
+        
+        throw new Error(errorMsg);
+      }
+
+      console.log("✅ [Formspree] Email envoyé avec succès:", {
+        response: responseData,
+        timestamp: new Date().toISOString(),
       });
+      return { success: true, response: responseData };
+    } catch (err) {
+      // Si erreur réseau ou timeout, réessayer
+      const isNetworkError = err.message?.includes("fetch") || 
+                            err.message?.includes("network") ||
+                            err.message?.includes("Failed to fetch") ||
+                            err.name === "TypeError";
+      
+      if (isNetworkError && retryCount < MAX_RETRIES) {
+        console.warn(`🔄 [Formspree] Erreur réseau, retry dans ${RETRY_DELAY * (retryCount + 1)}ms...`, err.message);
+        await new Promise((resolve) => setTimeout(resolve, RETRY_DELAY * (retryCount + 1)));
+        return sendToFormspree(reservationData, retryCount + 1);
+      }
+
+      // Ne pas bloquer le flux si Formspree échoue après tous les essais
+      const errorDetails = {
+        message: err.message,
+        name: err.name,
+        stack: err.stack,
+        retryCount: retryCount + 1,
+        reservationData: {
+          nom: reservationData.nom,
+          telephone: reservationData.telephone,
+          date: reservationData.date,
+        },
+        timestamp: new Date().toISOString(),
+      };
+      
+      console.error("❌ [Formspree] Échec définitif après toutes les tentatives:", errorDetails);
+      
+      // Envoyer l'erreur au backend pour logging (depuis Tunisie, vous pourrez voir ces logs)
+      logEmailError(null, err.message, errorDetails).catch(() => {
+        // Ignorer les erreurs de logging
+      });
+
+      return { success: false, error: err.message };
     }
   };
 
@@ -218,14 +320,31 @@ export default function ReservationForm() {
 
       // Appeler l'API backend (code existant)
       const result = await createReservation(reservationData);
+      
+      // Récupérer l'ID de la réservation créée
+      const reservationId = result?.reservation?._id || null;
 
-      // Envoyer aussi à Formspree en parallèle (sans bloquer)
+      // Envoyer aussi à Formspree en parallèle (sans bloquer) avec retry automatique
       sendToFormspree(reservationData)
-        .then(() => {
-          console.log("Email envoyé via Formspree avec succès");
+        .then((emailResult) => {
+          if (emailResult?.success) {
+            console.log("✅ Email de réservation envoyé avec succès");
+          } else {
+            console.warn("⚠️ L'email n'a pas pu être envoyé, mais la réservation est enregistrée");
+            // Logger l'erreur au backend avec l'ID de réservation
+            logEmailError(reservationId, emailResult?.error || "Échec d'envoi email", {
+              reservationId,
+              emailResult,
+            }).catch(() => {});
+          }
         })
         .catch((err) => {
-          console.error("Erreur Formspree (non bloquant):", err);
+          console.error("❌ Erreur lors de l'envoi de l'email:", err);
+          // Logger l'erreur au backend
+          logEmailError(reservationId, err.message, {
+            reservationId,
+            error: err,
+          }).catch(() => {});
         });
 
       if (result.result) {
