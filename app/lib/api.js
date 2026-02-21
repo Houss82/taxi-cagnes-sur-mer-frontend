@@ -20,23 +20,42 @@ const API_BASE_URL = getApiBaseUrl();
 
 export async function createReservation(reservationData) {
   try {
+    console.log('📤 Envoi de la réservation à:', `${API_BASE_URL}/users/reservation`);
+    
     const response = await fetch(`${API_BASE_URL}/users/reservation`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify(reservationData),
+      // Ajouter cache: 'no-cache' pour éviter les problèmes de cache
+      cache: 'no-cache',
     })
+
+    console.log('📥 Réponse reçue:', {
+      status: response.status,
+      statusText: response.statusText,
+      ok: response.ok,
+    });
 
     const data = await response.json()
 
     if (!response.ok) {
+      console.error('❌ Erreur API:', {
+        status: response.status,
+        data: data,
+      });
       throw new Error(data.error || 'Erreur lors de la création de la réservation')
     }
 
+    console.log('✅ Réservation créée avec succès');
     return data
   } catch (error) {
-    console.error('Erreur API:', error)
+    console.error('❌ Erreur API complète:', {
+      message: error.message,
+      name: error.name,
+      stack: error.stack,
+    });
     throw error
   }
 }
