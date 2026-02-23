@@ -147,6 +147,7 @@ export default function TransportMedical() {
     openingHours: "Mo-Su 00:00-23:59",
     paymentAccepted: "Cash, Credit Card, Assurance Maladie",
     currenciesAccepted: "EUR",
+    sameAs: ["https://maps.app.goo.gl/D6j4275xTCxMfvXP6"],
   };
 
   return (

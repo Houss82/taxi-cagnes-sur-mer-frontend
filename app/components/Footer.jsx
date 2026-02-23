@@ -81,12 +81,12 @@ export default function Footer() {
               <li className="flex items-center gap-2">
                 <Star className="w-4 h-4" />
                 <a 
-                  href="https://maps.app.goo.gl/yCtievVkn6jXJYCdA" 
+                  href="https://maps.app.goo.gl/D6j4275xTCxMfvXP6" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="hover:text-accent transition-colors"
                 >
-                  Voir sur Google
+                  ⭐ Voir nos avis Google (55 avis 4.8)
                 </a>
               </li>
             </ul>

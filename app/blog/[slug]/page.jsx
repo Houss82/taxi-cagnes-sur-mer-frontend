@@ -333,6 +333,7 @@ export default async function BlogPostPage({ params }) {
                       "Transport vers séances de chimiothérapie",
                       "Transport vers séances de radiothérapie",
                     ],
+                    sameAs: ["https://maps.app.goo.gl/D6j4275xTCxMfvXP6"],
                   }),
                 }}
               />

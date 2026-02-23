@@ -130,6 +130,7 @@ export default function TaxiSaintLaurentDuVar() {
     openingHours: "Mo-Su 00:00-23:59",
     paymentAccepted: "Cash, Credit Card",
     currenciesAccepted: "EUR",
+    sameAs: ["https://maps.app.goo.gl/D6j4275xTCxMfvXP6"],
   };
 
   return (

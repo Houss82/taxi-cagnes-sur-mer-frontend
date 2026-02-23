@@ -637,7 +637,7 @@ export default function Home() {
               addressRegion: "Provence-Alpes-Côte d'Azur",
               addressCountry: "FR",
             },
-            sameAs: ["https://maps.app.goo.gl/yCtievVkn6jXJYCdA"],
+            sameAs: ["https://maps.app.goo.gl/D6j4275xTCxMfvXP6"],
           }),
         }}
       />

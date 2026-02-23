@@ -19,7 +19,7 @@ export default function ReservationForm() {
     time: "",
     passengers: "1",
     luggage: "0",
-    vehicle: "classe-e",
+    vehicle: "berline",
     notes: "",
   });
 
@@ -145,8 +145,8 @@ export default function ReservationForm() {
 
       // Mapper le véhicule du format frontend vers le format backend
       const vehiculeMap = {
-        glb: "GLB",
-        "classe-v": "Classe V",
+        berline: "Berline",
+        van: "Van",
       };
 
       // Préparer les données pour l'API backend
@@ -196,7 +196,7 @@ export default function ReservationForm() {
           time: "",
           passengers: "1",
           luggage: "0",
-          vehicle: "classe-e",
+          vehicle: "berline",
           notes: "",
         });
       }, 5000);
@@ -390,8 +390,8 @@ export default function ReservationForm() {
                       setFormData({ ...formData, vehicle: e.target.value })
                     }
                   >
-                    <option value="glb">GLB</option>
-                    <option value="classe-v">Classe V</option>
+                    <option value="berline">Berline</option>
+                    <option value="van">Van</option>
                   </select>
                 </div>
               </div>

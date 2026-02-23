@@ -2,7 +2,7 @@
 // ISR: Revalidate toutes les 24 heures pour le SEO
 export const revalidate = 86400;
 
-import { Clock, Mail, MapPin, MessageCircle, Phone } from "lucide-react";
+import { Clock, Mail, MapPin, MessageCircle, Phone, Star } from "lucide-react";
 import Link from "next/link";
 import ContactForm from "../components/client/ContactForm";
 import Button from "../components/ui/Button";
@@ -119,12 +119,28 @@ export default function Contact() {
 
               <Card className="p-8">
                 <h3 className="font-bold text-lg mb-4">Suivez-nous</h3>
-                <div className="flex gap-4">
-                  {["WhatsApp"].map((platform) => (
-                    <Button key={platform} variant="outline" size="sm">
-                      {platform}
-                    </Button>
-                  ))}
+                <div className="space-y-4">
+                  <div className="flex gap-4">
+                    {["WhatsApp"].map((platform) => (
+                      <Button key={platform} variant="outline" size="sm">
+                        {platform}
+                      </Button>
+                    ))}
+                  </div>
+                  <div className="pt-4 border-t">
+                    <a
+                      href="https://maps.app.goo.gl/D6j4275xTCxMfvXP6"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 text-accent hover:text-primary transition-colors font-semibold"
+                    >
+                      <Star className="w-5 h-5 fill-accent" />
+                      Voir notre fiche Google Taxi Cagnes-sur-Mer ASM
+                    </a>
+                    <p className="text-sm text-muted-foreground mt-2">
+                      ⭐ 55 avis - Note 4.8/5
+                    </p>
+                  </div>
                 </div>
               </Card>
             </div>
