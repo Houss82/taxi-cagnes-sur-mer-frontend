@@ -151,13 +151,42 @@ Rendez-vous sur notre [page de réservation](/reservation) et remplissez le form
 
 ## 🌟 Pourquoi choisir notre taxi Cagnes-sur-Mer → Villeneuve-Loubet ?
 
-| Caractéristique         | Taxi Cagnes-sur-Mer                                 | Uber / VTC                 |
-| ----------------------- | --------------------------------------------------- | -------------------------- |
-| **Prix fixe**           | ✅ Annoncé à l'avance                               | ❌ Variable (surge)        |
-| **Prise en charge**     | ✅ Chauffeur dédié avec pancarte                    | ⚠️ Disponibilité aléatoire |
-| **Ponctualité**         | ✅ Arrivée à l'heure                                | ⚠️ Retards possibles       |
-| **Véhicule**            | ✅ Mercedes premium                                 | ⚠️ Niveau variable         |
-| **Connaissance locale** | ✅ Chauffeur local, connaît Marineland et les accès | ⚠️ GPS uniquement          |
+<table style="width: 100%; border-collapse: collapse; margin: 1.5rem 0;">
+  <thead>
+    <tr style="background-color: #3b82f6;">
+      <th style="padding: 12px; text-align: left; border: 1px solid #e5e7eb; font-weight: 600; color: #ffffff;">Caractéristique</th>
+      <th style="padding: 12px; text-align: left; border: 1px solid #e5e7eb; font-weight: 600; color: #ffffff;">Taxi Cagnes-sur-Mer</th>
+      <th style="padding: 12px; text-align: left; border: 1px solid #e5e7eb; font-weight: 600; color: #ffffff;">Uber / VTC</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;"><strong>Prix fixe</strong></td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;">✅ Annoncé à l'avance</td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;">❌ Variable (surge)</td>
+    </tr>
+    <tr style="background-color: #f9fafb;">
+      <td style="padding: 12px; border: 1px solid #e5e7eb;"><strong>Prise en charge</strong></td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;">✅ Chauffeur dédié avec pancarte</td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;">⚠️ Disponibilité aléatoire</td>
+    </tr>
+    <tr>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;"><strong>Ponctualité</strong></td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;">✅ Arrivée à l'heure</td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;">⚠️ Retards possibles</td>
+    </tr>
+    <tr style="background-color: #f9fafb;">
+      <td style="padding: 12px; border: 1px solid #e5e7eb;"><strong>Véhicule</strong></td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;">✅ Mercedes premium</td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;">⚠️ Niveau variable</td>
+    </tr>
+    <tr>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;"><strong>Connaissance locale</strong></td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;">✅ Chauffeur local, connaît Marineland et les accès</td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;">⚠️ GPS uniquement</td>
+    </tr>
+  </tbody>
+</table>
 
 ---
 
