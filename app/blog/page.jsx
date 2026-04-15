@@ -46,9 +46,9 @@ export default async function BlogPage({ searchParams }) {
     });
   }
 
-  const displayedPosts = selectedCategory
-    ? filteredPosts
-    : filteredPosts.slice(0, 9);
+  // Afficher tous les articles (pas de slice) : le blog compte peu de posts et
+  // une limite à 9 masquait des guides récents en page d'accueil du blog.
+  const displayedPosts = filteredPosts;
 
   const breadcrumbItems = [
     {

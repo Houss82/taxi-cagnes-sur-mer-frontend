@@ -36,13 +36,11 @@ export function getAllPosts() {
       };
     });
 
-  // Trier par date (plus récent en premier)
+  // Trier par date (plus récent en premier), puis par slug pour un ordre stable
   return allPostsData.sort((a, b) => {
-    if (a.date < b.date) {
-      return 1;
-    } else {
-      return -1;
-    }
+    if (a.date < b.date) return 1;
+    if (a.date > b.date) return -1;
+    return a.slug.localeCompare(b.slug, "fr");
   });
 }
 
