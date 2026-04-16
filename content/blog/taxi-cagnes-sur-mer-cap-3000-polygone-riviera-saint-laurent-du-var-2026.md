@@ -1,20 +1,11 @@
 ---
 title: "Taxi Cagnes-sur-Mer → Cap 3000, Polygone Riviera & Saint-Laurent-du-Var : prix & réservation 2026"
-date: "2026-04-04"
+date: "2026-04-15"
 excerpt: "Taxi Cagnes-sur-Mer vers Cap 3000, Polygone Riviera ou centre de Saint-Laurent-du-Var : durée, distance, tarifs indicatifs, prise en charge 24h/24. Évitez le stress du parking et des sacs de courses."
 image: "/taxi-cagnes-sur-mer-centre-commerciale-polygone.jpeg"
 category: "Taxi"
 author: "Taxi Cagnes-sur-Mer"
 language: "fr"
-keywords:
-  [
-    "taxi Cap 3000",
-    "taxi Cagnes-sur-Mer Cap 3000",
-    "taxi Polygone Riviera",
-    "taxi Saint-Laurent-du-Var depuis Cagnes",
-    "transfert centre commercial Cagnes",
-    "taxi shopping Cagnes-sur-Mer",
-  ]
 ---
 
 Pour aller au **Cap 3000**, au **Polygone Riviera** ou en centre-ville de **Saint-Laurent-du-Var** depuis **Cagnes-sur-Mer**, le **taxi** reste souvent le mode le plus simple : **pas de recherche de place** dans des parkings saturés le week-end, **chargement des courses** sans marche supplémentaire, et **retour nocturne** après cinéma ou restauration sans contrainte d'horaires de bus. Ce guide répond aux questions les plus fréquentes (**durée, tarif, prise en charge**) et s'appuie sur notre **expérience de courses locales** entre Cagnes-sur-Mer et la zone commerciale de Saint-Laurent-du-Var.
@@ -197,4 +188,4 @@ Réservez votre course avec tarif transparent et prise en charge à l'adresse de
 
 ---
 
-_Article mis à jour le 4 avril 2026_
+_Article mis à jour le 15 avril 2026_
