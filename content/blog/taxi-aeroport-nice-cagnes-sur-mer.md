@@ -72,7 +72,7 @@ Selon nos données internes de réservation et le trafic moyen entre Nice et Cag
 
 </div>
 
-**💶 Prix transfert Nice Aéroport → Cagnes-sur-Mer :** le tarif est **fixe et transparent**, sans mauvaise surprise. Que vous recherchiez un **taxi Nice Cagnes-sur-Mer** pour rejoindre votre hôtel, un **transfert depuis l'aéroport Nice vers Cagnes-sur-Mer** ou un retour **Cagnes-sur-Mer → Nice**, les prix sont annoncés dès la réservation :
+**💶 Prix transfert Nice Aéroport → Cagnes-sur-Mer :** le tarif est **fixe et transparent**, sans mauvaise surprise. Pour **forfaits indicatifs, suppléments (nuit, week-end) et comparaison taxi / VTC**, voir le guide dédié : [Combien coûte un taxi Cagnes ↔ aéroport Nice ? Forfaits 2026](https://taxi-cagnes-sur-mer.fr/blog/prix-taxi-cagnes-sur-mer-aeroport-nice-forfaits-2026). Que vous recherchiez un **taxi Nice Cagnes-sur-Mer** pour rejoindre votre hôtel, un **transfert depuis l'aéroport Nice vers Cagnes-sur-Mer** ou un retour **Cagnes-sur-Mer → Nice**, les prix sont annoncés dès la réservation :
 
 <table style="width: 100%; border-collapse: collapse; margin: 1.5rem 0;">
   <thead>

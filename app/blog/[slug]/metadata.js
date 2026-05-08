@@ -18,8 +18,11 @@ export async function generateMetadata({ params }) {
     };
   }
 
-  // Définir l'URL canonique
-  const canonicalUrl = `https://taxi-cagnes-sur-mer.fr/blog/${post.slug}`;
+  // URL canonique : front matter optionnel (sinon dérivée du slug)
+  const canonicalUrl =
+    typeof post.canonical === "string" && post.canonical.startsWith("http")
+      ? post.canonical
+      : `https://taxi-cagnes-sur-mer.fr/blog/${post.slug}`;
   const imageUrl = post.image.startsWith("http")
     ? post.image
     : `https://taxi-cagnes-sur-mer.fr${post.image}`;
