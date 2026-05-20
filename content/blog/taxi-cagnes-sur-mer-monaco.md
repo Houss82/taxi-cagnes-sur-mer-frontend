@@ -366,6 +366,8 @@ Pour aller plus loin avec Taxi Cagnes-sur-Mer :
 
 - 👉 [**Taxi Conventionné CPAM Cagnes-sur-Mer**](/services/taxi-conventionne-cagnes-sur-mer) – Transport médical remboursé par l'Assurance Maladie
 
+- 👉 [Taxi conventionné vers Monaco (CHPG & centres médicaux)](/blog/taxi-conventionne-cagnes-sur-mer-monaco-centres-medicaux-2026) – Prescription, accès hôpital & cliniques monégasques
+
 - 👉 [Chauffeur Privé](/services/chauffeur-prive) – Service personnalisé pour tous vos déplacements
 
 - 👉 [Longue Distance](/services/longue-distance) – Trajets vers Monaco, Cannes, Antibes

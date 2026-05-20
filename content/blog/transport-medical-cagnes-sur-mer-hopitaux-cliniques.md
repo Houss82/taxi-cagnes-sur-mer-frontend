@@ -404,6 +404,7 @@ Oui, pour les **trajets réguliers** (dialyse, chimiothérapie, consultations de
 Pour continuer votre découverte de nos services de transport :
 
 - 👉 [**Taxi Conventionné CPAM Cagnes-sur-Mer**](/services/taxi-conventionne-cagnes-sur-mer) – Transport médical remboursé par l'Assurance Maladie
+- 👉 [Taxi conventionné vers Monaco (CHPG & centres médicaux)](/blog/taxi-conventionne-cagnes-sur-mer-monaco-centres-medicaux-2026) – Trajets médicaux vers la Principauté depuis Cagnes-sur-Mer
 - 👉 [Réservation transport médical](/reservation) – Réservez votre trajet vers les établissements de santé
 - 👉 [Services de transport](/services) – Découvrez tous nos services disponibles
 - 👉 [Contact](/contact) – Besoin d'informations sur le transport médical ?
