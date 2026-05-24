@@ -1,5 +1,6 @@
 // ✅ SERVER COMPONENT - Pas de "use client"
 
+import Image from "next/image"
 import Link from "next/link"
 import { Phone, Mail, MapPin, Clock, Star } from "lucide-react"
 
@@ -11,9 +12,13 @@ export default function Footer() {
           {/* About */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 bg-accent rounded-full flex items-center justify-center">
-                <span className="text-accent-foreground font-bold text-sm">T</span>
-              </div>
+              <Image
+                src="/logo-definitif.png"
+                alt="Taxi Cagnes-sur-Mer — logo"
+                width={32}
+                height={32}
+                className="h-8 w-8 shrink-0 object-contain"
+              />
               <span className="font-bold text-lg">Taxi Cagnes-sur-Mer</span>
             </div>
             <p className="text-primary-foreground/80 text-sm leading-relaxed">

@@ -189,7 +189,7 @@ export default async function BlogPostPage({ params }) {
                   name: "Taxi Cagnes-sur-Mer",
                   logo: {
                     "@type": "ImageObject",
-                    url: "https://taxi-cagnes-sur-mer.fr/logo-taxi-cagnes.png",
+                    url: "https://taxi-cagnes-sur-mer.fr/logo-definitif.png",
                   },
                 },
                 inLanguage: "fr-FR",

@@ -21,6 +21,11 @@ export const metadata = {
   icons: {
     icon: [
       {
+        url: "/logo-definitif.png",
+        sizes: "500x500",
+        type: "image/png",
+      },
+      {
         url: "/favicon-32x32.png",
         sizes: "32x32",
         type: "image/png",
@@ -33,12 +38,12 @@ export const metadata = {
     ],
     apple: [
       {
-        url: "/logo-taxi-cagnes.png",
+        url: "/apple-touch-icon.png",
         sizes: "180x180",
         type: "image/png",
       },
     ],
-    shortcut: "/favicon-32x32.png",
+    shortcut: "/logo-definitif.png",
   },
   openGraph: {
     title: "Taxi Cagnes-sur-Mer ASM - Aéroport Nice, Gares & Conventionné CPAM",

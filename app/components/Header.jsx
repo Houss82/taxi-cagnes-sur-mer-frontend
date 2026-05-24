@@ -1,6 +1,7 @@
 // ✅ SERVER COMPONENT - Pas de "use client"
 // L'interactivité (scroll, menu mobile) est gérée par HeaderClient
 
+import Image from "next/image";
 import Link from "next/link";
 import HeaderClient from "./client/HeaderClient";
 
@@ -37,14 +38,14 @@ export default function Header() {
       <HeaderClient navItems={navItems}>
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2">
-          <div className="w-10 h-10 bg-accent rounded-full flex items-center justify-center">
-            <span className="font-bold text-lg italic">
-              <span className="text-white">T</span>
-              <span className="text-black" style={{ color: "#000000" }}>
-                C
-              </span>
-            </span>
-          </div>
+          <Image
+            src="/logo-definitif.png"
+            alt="Taxi Cagnes-sur-Mer — logo"
+            width={40}
+            height={40}
+            className="h-10 w-10 shrink-0 object-contain"
+            priority
+          />
           <span
             className={`font-bold text-lg md:text-xl transition-colors ${
               // Le style sera géré par HeaderClient via isScrolled
