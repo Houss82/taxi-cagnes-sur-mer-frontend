@@ -8,7 +8,7 @@ import Card from "../components/ui/Card";
 export const metadata = {
   title: "Réservation - Taxi Cagnes-sur-Mer",
   description:
-    "Réservez votre trajet en taxi à Cagnes-sur-Mer. Confirmation instantanée par email. Transferts aéroport Nice, Monaco, Antibes, Cannes. Service disponible 24/7.",
+    "Réservez votre trajet en taxi à Cagnes-sur-Mer. Confirmation instantanée par email. Transferts aéroport Nice, Monaco, Cannes. Service disponible 24/7.",
   keywords:
     "réservation taxi cagnes-sur-mer, réserver taxi nice, booking taxi monaco, réservation chauffeur privé",
 };

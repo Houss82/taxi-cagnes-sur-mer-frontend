@@ -203,7 +203,7 @@ export default async function BlogPage({ searchParams }) {
             <p className="text-gray-600 leading-relaxed max-w-3xl mx-auto">
               {selectedCategory
                 ? `Découvrez tous nos articles dans la catégorie "${selectedCategory.label}".`
-                : "Retrouvez nos articles dédiés aux transferts aéroport de Nice, aux trajets vers Monaco, Antibes, Cannes et à nos services conventionnés. Chaque guide est rédigé en interne pour répondre aux questions les plus fréquentes de nos passagers."}
+                : "Retrouvez nos articles dédiés aux transferts aéroport de Nice, aux trajets vers Monaco, Cannes et Nice, et à nos services conventionnés. Chaque guide est rédigé en interne pour répondre aux questions les plus fréquentes de nos passagers."}
             </p>
           </div>
         </div>

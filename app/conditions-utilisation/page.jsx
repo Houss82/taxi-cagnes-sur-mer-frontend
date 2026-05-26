@@ -53,7 +53,7 @@ export default function ConditionsUtilisation() {
               </p>
               <ul className="list-disc list-inside text-muted-foreground space-y-2 ml-4">
                 <li>Transferts aéroport Nice Côte d'Azur</li>
-                <li>Trajets vers Monaco, Antibes, Cannes et autres destinations</li>
+                <li>Trajets vers Monaco, Cannes, Nice et autres destinations</li>
                 <li>Service de chauffeur privé 24/7</li>
                 <li>Transport pour événements et groupes</li>
               </ul>

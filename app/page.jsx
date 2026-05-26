@@ -15,6 +15,7 @@ import {
   Users,
 } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import Script from "next/script";
 import VehicleCarousel from "./components/client/VehicleCarousel";
 import HeroBackgroundSlider from "./components/client/HeroBackgroundSlider";
@@ -22,6 +23,7 @@ import FloatingCallButtons from "./components/client/FloatingCallButtons";
 import HeroCallButton from "./components/client/HeroCallButton";
 import Button from "./components/ui/Button";
 import Card from "./components/ui/Card";
+import { listSectors, ZONES_DESSERVIES_PATH } from "./lib/sectorsData";
 
 const vehicles = [
   { name: "Berline", image: "/taxi-cagnes-glb.png" },
@@ -98,7 +100,7 @@ export default function Home() {
               <strong className="font-bold text-primary">gares SNCF</strong>,
               les hôtels, résidences de vacances et les villes voisines comme{" "}
               <strong className="font-bold text-primary">
-                Antibes, Nice, Cannes ou Monaco
+                Nice, Cannes ou Monaco
               </strong>
               .
             </p>
@@ -130,7 +132,7 @@ export default function Home() {
               {
                 icon: Compass,
                 label: "Longue Distance",
-                desc: "Monaco, Antibes, Cannes",
+                desc: "Monaco, Nice, Cannes",
               },
             ].map((service, i) => {
               const Icon = service.icon;
@@ -147,6 +149,76 @@ export default function Home() {
                 </Card>
               );
             })}
+          </div>
+        </div>
+      </section>
+
+      {/* Zones desservies — maillage SEO local */}
+      <section className="py-16 bg-linear-to-b from-slate-50 to-white border-y border-slate-100">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8 mb-10">
+            <div className="max-w-2xl">
+              <p className="text-sm font-semibold text-accent uppercase tracking-wide mb-2">
+                Côte d&apos;Azur
+              </p>
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 text-balance">
+                Zones où nous venons vous chercher
+              </h2>
+              <p className="text-gray-700 leading-relaxed text-lg">
+                En plus des courses à{" "}
+                <strong className="text-gray-900">Cagnes-sur-Mer</strong>, nous ouvrons des{" "}
+                <strong className="text-gray-900">pages locales</strong> pour les trajets qui reviennent souvent : liaison{" "}
+                <Link
+                  href="/services/transfert-aeroport"
+                  className="text-accent underline font-medium hover:opacity-90"
+                >
+                  aéroport Nice
+                </Link>
+                , gares SNCF ou{" "}
+                <Link
+                  href="/services/taxi-conventionne-cagnes-sur-mer"
+                  className="text-accent underline font-medium hover:opacity-90"
+                >
+                  transports médicaux CPAM
+                </Link>
+                lorsque vos droits le permettent. Chaque fiche précise temps de route habituels, dépose et exemples utiles pour réserver sans stress.
+              </p>
+            </div>
+            <Button
+              href={ZONES_DESSERVIES_PATH}
+              variant="outline"
+              className="border-primary text-primary shrink-0 self-start lg:self-auto"
+              size="lg"
+            >
+              Voir la carte des zones →
+            </Button>
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            {listSectors().map((zone) => (
+              <Link
+                key={zone.path}
+                href={zone.path}
+                className="group rounded-xl border border-gray-200 bg-white px-5 py-4 shadow-sm hover:shadow-md hover:border-accent/30 transition-all flex flex-col gap-1"
+              >
+                <span className="font-bold text-gray-900 group-hover:text-accent transition-colors">
+                  Taxi {zone.displayName}
+                </span>
+                <span className="text-xs text-gray-600 leading-snug line-clamp-2">
+                  {zone.hubTeaser}
+                </span>
+              </Link>
+            ))}
+            <Link
+              href="/services/transfert-aeroport"
+              className="group rounded-xl border-2 border-dashed border-accent/40 bg-accent/5 px-5 py-4 flex flex-col justify-center hover:bg-accent/10 transition-colors min-h-21"
+            >
+              <span className="font-bold text-primary group-hover:text-accent">
+                Taxi aéroport Nice
+              </span>
+              <span className="text-xs text-gray-700 mt-1">
+                De la région ou vers Nice Côte d&apos;Azur
+              </span>
+            </Link>
           </div>
         </div>
       </section>
@@ -260,13 +332,13 @@ export default function Home() {
                 <strong className="font-bold text-primary text-lg">
                   Renoir Museum
                 </strong>
-                , profiter des plages familiales ou rejoindre rapidement{" "}
+                , profiter des plages familiales                 ou rejoindre rapidement{" "}
                 <strong className="font-bold text-primary text-lg">
                   Monaco
                 </strong>{" "}
                 ou{" "}
                 <strong className="font-bold text-primary text-lg">
-                  Antibes
+                  Cannes
                 </strong>
                 , notre service répond à tous vos besoins de mobilité sur la
                 Côte d&apos;Azur.
@@ -626,7 +698,6 @@ export default function Home() {
             areaServed: [
               "Cagnes-sur-Mer",
               "Nice",
-              "Antibes",
               "Monaco",
               "Cannes",
               "Alpes-Maritimes",

@@ -569,3 +569,162 @@ html {
 .animate-pulse-ring {
   animation: pulse-ring 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
+
+/* ---------- Pages villes / secteurs : animations CSS uniquement (pas de use client) ---------- */
+@keyframes sector-rise {
+  from {
+    opacity: 0;
+    transform: translateY(1.65rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes sector-soft-scale {
+  from {
+    opacity: 0;
+    transform: scale(1.035);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Hero services : zoom sans opacity — évite « film blanc » (main #fff) si z-index / fin d’anim foireux */
+@keyframes sector-hero-zoom {
+  from {
+    transform: scale(1.045);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* Révélation au scroll : pas d'opacity ici — sinon les sections courtes (ex. CTA en bas)
+   ne finissent jamais la plage view() et restent semi-transparentes au-dessus du main blanc = « film blanc ». */
+@keyframes sector-view-slide {
+  from {
+    transform: translateY(1.65rem);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .sector-anim-in {
+    animation: sector-rise 0.75s cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+
+  .sector-anim-delay-1 {
+    animation-delay: 90ms;
+  }
+  .sector-anim-delay-2 {
+    animation-delay: 0.17s;
+  }
+  .sector-anim-delay-3 {
+    animation-delay: 0.25s;
+  }
+  .sector-anim-delay-4 {
+    animation-delay: 0.33s;
+  }
+
+  .sector-hero-ken {
+    animation: sector-soft-scale 1.1s cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+
+  /* Pages services (ServiceHero) : pas d’opacity sur la photo */
+  .sector-hero-image-pop {
+    animation: sector-hero-zoom 1.1s cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+
+  @supports (animation-timeline: view()) {
+    .sector-view-reveal {
+      animation: sector-view-slide 0.75s cubic-bezier(0.22, 1, 0.36, 1) both;
+      animation-timeline: view();
+      animation-range: entry 0% cover 32%;
+    }
+  }
+
+  .sector-stagger > * {
+    animation: sector-rise 0.65s cubic-bezier(0.22, 1, 0.36, 1) both;
+    opacity: 0;
+    animation-fill-mode: forwards;
+  }
+  .sector-stagger > *:nth-child(1) {
+    animation-delay: 40ms;
+  }
+  .sector-stagger > *:nth-child(2) {
+    animation-delay: 0.11s;
+  }
+  .sector-stagger > *:nth-child(3) {
+    animation-delay: 0.18s;
+  }
+  .sector-stagger > *:nth-child(4) {
+    animation-delay: 0.25s;
+  }
+  .sector-stagger > *:nth-child(5) {
+    animation-delay: 0.32s;
+  }
+  .sector-stagger > *:nth-child(6) {
+    animation-delay: 0.39s;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sector-anim-in,
+  .sector-anim-delay-1,
+  .sector-anim-delay-2,
+  .sector-anim-delay-3,
+  .sector-anim-delay-4,
+  .sector-hero-ken,
+  .sector-hero-image-pop,
+  .sector-view-reveal {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  .sector-stagger > * {
+    animation: none !important;
+    opacity: 1 !important;
+  }
+}
+
+.sector-media-hover {
+  transition: transform 0.65s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.group:hover .sector-media-hover {
+  transform: scale(1.045);
+}
+
+.sector-card {
+  transition:
+    transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.sector-card:hover {
+  transform: translateY(-6px);
+  box-shadow:
+    0 24px 50px -20px rgb(0 0 0 / 0.16),
+    0 12px 24px -14px rgb(0 0 0 / 0.08);
+}
+
+.sector-soft-grid {
+  background-image:
+    radial-gradient(circle at 1px 1px, rgb(0 0 0 / 0.06) 1px, transparent 0);
+  background-size: 1.35rem 1.35rem;
+}
+
+.sector-faq-chevron {
+  transition: transform 0.22s ease;
+}
+
+.sector-faq-details[open] > summary .sector-faq-chevron {
+  transform: rotate(90deg);
+}

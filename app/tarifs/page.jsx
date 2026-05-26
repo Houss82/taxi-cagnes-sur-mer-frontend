@@ -10,16 +10,15 @@ import Card from "../components/ui/Card";
 export const metadata = {
   title: "Tarifs - Taxi Cagnes-sur-Mer",
   description:
-    "Tarifs transparents pour transferts aéroport Nice, Monaco, Antibes, Cannes. Prix fixes sans surprise. Service premium à des tarifs compétitifs.",
+    "Tarifs transparents pour transferts aéroport Nice, Monaco, Cannes. Prix fixes sans surprise. Service premium à des tarifs compétitifs.",
   keywords:
-    "tarifs taxi cagnes-sur-mer, prix transfert aéroport nice, tarif taxi monaco, prix taxi antibes",
+    "tarifs taxi cagnes-sur-mer, prix transfert aéroport nice, tarif taxi monaco, taxi côte d'azur",
 };
 
 export default function Pricing() {
   const routes = [
     { from: "Aéroport Nice", to: "Cagnes-sur-Mer", priceMin: 35, priceMax: 50 },
     { from: "Cagnes-sur-Mer", to: "Monaco", priceMin: 90, priceMax: 110 },
-    { from: "Cagnes-sur-Mer", to: "Antibes", priceMin: 35, priceMax: 50 },
     { from: "Cagnes-sur-Mer", to: "Cannes", priceMin: 60, priceMax: 80 },
     { from: "Cagnes-sur-Mer", to: "Nice", priceMin: 40, priceMax: 50 },
   ];

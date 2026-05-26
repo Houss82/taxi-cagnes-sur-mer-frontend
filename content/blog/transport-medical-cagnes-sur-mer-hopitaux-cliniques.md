@@ -26,6 +26,12 @@ En tant que service de transport local spécialisé dans l'accompagnement médic
 
 </div>
 
+<div class="info-box">
+
+<strong>Zones voisines :</strong> retrouvez aussi nos fiches locales (délais, gares, médical) sur la page <a href="/zones-desservies">Zones desservies</a> — par ex. Villeneuve-Loubet, Saint-Laurent-du-Var, Vence, Antibes.
+
+</div>
+
 ---
 
 ## 📊 Pourquoi un transport médical adapté est essentiel ?

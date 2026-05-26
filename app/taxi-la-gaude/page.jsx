@@ -4,8 +4,8 @@ export const revalidate = 3600;
 import SectorLandingTemplate from "../components/SectorLandingTemplate";
 import { generateSectorMetadata } from "../lib/sectorPageMetadata";
 
-export const metadata = generateSectorMetadata("vence");
+export const metadata = generateSectorMetadata("la-gaude");
 
-export default function TaxiVencePage() {
-  return <SectorLandingTemplate sectorId="vence" />;
+export default function TaxiLaGaudePage() {
+  return <SectorLandingTemplate sectorId="la-gaude" />;
 }

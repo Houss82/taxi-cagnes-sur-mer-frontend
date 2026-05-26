@@ -53,8 +53,33 @@ export default function sitemap() {
       changeFrequency: "monthly",
     },
     {
+      path: "/zones-desservies",
+      priority: 0.9,
+      changeFrequency: "weekly",
+    },
+    {
       path: "/taxi-vence",
-      priority: 0.8,
+      priority: 0.85,
+      changeFrequency: "monthly",
+    },
+    {
+      path: "/taxi-la-colle-sur-loup",
+      priority: 0.85,
+      changeFrequency: "monthly",
+    },
+    {
+      path: "/taxi-la-gaude",
+      priority: 0.85,
+      changeFrequency: "monthly",
+    },
+    {
+      path: "/taxi-saint-paul-de-vence",
+      priority: 0.85,
+      changeFrequency: "monthly",
+    },
+    {
+      path: "/taxi-biot",
+      priority: 0.85,
       changeFrequency: "monthly",
     },
     { path: "/contact", priority: 0.8, changeFrequency: "monthly" },
