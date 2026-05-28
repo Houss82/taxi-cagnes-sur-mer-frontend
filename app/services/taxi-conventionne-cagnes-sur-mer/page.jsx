@@ -456,7 +456,7 @@ export default function TransportMedical() {
                 Mercedes Classe V
               </h3>
               <ul className="space-y-2 text-neutral-700 text-[15px]">
-                <li>• Capacité : jusqu'à 7 passagers</li>
+                <li>• Capacité : {"jusqu'à 7 passagers"}</li>
                 <li>• Espace pour fauteuils roulants</li>
                 <li>• Portes coulissantes, hauteur adaptée</li>
                 <li>• Idéal pour mobilité réduite</li>
@@ -629,7 +629,7 @@ export default function TransportMedical() {
                   </tr>
                   <tr className="bg-gray-50 hover:bg-gray-100">
                     <td className="border border-gray-300 px-4 py-3 font-semibold">
-                      Polyclinique de l'Europe (Antibes)
+                      {"Polyclinique de l'Europe (Antibes)"}
                     </td>
                     <td className="border border-gray-300 px-4 py-3">
                       Transport médical
