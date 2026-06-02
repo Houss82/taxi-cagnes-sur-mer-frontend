@@ -708,7 +708,10 @@ export default function Home() {
               addressRegion: "Provence-Alpes-Côte d'Azur",
               addressCountry: "FR",
             },
-            sameAs: ["https://maps.app.goo.gl/D6j4275xTCxMfvXP6"],
+            sameAs: [
+              "https://maps.app.goo.gl/D6j4275xTCxMfvXP6",
+              "https://hoodspot.fr/taxi/taxi-cagnes-sur-mer-asm-98534585900013/",
+            ],
           }),
         }}
       />

@@ -118,6 +118,17 @@ export default function Footer() {
                   Contact / devis écrit
                 </Link>
               </li>
+              <li>
+                <a
+                  href="https://hoodspot.fr/taxi/taxi-cagnes-sur-mer-asm-98534585900013/"
+                  title="taxi Cagnes sur Mer ASM"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-accent transition-colors"
+                >
+                  Fiche annuaire Hoodspot
+                </a>
+              </li>
             </ul>
             <div className="mt-8 space-y-3 text-primary-foreground/90">
               <p className="flex items-start gap-2">
