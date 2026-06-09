@@ -26,6 +26,12 @@ En tant que service de transport local établi à Cagnes-sur-Mer, nous effectuon
 
 </div>
 
+<div class="info-box">
+
+<strong>📌 Quel guide lire ?</strong> **Cet article** couvre le <strong>trajet taxi</strong> Cagnes-sur-Mer → <strong>Centre Antoine Lacassagne</strong> (oncologie, chimio, radio, itinéraires, tarifs, CPAM). Pour le <strong>panorama transport médical</strong> (tous hôpitaux & cliniques de la Côte), voir [Transport médical Cagnes-sur-Mer](/blog/transport-medical-cagnes-sur-mer-hopitaux-cliniques). Pour le <strong>CHU Nice</strong> (Pasteur, Cimiez, Archet) ou <strong>Pasteur en taxi conventionné</strong> : [guide CHU](/blog/taxi-cagnes-sur-mer-chu-nice-guide-trajet) · [taxi conventionné Pasteur](/blog/taxi-conventionne-cpam-cagnes-sur-mer-hopital-pasteur-nice-2026).
+
+</div>
+
 ---
 
 ## 📊 Pourquoi un guide pratique pour le trajet Cagnes-sur-Mer → Centre Antoine Lacassagne ?
@@ -54,7 +60,7 @@ C'est souvent vers le Centre Antoine Lacassagne que les patients de Cagnes-sur-M
 
 <strong>💡 Expertise locale :</strong> Nos chauffeurs connaissent parfaitement le Centre Antoine Lacassagne et les meilleurs itinéraires selon l'heure de la journée. Nos clients apprécient la ponctualité, le confort et la sérénité lors de leurs trajets vers le centre, surtout après les séances de traitement.
 
-**💡 Transport remboursé (CPAM) :** La prise en charge dépend de votre situation et d'une prescription médicale. Pour vérifier vos droits, demandez conseil à votre médecin et/ou à votre CPAM. Nous pouvons vous expliquer les documents généralement demandés lors de la réservation. Découvrez notre service de [**taxi conventionné CPAM à Cagnes-sur-Mer**](/services/taxi-conventionne-cagnes-sur-mer) pour plus d'informations.
+**💡 Transport remboursé (CPAM) :** prescription médicale obligatoire — voir [taxi conventionné CPAM](/services/taxi-conventionne-cagnes-sur-mer) et, pour Pasteur (examens complémentaires), le [guide conventionné Pasteur](/blog/taxi-conventionne-cpam-cagnes-sur-mer-hopital-pasteur-nice-2026). Panorama global : [transport médical Cagnes-sur-Mer](/blog/transport-medical-cagnes-sur-mer-hopitaux-cliniques).
 
 </div>
 
@@ -433,9 +439,10 @@ Pour réserver votre **taxi Cagnes-sur-Mer → Centre Antoine Lacassagne**, cont
 ## 🔗 Liens utiles
 
 - [Centre Antoine Lacassagne - Site officiel](https://www.centreantoinelacassagne.org/)
-- [Taxi conventionné CPAM Cagnes-sur-Mer](/services/taxi-conventionne-cagnes-sur-mer)
-- [Transport médical Cagnes-sur-Mer](/content/blog/transport-medical-cagnes-sur-mer-hopitaux-cliniques)
-- [Taxi Cagnes-sur-Mer → CHU Nice](/content/blog/taxi-cagnes-sur-mer-chu-nice-guide-trajet)
+- [Transport médical Cagnes-sur-Mer](/blog/transport-medical-cagnes-sur-mer-hopitaux-cliniques) – Panorama hôpitaux & cliniques
+- [Taxi Cagnes-sur-Mer → CHU Nice](/blog/taxi-cagnes-sur-mer-chu-nice-guide-trajet) – Pasteur, Cimiez, Archet
+- [Taxi conventionné CPAM → Pasteur](/blog/taxi-conventionne-cpam-cagnes-sur-mer-hopital-pasteur-nice-2026)
+- [Taxi conventionné CPAM](/services/taxi-conventionne-cagnes-sur-mer)
 
 ---
 

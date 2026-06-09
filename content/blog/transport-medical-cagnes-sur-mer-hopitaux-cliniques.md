@@ -28,7 +28,12 @@ En tant que service de transport local spécialisé dans l'accompagnement médic
 
 <div class="info-box">
 
-<strong>Zones voisines :</strong> retrouvez aussi nos fiches locales (délais, gares, médical) sur la page <a href="/zones-desservies">Zones desservies</a> — par ex. Villeneuve-Loubet, Saint-Laurent-du-Var, Vence, Antibes.
+<strong>📌 Quel guide lire ?</strong> **Cet article** est le <strong>panorama transport médical</strong> depuis Cagnes (tous hôpitaux & cliniques, types de service, véhicules, réservation). Pour aller plus loin sur une destination précise :
+- [Guide CHU Nice](/blog/taxi-cagnes-sur-mer-chu-nice-guide-trajet) — Pasteur, Cimiez, Archet (trajets & accès)
+- [Taxi conventionné → Pasteur](/blog/taxi-conventionne-cpam-cagnes-sur-mer-hopital-pasteur-nice-2026) — CPAM, prescription, tiers payant
+- [Centre Antoine Lacassagne](/blog/taxi-cagnes-sur-mer-centre-antoine-lacassagne-nice) — oncologie & radiothérapie
+
+<strong>Zones voisines :</strong> fiches locales sur <a href="/zones-desservies">Zones desservies</a> — Villeneuve-Loubet, Saint-Laurent-du-Var, Vence, Antibes.
 
 </div>
 
@@ -38,10 +43,10 @@ En tant que service de transport local spécialisé dans l'accompagnement médic
 
 Selon nos statistiques internes et les données de l'[Observatoire Régional de la Santé PACA](https://www.orspaca.org/), **plus de 35% des résidents de Cagnes-sur-Mer** doivent se déplacer régulièrement vers des établissements de santé situés à Nice, Cannes ou Antibes pour :
 
-- **Consultations spécialisées** : cardiologie, oncologie, neurologie, ophtalmologie
+- **Consultations spécialisées** : cardiologie, neurologie, ophtalmologie ([CHU Nice](/blog/taxi-cagnes-sur-mer-chu-nice-guide-trajet)), oncologie ([Lacassagne](/blog/taxi-cagnes-sur-mer-centre-antoine-lacassagne-nice))
 - **Examens médicaux** : IRM, scanner, échographie, analyses biologiques
 - **Chirurgie ambulatoire** : interventions nécessitant un transport sécurisé
-- **Suivi médical régulier** : dialyse, chimiothérapie, rééducation
+- **Suivi médical régulier** : dialyse ([guide Pasteur CPAM](/blog/taxi-conventionne-cpam-cagnes-sur-mer-hopital-pasteur-nice-2026)), chimiothérapie ([Lacassagne](/blog/taxi-cagnes-sur-mer-centre-antoine-lacassagne-nice)), rééducation
 - **Urgences médicales** : transport vers les services d'urgence
 - **Accompagnement personnes âgées** : rendez-vous médicaux, visites hospitalières
 
@@ -51,7 +56,7 @@ Selon nos statistiques internes et les données de l'[Observatoire Régional de 
 
 <strong>💡 Expertise médicale :</strong> Nos chauffeurs sont formés à l'accompagnement médical et connaissent parfaitement les accès aux établissements de santé de la région. **92% de nos clients** choisissent notre service pour la ponctualité, le confort et la sérénité lors de leurs déplacements médicaux.
 
-**💡 Remboursement CPAM :** Si vous avez besoin d'un transport médical remboursé par l'Assurance Maladie, découvrez notre service de [**taxi conventionné CPAM à Cagnes-sur-Mer**](/services/taxi-conventionne-cagnes-sur-mer) qui vous permet de bénéficier du remboursement de vos trajets médicaux vers les hôpitaux et cliniques de la région.
+**💡 Remboursement CPAM :** voir le [guide taxi conventionné → Hôpital Pasteur](/blog/taxi-conventionne-cpam-cagnes-sur-mer-hopital-pasteur-nice-2026) (prescription, documents, ALD) et la page [taxi conventionné CPAM](/services/taxi-conventionne-cagnes-sur-mer).
 
 </div>
 
@@ -61,23 +66,51 @@ Selon nos statistiques internes et les données de l'[Observatoire Régional de 
 
 ### 📍 Centre Hospitalier Universitaire (CHU) de Nice
 
-Le **CHU de Nice** est le plus grand établissement hospitalier de la région, avec **plus de 2 000 lits** et une offre de soins complète. Il comprend plusieurs sites :
+Le **CHU de Nice** regroupe **plusieurs sites** (Pasteur, Cimiez, Archet, Saint-Roch…) — chacun avec des spécialités et des accès différents. **Ne réservez pas « CHU Nice » sans préciser le site** : c’est l’erreur la plus fréquente depuis Cagnes-sur-Mer.
 
-- **Hôpital Pasteur** : Urgences adultes, cardiologie, neurologie, chirurgie
-- **Hôpital de Cimiez** : Gériatrie, rééducation fonctionnelle, soins de suite
-- **Hôpital Archet** : Maternité, pédiatrie, cancérologie, urgences pédiatriques
-- **Hôpital Saint-Roch** : Urgences, médecine interne, chirurgie digestive
+<table style="width: 100%; border-collapse: collapse; margin: 1rem 0;">
+  <thead>
+    <tr style="background-color: #3b82f6;">
+      <th style="padding: 10px; text-align: left; border: 1px solid #e5e7eb; color: #fff;">Site CHU</th>
+      <th style="padding: 10px; text-align: left; border: 1px solid #e5e7eb; color: #fff;">En bref</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="padding: 10px; border: 1px solid #e5e7eb;"><strong>Pasteur</strong></td>
+      <td style="padding: 10px; border: 1px solid #e5e7eb;">Urgences adultes, cardio, neuro, chirurgie</td>
+    </tr>
+    <tr style="background-color: #f9fafb;">
+      <td style="padding: 10px; border: 1px solid #e5e7eb;"><strong>Cimiez</strong></td>
+      <td style="padding: 10px; border: 1px solid #e5e7eb;">Gériatrie, rééducation, soins de suite</td>
+    </tr>
+    <tr>
+      <td style="padding: 10px; border: 1px solid #e5e7eb;"><strong>Archet</strong></td>
+      <td style="padding: 10px; border: 1px solid #e5e7eb;">Maternité, pédiatrie, urgences enfants</td>
+    </tr>
+  </tbody>
+</table>
 
-<img src="/hopital-nice-chu.png" alt="CHU de Nice - Centre Hospitalier Universitaire avec plusieurs sites hospitaliers pour soins spécialisés et urgences" style="max-width: 100%; height: auto; border-radius: 0.75rem; margin: 1.5rem 0;" />
+**Tarif indicatif** : à partir de **40 €** depuis Cagnes · **Durée** : 20–35 min selon site et trafic.
 
-**Distance depuis Cagnes-sur-Mer** : 12-15 km selon le site  
-**Durée du trajet** : 20-30 minutes selon le trafic  
-**Parking** : Très limité, souvent complet dès 8h  
-**Transport en commun** : Bus ligne 200, arrêt à 300-500 mètres des entrées
+👉 **Guides détaillés** (itinéraires, accès, erreurs à éviter) :
+- [Taxi Cagnes-sur-Mer → CHU Nice](/blog/taxi-cagnes-sur-mer-chu-nice-guide-trajet) — Pasteur, Cimiez, Archet
+- [Taxi conventionné CPAM → Pasteur](/blog/taxi-conventionne-cpam-cagnes-sur-mer-hopital-pasteur-nice-2026) — remboursement Assurance Maladie
 
-👉 **En transport médical** : Dépose directe aux **entrées principales** de chaque site hospitalier, évitant les difficultés de stationnement et les longues marches depuis les parkings. Nos chauffeurs connaissent les meilleurs accès selon votre service médical.
+---
 
-**Tarif transport médical depuis Cagnes-sur-Mer** : À partir de 40€ (trajet vers CHU Nice)
+### 📍 Centre Antoine Lacassagne (Nice) — cancérologie
+
+Le **Centre Antoine Lacassagne** est le **centre de référence en cancérologie** de Nice : **consultations oncologiques**, **chimiothérapie**, **radiothérapie**, chirurgie oncologique et soins de support. Ce n’est **pas** un site du CHU — l’adresse, les accès et les parkings sont **différents** de Pasteur ou de l’Archet.
+
+📍 **Adresse** : 33, avenue de Valombrose – 06189 Nice Cedex 2  
+**Tarif indicatif** : à partir de **40 €** depuis Cagnes · **Durée** : 20–30 min selon trafic
+
+**Motifs fréquents** : séances de **chimio** ou **radio** hebdomadaires, consultation oncologue, examens de suivi.
+
+👉 **Guide détaillé** (itinéraires, horaires de départ, fatigue post-traitement, CPAM) : [Taxi Cagnes-sur-Mer → Centre Antoine Lacassagne](/blog/taxi-cagnes-sur-mer-centre-antoine-lacassagne-nice)
+
+**Dialyse** : souvent orientée vers Pasteur ou un centre dédié — voir le [guide taxi conventionné Pasteur](/blog/taxi-conventionne-cpam-cagnes-sur-mer-hopital-pasteur-nice-2026) pour les trajets réguliers remboursés.
 
 ---
 
@@ -153,9 +186,10 @@ Pour vos **consultations médicales**, **examens spécialisés** ou **suivi méd
 
 **Cas d'usage fréquents** :
 
-- Consultations cardiologie, neurologie, oncologie
+- Consultations cardiologie, neurologie → [CHU Nice](/blog/taxi-cagnes-sur-mer-chu-nice-guide-trajet)
+- Oncologie, chimiothérapie, radiothérapie → [Centre Antoine Lacassagne](/blog/taxi-cagnes-sur-mer-centre-antoine-lacassagne-nice)
 - Examens IRM, scanner, échographie
-- Suivi dialyse, chimiothérapie
+- Suivi dialyse → [taxi conventionné Pasteur](/blog/taxi-conventionne-cpam-cagnes-sur-mer-hopital-pasteur-nice-2026)
 - Consultations ophtalmologie, dermatologie
 
 ### 🚨 Transport urgences médicales
@@ -194,7 +228,7 @@ Pour les **visites hospitalières**, **accompagnement lors d'hospitalisation** o
 - Visiter vos proches hospitalisés sans stress de stationnement
 - Accompagner un membre de famille à un rendez-vous médical
 - Transporter plusieurs personnes vers un établissement de santé
-- Réaliser des allers-retours réguliers (dialyse, chimiothérapie)
+- Réaliser des allers-retours réguliers (dialyse, [chimiothérapie Lacassagne](/blog/taxi-cagnes-sur-mer-centre-antoine-lacassagne-nice))
 
 ---
 
@@ -211,16 +245,10 @@ Pour les **visites hospitalières**, **accompagnement lors d'hospitalisation** o
   </thead>
   <tbody>
     <tr>
-      <td style="padding: 12px; border: 1px solid #e5e7eb;"><strong>CHU Nice (Pasteur)</strong></td>
-      <td style="padding: 12px; border: 1px solid #e5e7eb;">15 km</td>
-      <td style="padding: 12px; border: 1px solid #e5e7eb;">25-30 min</td>
-      <td style="padding: 12px; border: 1px solid #e5e7eb;"><strong>40€</strong></td>
-    </tr>
-    <tr style="background-color: #f9fafb;">
-      <td style="padding: 12px; border: 1px solid #e5e7eb;"><strong>CHU Nice (Cimiez)</strong></td>
-      <td style="padding: 12px; border: 1px solid #e5e7eb;">14 km</td>
-      <td style="padding: 12px; border: 1px solid #e5e7eb;">20-25 min</td>
-      <td style="padding: 12px; border: 1px solid #e5e7eb;"><strong>38€</strong></td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;"><strong>CHU Nice</strong> <a href="/blog/taxi-cagnes-sur-mer-chu-nice-guide-trajet">(détail par site)</a></td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;">14–18 km</td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;">20–35 min</td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;"><strong>40–42€</strong></td>
     </tr>
     <tr>
       <td style="padding: 12px; border: 1px solid #e5e7eb;"><strong>Hôpital Cannes</strong></td>
@@ -241,15 +269,15 @@ Pour les **visites hospitalières**, **accompagnement lors d'hospitalisation** o
       <td style="padding: 12px; border: 1px solid #e5e7eb;"><strong>25€</strong></td>
     </tr>
     <tr style="background-color: #f9fafb;">
-      <td style="padding: 12px; border: 1px solid #e5e7eb;"><strong>Centre de dialyse Nice</strong></td>
-      <td style="padding: 12px; border: 1px solid #e5e7eb;">14 km</td>
-      <td style="padding: 12px; border: 1px solid #e5e7eb;">20-25 min</td>
-      <td style="padding: 12px; border: 1px solid #e5e7eb;"><strong>38€</strong></td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;"><strong>Centre Antoine Lacassagne</strong> <a href="/blog/taxi-cagnes-sur-mer-centre-antoine-lacassagne-nice">(guide)</a></td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;">~14 km</td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;">20–30 min</td>
+      <td style="padding: 12px; border: 1px solid #e5e7eb;"><strong>40€</strong></td>
     </tr>
   </tbody>
 </table>
 
-**💶 Tarifs transport médical** : Les prix sont **fixes et transparents**, annoncés dès la réservation. Pour les **trajets réguliers** (dialyse, chimiothérapie), des tarifs préférentiels peuvent être proposés. Les **suppléments** (attente, nuit, dimanche) sont communiqués à l'avance.
+**💶 Tarifs transport médical** : Les prix sont **fixes et transparents**, annoncés dès la réservation. Pour les **trajets réguliers** (séries [chimio/radio à Lacassagne](/blog/taxi-cagnes-sur-mer-centre-antoine-lacassagne-nice), [dialyse conventionnée](/blog/taxi-conventionne-cpam-cagnes-sur-mer-hopital-pasteur-nice-2026)), des tarifs préférentiels peuvent être proposés. Les **suppléments** (attente, nuit, dimanche) sont communiqués à l'avance.
 
 <div class="info-box">
 
@@ -341,7 +369,7 @@ Le **transport médical en taxi** peut être pris en charge par la Sécurité So
 - **Justification médicale** : Le transport doit être justifié par votre état de santé (mobilité réduite, urgence, équipements médicaux)
 - **Tiers payant** : Certains établissements de santé peuvent organiser le transport en tiers payant
 
-**Important** : Contactez votre **caisse primaire d'assurance maladie (CPAM)** pour connaître les conditions exactes de remboursement selon votre situation. Nous pouvons vous fournir les justificatifs nécessaires (facture détaillée, justificatif de trajet).
+**Important** : Contactez votre **CPAM** pour les conditions exactes. Guide détaillé Pasteur : [taxi conventionné CPAM](/blog/taxi-conventionne-cpam-cagnes-sur-mer-hopital-pasteur-nice-2026). Nous fournissons les justificatifs (facture, trajet).
 
 </details>
 
@@ -373,7 +401,7 @@ Oui, notre **Mercedes Classe V** est adapté pour le transport de **fauteuils ro
 
 <summary><strong>4. Combien de temps à l'avance dois-je réserver ?</strong></summary>
 
-Pour les **rendez-vous médicaux**, nous recommandons de réserver **au moins 2h à l'avance** pour garantir la disponibilité et la ponctualité. Pour les **rendez-vous réguliers** (dialyse, chimiothérapie), vous pouvez réserver plusieurs trajets à l'avance pour garantir la disponibilité.
+Pour les **rendez-vous médicaux**, nous recommandons de réserver **au moins 2h à l'avance**. Pour les **séries de traitement** ([Lacassagne](/blog/taxi-cagnes-sur-mer-centre-antoine-lacassagne-nice), dialyse), réservez plusieurs trajets à l'avance — voir les guides dédiés pour les créneaux habituels.
 
 **En cas d'urgence** : Appelez-nous directement, nous ferons notre maximum pour vous transporter rapidement selon nos disponibilités.
 
@@ -393,7 +421,7 @@ Oui, vous pouvez être **accompagné** lors de votre rendez-vous médical. Nos v
 
 <summary><strong>6. Proposez-vous des tarifs préférentiels pour les trajets réguliers ?</strong></summary>
 
-Oui, pour les **trajets réguliers** (dialyse, chimiothérapie, consultations de suivi), nous proposons des **tarifs préférentiels** :
+Oui, pour les **trajets réguliers** (dialyse, [chimiothérapie au Lacassagne](/blog/taxi-cagnes-sur-mer-centre-antoine-lacassagne-nice), consultations de suivi), nous proposons des **tarifs préférentiels** :
 
 - **Forfait mensuel** : Pour plusieurs trajets par mois vers le même établissement
 - **Réduction** : Selon la fréquence et la régularité des trajets
@@ -409,7 +437,10 @@ Oui, pour les **trajets réguliers** (dialyse, chimiothérapie, consultations de
 
 Pour continuer votre découverte de nos services de transport :
 
-- 👉 [**Taxi Conventionné CPAM Cagnes-sur-Mer**](/services/taxi-conventionne-cagnes-sur-mer) – Transport médical remboursé par l'Assurance Maladie
+- 👉 [Guide CHU Nice — Pasteur, Cimiez, Archet](/blog/taxi-cagnes-sur-mer-chu-nice-guide-trajet) – Trajets taxi classique vers chaque site
+- 👉 [Guide Centre Antoine Lacassagne](/blog/taxi-cagnes-sur-mer-centre-antoine-lacassagne-nice) – Oncologie, chimio, radiothérapie
+- 👉 [Taxi conventionné CPAM → Hôpital Pasteur](/blog/taxi-conventionne-cpam-cagnes-sur-mer-hopital-pasteur-nice-2026) – Prescription, tiers payant, ALD
+- 👉 [**Taxi Conventionné CPAM**](/services/taxi-conventionne-cagnes-sur-mer) – Page service Assurance Maladie
 - 👉 [Taxi conventionné vers Monaco (CHPG & centres médicaux)](/blog/taxi-conventionne-cagnes-sur-mer-monaco-centres-medicaux-2026) – Trajets médicaux vers la Principauté depuis Cagnes-sur-Mer
 - 👉 [Réservation transport médical](/reservation) – Réservez votre trajet vers les établissements de santé
 - 👉 [Services de transport](/services) – Découvrez tous nos services disponibles
@@ -422,9 +453,9 @@ Pour continuer votre découverte de nos services de transport :
 
 Le **transport médical depuis Cagnes-sur-Mer** vers les hôpitaux et cliniques de la Côte d'Azur est essentiel pour garantir vos déplacements médicaux en toute sérénité. Que vous ayez un rendez-vous médical, une consultation spécialisée, un examen ou besoin d'un accompagnement pour une personne à mobilité réduite, notre service vous garantit un transport confortable, ponctuel et adapté à vos besoins de santé.
 
-Avec **plus de 50 établissements de santé** accessibles depuis Cagnes-sur-Mer (CHU Nice, Hôpital Cannes, cliniques privées), notre expertise locale vous permet d'optimiser vos déplacements médicaux, en évitant les difficultés de stationnement, les retards liés au trafic et le stress des transports en commun.
+Avec **plus de 50 établissements de santé** accessibles depuis Cagnes-sur-Mer ([CHU Nice](/blog/taxi-cagnes-sur-mer-chu-nice-guide-trajet), [Centre Antoine Lacassagne](/blog/taxi-cagnes-sur-mer-centre-antoine-lacassagne-nice), Hôpital Cannes, cliniques privées), notre expertise locale vous permet d'optimiser vos déplacements médicaux.
 
-**Bon à savoir** : Nos chauffeurs connaissent parfaitement les accès aux établissements de santé de la région et peuvent vous conseiller les meilleurs itinéraires selon votre destination médicale. Pour les trajets réguliers (dialyse, chimiothérapie), des tarifs préférentiels peuvent être proposés.
+**Bon à savoir** : pour une destination précise, consultez les **guides dédiés** (CHU, Lacassagne, Pasteur CPAM) plutôt que de tout chercher ici — chaque article détaille trajets, accès et réservation pour un parcours de soins donné.
 
 ---
 
@@ -438,4 +469,4 @@ Réservez votre transport médical dès maintenant et profitez d'un service fiab
 
 ---
 
-_Article mis à jour le 9 décembre 2025_
+_Article mis à jour le 9 juin 2026_

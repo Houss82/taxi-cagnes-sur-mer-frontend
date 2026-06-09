@@ -384,7 +384,19 @@ export default function Home() {
                 remboursable par l'Assurance Maladie. Nos véhicules adaptés vous
                 accompagnent vers les hôpitaux et cliniques de la Côte d'Azur
                 (CHU Nice, Hôpital Cannes, cliniques privées) avec des
-                chauffeurs formés à l'accompagnement médical.
+                chauffeurs formés à l'accompagnement médical. Consultez
+                également notre{" "}
+                <a
+                  href="/blog/taxi-conventionne-cpam-cagnes-sur-mer-hopital-pasteur-nice-2026"
+                  className="inline-flex items-center gap-1 text-accent font-bold hover:text-primary transition-all duration-200 relative group text-xl"
+                >
+                  <span className="relative">
+                    guide complet sur les trajets en taxi conventionné entre
+                    Cagnes-sur-Mer et l'Hôpital Pasteur de Nice
+                    <span className="absolute bottom-0 left-0 right-0 h-1 bg-linear-to-r from-accent to-primary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left rounded-full"></span>
+                  </span>
+                </a>
+                .
               </p>
             </div>
 
