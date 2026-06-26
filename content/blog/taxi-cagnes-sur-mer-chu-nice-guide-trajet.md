@@ -35,7 +35,7 @@ Ce guide **Taxi Cagnes-sur-Mer** décrit **quel site choisir**, **comment y alle
 
 <div class="info-box">
 
-<strong>📌 Quel guide lire ?</strong> **Cet article** couvre le <strong>taxi classique</strong> vers les <strong>3 principaux sites du CHU Nice</strong> (trajets, tarifs, accès). Pour l’<strong>Hôpital Pasteur</strong> en <strong>taxi conventionné CPAM</strong> (prescription, tiers payant, ALD, dialyse), consultez notre [guide taxi conventionné Cagnes-sur-Mer → Pasteur](/blog/taxi-conventionne-cpam-cagnes-sur-mer-hopital-pasteur-nice-2026).
+<strong>📌 Quel guide lire ?</strong> **Cet article** couvre le <strong>taxi classique</strong> vers les <strong>3 principaux sites du CHU Nice</strong> (trajets, tarifs, accès). Pour l’<strong>Hôpital Pasteur</strong> en <strong>taxi conventionné CPAM</strong> (prescription, tiers payant, ALD), voir [guide Pasteur](/blog/taxi-conventionne-cpam-cagnes-sur-mer-hopital-pasteur-nice-2026). Pour la <strong>sortie d’hospitalisation</strong> (retour domicile Cagnes), voir [guide sortie CHU](/blog/taxi-conventionne-sortie-hospitalisation-chu-nice-cagnes-sur-mer-2026).
 
 </div>
 
@@ -344,6 +344,7 @@ Indiquez : **site CHU** (Pasteur / Cimiez / Archet), **service**, **heure du RDV
 ## 🔗 Liens utiles
 
 - 🏥 [Taxi conventionné → Hôpital Pasteur](/blog/taxi-conventionne-cpam-cagnes-sur-mer-hopital-pasteur-nice-2026) – CPAM, prescription, tiers payant
+- 🏠 [Sortie d’hospitalisation CHU → Cagnes](/blog/taxi-conventionne-sortie-hospitalisation-chu-nice-cagnes-sur-mer-2026) – Retour domicile, prescription, réservation jour J
 - 🎗️ [Taxi Cagnes → Centre Antoine Lacassagne](/blog/taxi-cagnes-sur-mer-centre-antoine-lacassagne-nice) – Oncologie & radiothérapie
 - 🚑 [Transport médical Cagnes-sur-Mer](/blog/transport-medical-cagnes-sur-mer-hopitaux-cliniques) – Tous les hôpitaux de la Côte
 - 🏥 [Taxi conventionné CPAM](/services/taxi-conventionne-cagnes-sur-mer) – Page service

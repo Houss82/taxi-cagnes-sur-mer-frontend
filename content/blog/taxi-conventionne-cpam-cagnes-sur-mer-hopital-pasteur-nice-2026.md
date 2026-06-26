@@ -38,7 +38,7 @@ Ce billet ne refait pas un « guide Assurance Maladie » : **Taxi Cagnes-sur-Mer
 
 <div class="info-box">
 
-<strong>📌 Quel guide lire ?</strong> **Cet article** est dédié au <strong>taxi conventionné CPAM</strong> vers l’<strong>Hôpital Pasteur</strong> (prescription, tiers payant, ALD, documents, réservation). Pour le <strong>taxi classique</strong> vers les sites du <strong>CHU Nice</strong> (Pasteur, Cimiez, Archet — itinéraires, tarifs, accès), consultez notre [guide Taxi Cagnes-sur-Mer → CHU Nice](/blog/taxi-cagnes-sur-mer-chu-nice-guide-trajet).
+<strong>📌 Quel guide lire ?</strong> **Cet article** est dédié au <strong>taxi conventionné CPAM</strong> vers l’<strong>Hôpital Pasteur</strong> (aller, prescription, ALD). Pour la <strong>sortie d’hospitalisation</strong> retour Cagnes : [guide sortie CHU](/blog/taxi-conventionne-sortie-hospitalisation-chu-nice-cagnes-sur-mer-2026). Pour le <strong>taxi classique</strong> vers les sites du <strong>CHU Nice</strong> : [guide CHU](/blog/taxi-cagnes-sur-mer-chu-nice-guide-trajet).
 
 </div>
 
@@ -91,7 +91,7 @@ Le bassin niçois regroupe pourtant plusieurs **établissements de santé** que 
 
 <div class="info-box">
 
-<strong>💡 Maillage utile :</strong> [Guide Taxi Cagnes-sur-Mer → CHU Nice](/blog/taxi-cagnes-sur-mer-chu-nice-guide-trajet) (Pasteur, Cimiez, Archet) · [Transport médical Cagnes-sur-Mer](/blog/transport-medical-cagnes-sur-mer-hopitaux-cliniques) · [Centre Antoine Lacassagne](/blog/taxi-cagnes-sur-mer-centre-antoine-lacassagne-nice) · [Réservation](/reservation)
+<strong>💡 Maillage utile :</strong> [Sortie hospitalisation → Cagnes](/blog/taxi-conventionne-sortie-hospitalisation-chu-nice-cagnes-sur-mer-2026) · [Guide CHU Nice](/blog/taxi-cagnes-sur-mer-chu-nice-guide-trajet) · [Transport médical](/blog/transport-medical-cagnes-sur-mer-hopitaux-cliniques) · [Lacassagne](/blog/taxi-cagnes-sur-mer-centre-antoine-lacassagne-nice) · [Réservation](/reservation)
 
 </div>
 
@@ -309,7 +309,7 @@ L’**Hôpital Pasteur** est vaste. Un **taxi conventionné Cagnes-sur-Mer** per
 
 ## 📞 Comment réserver un taxi conventionné vers Pasteur
 
-**Réserver un taxi Cagnes-sur-Mer pour Pasteur** se fait **en avance** — idéalement **24 à 48 h** avant, plus tôt pour une **première hospitalisation** ou une série de **dialyse**. Pour un **transport médical** urgent non vital (report de RDV, sortie d’hospitalisation le jour même), appelez directement **Taxi Cagnes-sur-Mer** : nous faisons le maximum selon la flotte disponible.
+**Réserver un taxi Cagnes-sur-Mer pour Pasteur** se fait **en avance** — idéalement **24 à 48 h** avant, plus tôt pour une **première hospitalisation** ou une série de **dialyse**. Pour une **sortie d’hospitalisation** le jour même, consultez notre [guide retour domicile CHU → Cagnes](/blog/taxi-conventionne-sortie-hospitalisation-chu-nice-cagnes-sur-mer-2026) ou appelez directement **Taxi Cagnes-sur-Mer**.
 
 **Canaux :**
 
