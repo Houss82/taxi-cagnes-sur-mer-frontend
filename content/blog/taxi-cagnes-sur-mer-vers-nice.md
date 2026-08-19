@@ -210,6 +210,8 @@ Notre service de **taxi Cagnes-sur-Mer vers Nice** ne se limite pas à un simple
 
 Votre chauffeur connaît parfaitement Nice et ses spécificités (rues étroites du Vieux-Nice, circulation dense sur la Promenade des Anglais, accès à la gare SNCF, zones difficiles d'accès). N'hésitez pas à lui demander des conseils sur les **bons restaurants, plages ou idées de visite** à Nice. Pour découvrir toutes les attractions et événements de Nice, consultez le [site officiel de l'Office de Tourisme de Nice](https://www.nicecotedazur.org/) qui recense les musées, les événements culturels et les activités nautiques.
 
+**Déjà sur place à Nice ?** Cet article concerne principalement les trajets depuis Cagnes-sur-Mer vers Nice. Pour une prise en charge directement à Nice, par exemple entre un hôtel, la gare, le centre-ville ou l'aéroport, vous pouvez également faire appel à [Taxi Nice 06](https://taxi-nice-06.com/) pour vos déplacements à Nice et dans les environs.
+
 <img src="/port-lympia-nice.jpg" alt="Port Lympia à Nice - Port de plaisance avec restaurants, bars branchés et galeries d'art contemporain" style="max-width: 100%; height: auto; border-radius: 0.75rem; margin: 1.5rem 0;" />
 
 ---
