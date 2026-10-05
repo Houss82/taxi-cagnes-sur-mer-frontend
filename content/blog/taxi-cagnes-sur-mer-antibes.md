@@ -200,6 +200,8 @@ Notre service de **transport vers Antibes** ne se limite pas à un simple "centr
 
 Votre chauffeur connaît parfaitement Antibes et ses spécificités (rues étroites du vieux Antibes, circulation dense vers Juan-les-Pins en été, accès au Port Vauban, zones difficiles d'accès). N'hésitez pas à lui demander des conseils sur les **bons restaurants, plages ou idées de visite** à Antibes. Pour découvrir toutes les attractions et événements d'Antibes, consultez le [site officiel de l'Office de Tourisme d'Antibes Juan-les-Pins](https://www.antibes-juanlespins.com/) qui recense les musées, les événements culturels et les activités nautiques.
 
+**Déjà sur place à Antibes ?** Cet article concerne principalement les trajets depuis Cagnes-sur-Mer vers Antibes. Pour une prise en charge directement à Antibes — hôtel, gare SNCF, Juan-les-Pins ou Cap d'Antibes — vous pouvez également faire appel à [Taxi Antibes Riviera](https://www.taxi-antibes.fr/) pour vos déplacements sur place.
+
 ---
 
 ## 🗺️ Itinéraire et conseils pour votre trajet vers Antibes
